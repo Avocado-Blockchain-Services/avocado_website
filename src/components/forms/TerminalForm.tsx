@@ -154,7 +154,6 @@ export function TerminalForm() {
               value={emailInput}
               onChange={e => setEmailInput(e.target.value)}
               placeholder="you@company.com"
-              autoFocus
               aria-label="Your email address"
               aria-required="true"
             />

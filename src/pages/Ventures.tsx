@@ -42,6 +42,24 @@ const perseaAiSchema = {
   }
 }
 
+const notarySchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://avocado.dev/ventures#notary",
+  "name": "Notary",
+  "description": "Blockchain-based document verification and supply chain transparency platform",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "creator": {
+    "@id": "https://avocado.dev/#organization"
+  }
+}
+
 const ventures = [
   {
     name: 'Persea Social',
@@ -51,7 +69,7 @@ const ventures = [
     stack: ['Solidity', 'React', 'Python', 'GCP'],
     metric: 'Shipped in 2 weeks, 10K users in month 1',
     url: 'https://perseasocial.com',
-    image: '/persea-social.webp'
+    image: '/persea_social_mobile.webp'
   },
   {
     name: 'Persea.ai',
@@ -61,7 +79,17 @@ const ventures = [
     stack: ['Vertex AI', 'Python', 'React', 'GCP'],
     metric: 'Processing 1M+ documents/day, 99.9% uptime',
     url: 'https://persea.ai',
-    image: '/persea-ai.webp'
+    image: '/persea_ai_Desktop.png'
+  },
+  {
+    name: 'Notary',
+    tagline: 'Blockchain Document Verification',
+    challenge: 'Create tamper-proof transparency chains for documents and supply chain management.',
+    approach: 'High-throughput blockchain notarization with cryptographic proof of authenticity.',
+    stack: ['Solidity', 'Python', 'React', 'GCP'],
+    metric: 'Enterprise-grade throughput, immutable audit trails',
+    url: 'https://notary.avocadoblock.com',
+    image: ''
   }
 ]
 
@@ -74,6 +102,7 @@ export function Ventures() {
       />
       <Schema data={perseaAppSchema} />
       <Schema data={perseaAiSchema} />
+      <Schema data={notarySchema} />
 
       <Section className="py-20">
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -122,9 +151,17 @@ export function Ventures() {
                   </Button>
                 </div>
 
-                {/* Placeholder for screenshot */}
-                <div className="bg-void-surface border border-void-elevated rounded-lg aspect-video flex items-center justify-center">
-                  <span className="text-text-tertiary font-mono text-sm">[Screenshot]</span>
+                {/* Screenshot */}
+                <div className="bg-void-surface border border-void-elevated rounded-lg overflow-hidden flex items-center justify-center min-h-[200px]">
+                  {venture.image ? (
+                    <img
+                      src={venture.image}
+                      alt={`${venture.name} screenshot`}
+                      className="w-full h-auto object-cover"
+                    />
+                  ) : (
+                    <span className="text-text-tertiary font-mono text-sm">[Coming Soon]</span>
+                  )}
                 </div>
               </div>
             </Card>

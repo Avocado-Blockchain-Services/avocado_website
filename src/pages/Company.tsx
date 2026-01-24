@@ -50,10 +50,13 @@ export function Company() {
 
       {/* Credentials */}
       <Section className="py-12 border-y border-void-elevated bg-void-surface">
-         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
+         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
              <img src="/clients/Google for Startups black color letter.png" alt="Google for Startups" className="h-12 w-auto invert" />
              <img src="/clients/iso27001.png" alt="ISO 27001" className="h-20 w-auto invert" />
              <img src="/clients/espmx.vc.png" alt="ESPMX VC" className="h-12 w-auto invert" />
+             <a href="https://clios.com/winners-gallery/details/152833" target="_blank" rel="noopener noreferrer">
+               <img src="/clients/bitsoaward.png" alt="Clio Sports Silver 2022" className="h-16 w-auto invert hover:invert-0 transition-all" />
+             </a>
          </div>
       </Section>
 
@@ -68,13 +71,13 @@ export function Company() {
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <Card className="p-6">
             <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; SPORTS &amp; ENTERTAINMENT</div>
-            <p className="text-text-secondary text-sm">
-              Selección Mexicana + Bitso fan engagement. Chivas NFT strategy. Historic Club América + Chivas "Clásico" blockchain activation.
+            <p className="text-white/80 text-base">
+              Selección Mexicana + Bitso fan engagement (<a href="https://clios.com/winners-gallery/details/152833" target="_blank" rel="noopener noreferrer" className="text-signal hover:underline">Clio Sports Silver 2022</a>). Chivas NFT strategy. Historic Club América + Chivas "Clásico" blockchain activation.
             </p>
           </Card>
           <Card className="p-6">
             <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; ENTERPRISE FINANCE</div>
-            <p className="text-text-secondary text-sm">
+            <p className="text-white/80 text-base">
               Banorte consortium blockchain PoCs. BBVA loyalty program integration. NFT-based rewards infrastructure.
             </p>
           </Card>
@@ -91,6 +94,7 @@ export function Company() {
              { name: 'BBVA', src: '/clients/BBVA Logo.png' },
              { name: 'Grupo Salinas', src: '/clients/Grupo Salinas Logo.png' },
              { name: 'BitSo', src: '/clients/BitSo Logo.png' },
+             { name: 'Ava Labs', src: '/clients/AvaLabs.png' },
              { name: 'HouseBlocks', src: '/clients/HouseBlocks Logo.png' },
            ].map((client) => (
              <Card key={client.name} className="p-8 flex items-center justify-center hover:bg-void-elevated transition-colors min-h-[160px]">

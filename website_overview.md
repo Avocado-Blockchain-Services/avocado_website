@@ -30,6 +30,18 @@ Leveraging AI to provide deep insights and analytics.
 *   Enterprises seeking specialized AI and Blockchain implementation.
 *   Innovators looking for a technical partner who "gets it."
 
+## Social Presence
+*   **X/Twitter:** @avocado_dev - Technical threads, ship updates
+*   **LinkedIn:** /company/avocado-dev - B2B credibility, case studies
+*   **Facebook:** /avocadodev - Brand presence, community engagement
+*   **Instagram:** @avocado_dev - Visual portfolio, team culture, behind-the-scenes
+
+## Brand Assets
+*   **Primary Color:** #0000FF (Avocado Blue)
+*   **Logo:** Avocado wordmark + icon (see `/assets/logo/`)
+*   **Product Screenshots:** Persea.app and Persea.ai visuals (see `/assets/persea-*/`)
+
 ## Website Theme & Visual Identity
 *   **Theme:** Engineering Excellence, Speed, Precision. Less "Marketing Fluff," more "Technical Authority."
 *   **Vibe:** "We build the future." Clean lines, code snippets, architectural diagrams, and a focus on the tech stack.
+*   **Color Palette:** Deep void blacks with electric blue (#0000FF) accents. Terminal/hacker aesthetic.

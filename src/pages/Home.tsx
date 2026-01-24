@@ -120,22 +120,38 @@ export function Home() {
           </Card>
           <Card className="px-6 py-5 flex items-center gap-3">
             <div className="w-3 h-3 bg-signal rounded-full animate-pulse" />
+            <span className="font-mono text-white text-base">Clio Sports Silver 2022</span>
+          </Card>
+          <Card className="px-6 py-5 flex items-center gap-3">
+            <div className="w-3 h-3 bg-signal rounded-full animate-pulse" />
             <span className="font-mono text-white text-base">ESPMX VC Backed</span>
           </Card>
         </div>
 
         {/* Client Logos */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center text-white/60 text-sm font-mono mb-8 tracking-wider">
             TRUSTED BY ENTERPRISE
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 items-center justify-items-center">
-            {['BBVA', 'Banorte', 'Grupo Salinas', 'Chivas', 'Bitso', 'HouseBlocks'].map((client) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-8 items-center justify-items-center">
+            {[
+              { name: 'BBVA', src: '/clients/BBVA Logo.png' },
+              { name: 'Banorte', src: '/clients/Banorte Logo.png' },
+              { name: 'Grupo Salinas', src: '/clients/Grupo Salinas Logo.png' },
+              { name: 'Chivas', src: '/clients/ChivasLogo.png' },
+              { name: 'Bitso', src: '/clients/BitSo Logo.png' },
+              { name: 'Ava Labs', src: '/clients/AvaLabs.png' },
+              { name: 'HouseBlocks', src: '/clients/HouseBlocks Logo.png' },
+            ].map((client) => (
               <div
-                key={client}
-                className="font-mono text-white/80 text-base border border-white/20 px-5 py-4 rounded hover:border-signal/50 hover:text-white transition-all w-full text-center"
+                key={client.name}
+                className="flex items-center justify-center p-4 h-20 w-full"
               >
-                {client}
+                <img
+                  src={client.src}
+                  alt={client.name}
+                  className="max-h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                />
               </div>
             ))}
           </div>

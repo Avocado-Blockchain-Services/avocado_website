@@ -119,11 +119,11 @@ body {
   }
   60% {
     transform: translate(-1px, -1px);
-    clip-path: inset(10% 0 60% 0);
+    filter: hue-rotate(45deg) brightness(1.2);
   }
   80% {
     transform: translate(1px, 1px);
-    clip-path: inset(60% 0 10% 0);
+    filter: hue-rotate(-45deg) brightness(0.9);
   }
   100% {
     transform: translate(0);
@@ -134,6 +134,7 @@ body {
 .glitch-hover:hover {
   animation: glitch 0.3s ease;
   position: relative;
+  pointer-events: auto;
 }
 
 /* Phosphor Glow */

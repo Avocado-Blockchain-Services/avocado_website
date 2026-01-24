@@ -40,9 +40,9 @@ export function Header() {
            <img src="/logo-blue.svg" alt="Avocado" className="h-8 w-auto group-hover:brightness-125 transition-all" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm">
+        <nav className="hidden md:flex items-center gap-8 text-base">
           {['Home', 'Company', 'Protocol', 'Ventures', 'Services'].map((item) => (
-             <a key={item} href={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-text-secondary hover:text-signal transition-colors">
+             <a key={item} href={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-white/90 hover:text-signal transition-colors">
                {item}
              </a>
           ))}
