@@ -10,7 +10,11 @@ export function Signal() {
 
   // Scroll to top on mount
   useEffect(() => {
-    window.scrollTo(0, 0)
+    // Small timeout to ensure we override browser scroll restoration
+    const timer = setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' })
+    }, 10)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
