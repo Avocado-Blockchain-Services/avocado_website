@@ -26,12 +26,12 @@ export function TerminalInput({
   }, [autoFocus, isLoading])
 
   return (
-    <div className={cn('flex items-center gap-2 font-mono text-base md:text-sm', className)}>
-      <span className="text-prompt select-none whitespace-nowrap">{prompt}</span>
+    <div className={cn('flex items-center gap-2 font-mono text-lg', className)}>
+      <span className="text-signal select-none whitespace-nowrap">{prompt}</span>
       <div className="relative flex-1">
         <input
           ref={inputRef}
-          className="w-full bg-transparent border-none outline-none p-0 text-text-primary placeholder-transparent caret-signal focus:ring-0"
+          className="w-full bg-transparent border-none outline-none p-0 text-white placeholder-white/40 caret-signal focus:ring-0 text-lg"
           autoComplete="off"
           spellCheck={false}
           disabled={isLoading}

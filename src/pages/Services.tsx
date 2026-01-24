@@ -9,32 +9,32 @@ import { SEO } from '@/components/seo/SEO'
 export function Services() {
   const services = [
     {
-      title: 'Blockchain & Web3',
+      title: 'Digital Products',
       timeline: '1-3 weeks',
-      idealFor: 'Enterprises entering Web3 or launching NFT/token projects',
-      desc: 'NFT strategy, smart contract development, and blockchain integration. Google for Startups company with projects for Chivas, Bitso, and Banorte.',
-      action: 'Explore Web3'
+      idealFor: 'Founders ready to launch',
+      desc: 'Apps, platforms, and tools your customers will love. From concept to live product in weeks.',
+      action: 'Build My Product'
     },
     {
-      title: 'MVP Development',
+      title: 'AI-Powered Experiences',
       timeline: '1-3 weeks',
-      idealFor: 'Founders with validated ideas ready to build',
-      desc: 'PoC in 3 days. Production-ready MVP in 1-3 weeks. AI-accelerated, human-verified.',
-      action: 'Start an MVP'
+      idealFor: 'Companies looking to automate',
+      desc: 'Chatbots, recommendation engines, document processing. AI that solves real business problems.',
+      action: 'Explore AI'
     },
     {
-      title: 'Scale Engineering',
-      timeline: 'Ongoing',
-      idealFor: 'Products hitting growth limits',
-      desc: 'Scale existing products to handle 10x-100x growth. Infrastructure that doesn\'t break.',
-      action: 'Scale Your Product'
+      title: 'Fan Engagement & Loyalty',
+      timeline: '2-4 weeks',
+      idealFor: 'Brands wanting deeper connections',
+      desc: 'Rewards platforms, NFT campaigns, digital collectibles. Trusted by Chivas, Club América, and Bitso.',
+      action: 'Launch Campaign'
     },
     {
       title: 'Technical Rescue',
       timeline: '3-7 days',
-      idealFor: 'Projects that are stuck, broken, or behind',
-      desc: 'Fix and stabilize failing or stalled projects. Clean, documented, maintainable.',
-      action: 'Rescue My Project'
+      idealFor: 'Projects stuck or behind',
+      desc: 'We fix failing projects fast. Clean, documented, ready for your team to take over.',
+      action: 'Rescue Project'
     },
   ]
 

@@ -2,28 +2,28 @@ import { PhosphorGlow } from '@/components/effects/PhosphorGlow'
 
 const phases = [
   {
-    name: 'RECON',
+    name: 'DISCOVER',
     duration: '24-48h',
     icon: '01',
-    desc: 'Domain decomposition. Figma prototypes. First commits day one.'
+    desc: 'We map your goals, design the experience, and start building. Day one.'
   },
   {
     name: 'PROTOTYPE',
     duration: '3 days',
     icon: '02',
-    desc: 'Working PoC. AI-generated scaffolding. Validated architecture.'
+    desc: 'A working version you can click through. Test your idea before full investment.'
   },
   {
-    name: 'SPRINT',
+    name: 'BUILD',
     duration: '1-2 weeks',
     icon: '03',
-    desc: 'AI-accelerated velocity. Daily deploys. Human-verified correctness.'
+    desc: 'Rapid development with daily progress updates. You see results, not slide decks.'
   },
   {
-    name: 'DEPLOY',
+    name: 'LAUNCH',
     duration: '2-3 days',
     icon: '04',
-    desc: 'Staged rollout. Telemetry validation. Production handoff.'
+    desc: 'Your product goes live. We handle the complexity. You handle the champagne.'
   },
 ]
 
@@ -73,7 +73,7 @@ export function MethodPreview() {
       {/* Terminal command hint */}
       <div className="mt-12 text-center">
         <code className="text-white/50 text-sm font-mono">
-          $ ./methodology --poc <span className="text-signal">3 days</span> --mvp <span className="text-signal">1-3 weeks</span> to production
+          From idea to live product: <span className="text-signal">1-3 weeks</span>
         </code>
       </div>
     </div>

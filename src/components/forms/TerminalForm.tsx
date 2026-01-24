@@ -6,6 +6,9 @@ import { TerminalInput } from '@/components/terminal/TerminalInput'
 import { TerminalMenu, type Option } from '@/components/terminal/TerminalMenu'
 import { contactFormSchema, type ContactFormData } from '@/lib/schemas'
 
+// Get your access key from https://web3forms.com
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || ''
+
 export function TerminalForm() {
   const [step, setStep] = useState(0)
   const [history, setHistory] = useState<ReactNode[]>([])
@@ -86,16 +89,41 @@ export function TerminalForm() {
       <TerminalOutput key="cmd-deploy">avocado@signal:~$ deploy --submit</TerminalOutput>,
       <TerminalOutput key="progress" animate>████████████████████████████████████████ 100%</TerminalOutput>
     ])
-    console.log('Submitting', data)
 
-    await new Promise(r => setTimeout(r, 2000))
-    
-    setHistory(prev => [
-      ...prev,
-      <TerminalOutput key="success-1" className="text-success">✓ Signal transmitted successfully</TerminalOutput>,
-      <TerminalOutput key="success-2" className="text-success">✓ Expect response within 24 hours</TerminalOutput>,
-      <TerminalOutput key="success-3" className="text-success">✓ Check your inbox for confirmation</TerminalOutput>
-    ])
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `New Project Inquiry: ${data.projectType}`,
+          from_name: 'Avocado Website (Terminal)',
+          ...data
+        })
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setHistory(prev => [
+          ...prev,
+          <TerminalOutput key="success-1" className="text-success">✓ Signal transmitted successfully</TerminalOutput>,
+          <TerminalOutput key="success-2" className="text-success">✓ Expect response within 24 hours</TerminalOutput>,
+          <TerminalOutput key="success-3" className="text-success">✓ Check your inbox for confirmation</TerminalOutput>
+        ])
+      } else {
+        setHistory(prev => [
+          ...prev,
+          <TerminalOutput key="error" className="text-error">ERROR: Transmission failed. Try again later.</TerminalOutput>
+        ])
+      }
+    } catch {
+      setHistory(prev => [
+        ...prev,
+        <TerminalOutput key="error" className="text-error">ERROR: Network error. Check connection.</TerminalOutput>
+      ])
+    }
+
     setStep(4) // Done
   }
 
@@ -137,7 +165,7 @@ export function TerminalForm() {
           <div className="mt-4">
             <TerminalOutput>avocado@signal:~$ project --type</TerminalOutput>
             <div className="pl-4 border-l-2 border-void-elevated ml-2 mb-4">
-              <div className="text-text-secondary mb-2" id="project-type-label">? Select project type:</div>
+              <div className="text-white/80 mb-2 text-base" id="project-type-label">? Select project type:</div>
               <TerminalMenu
                 options={projectOptions}
                 onSelect={handleProjectSelect}
@@ -157,7 +185,7 @@ export function TerminalForm() {
               aria-label="Your email address"
               aria-required="true"
             />
-            <div className="text-text-tertiary text-xs mt-2 ml-4" aria-live="polite">Press Enter to confirm</div>
+            <div className="text-white/60 text-sm mt-2 ml-4" aria-live="polite">Press Enter to confirm</div>
           </form>
         )}
 
@@ -165,7 +193,7 @@ export function TerminalForm() {
           <div className="mt-4">
             <TerminalOutput>avocado@signal:~$ timeline --target</TerminalOutput>
             <div className="pl-4 border-l-2 border-void-elevated ml-2 mb-4">
-              <div className="text-text-secondary mb-2" id="timeline-label">? When do you need this?</div>
+              <div className="text-white/80 mb-2 text-base" id="timeline-label">? When do you need this?</div>
               <TerminalMenu
                 options={timelineOptions}
                 onSelect={handleTimelineSelect}

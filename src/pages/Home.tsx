@@ -168,8 +168,8 @@ export function Home() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; PROTOCOL</div>
           <h2 className="text-3xl md:text-4xl font-bold font-mono mb-4 text-white">HOW WE WORK</h2>
-          <p className="text-white/80 text-lg mb-2">Four phases. First code on day one. No death by meetings.</p>
-          <p className="text-white/60 text-base">AI-augmented development with human-verified correctness. Rigorous testing. Battle-tested infrastructure.</p>
+          <p className="text-white/80 text-lg mb-2">Four phases. Results on day one. No death by meetings.</p>
+          <p className="text-white/60 text-base">You see progress daily. Not PowerPoints. Not status reports. Working software.</p>
         </div>
         <MethodPreview />
       </Section>

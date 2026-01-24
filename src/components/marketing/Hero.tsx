@@ -25,7 +25,7 @@ export function Hero() {
 
            <div className="font-mono text-sm md:text-base text-text-secondary space-y-2">
              <p className="text-signal">[████████████░░░░] 75% FASTER DELIVERY</p>
-             <p>AI, blockchain, and scalable systems. For founders who refuse to wait.</p>
+             <p>Launch your digital product in weeks. Trusted by BBVA, Banorte, and Chivas.</p>
            </div>
 
            <div className="flex flex-col sm:flex-row gap-4 pt-4">

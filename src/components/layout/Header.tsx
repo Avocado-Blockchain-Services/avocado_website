@@ -54,12 +54,12 @@ export function Header() {
       </div>
 
       {/* Status Bar */}
-      <div className="border-t border-void-elevated bg-void-surface text-xs text-text-tertiary">
-        <div className="max-w-7xl mx-auto px-4 h-6 flex items-center justify-between">
-          <span>{`> current: ${pathname}`}</span>
-          <div className="flex gap-4">
-            <span>{`scroll: ${Math.round(scrollProgress * 100)}%`}</span>
-            <span>{`session: ${sessionTime}m`}</span>
+      <div className="border-t border-void-elevated bg-void-surface text-sm text-white/50">
+        <div className="max-w-7xl mx-auto px-4 h-7 flex items-center justify-between font-mono">
+          <span><span className="text-signal">&gt;</span> current: {pathname}</span>
+          <div className="flex gap-6">
+            <span>scroll: <span className="text-white/70">{Math.round(scrollProgress * 100)}%</span></span>
+            <span>session: <span className="text-white/70">{sessionTime}m</span></span>
           </div>
         </div>
       </div>

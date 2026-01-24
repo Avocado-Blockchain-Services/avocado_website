@@ -74,43 +74,43 @@ export function FAQ({ items, className = '' }: FAQProps) {
 // Default FAQ items for the services page
 export const servicesFAQItems: FAQItem[] = [
   {
-    question: "Does Avocado build blockchain and Web3 applications?",
-    answer: "Yes. We're a Google for Startups company with extensive blockchain experience. We've delivered NFT projects for Chivas and Club América, fan engagement platforms with Bitso, and enterprise blockchain PoCs for Banorte. Our team builds with Solidity (Ethereum/Polygon), Rust (Solana), and integrates Web3 into existing enterprise systems. Our own product Persea.social is a Web3 gamified rewards platform."
+    question: "What kind of products can Avocado build?",
+    answer: "Customer apps, AI assistants, loyalty platforms, NFT campaigns, internal tools, and data dashboards. We build for web, mobile, and emerging platforms. Our clients include BBVA, Banorte, Chivas, and Bitso."
   },
   {
-    question: "How fast can Avocado build an MVP?",
-    answer: "With AI-driven development, we ship PoCs in 3 days and full MVPs in 1-3 weeks. Our fastest deployment was 72 hours for a functional AI chatbot with custom training data. We're 10x faster than traditional agencies because we leverage AI-augmented pipelines while maintaining rigorous testing and code quality."
+    question: "How fast can you deliver?",
+    answer: "Working prototype in 3 days. Full product in 1-3 weeks. Our fastest launch was 72 hours for a working AI assistant. We move 10x faster than traditional agencies while maintaining enterprise-grade quality."
   },
   {
-    question: "What technologies does Avocado specialize in?",
-    answer: "We specialize in blockchain (Solidity), AI/ML infrastructure (Vertex AI, GCP), and modern web (React, JavaScript, Python). We choose technologies based on your specific needs, not what's trendy."
+    question: "Is Avocado enterprise-ready?",
+    answer: "Yes. ISO 27001 certified. Google for Startups company. Trusted by Fortune 500 clients like BBVA and Banorte. Enterprise security with startup speed."
   },
   {
-    question: "How is Avocado different from a traditional dev agency?",
-    answer: "We've been building AI and blockchain systems since 2018. Enterprise clients like BBVA, Banorte, and Chivas trust us because we combine deep technical expertise with startup velocity. Google for Startups company. ISO 27001 certified. We don't bill by the hour; we bill by the outcome."
+    question: "How is Avocado different from a traditional agency?",
+    answer: "We build since 2018, not consult. No 6-month discovery phases, no 20-person teams, no PowerPoint deliverables. You pay for working software, not hours billed. Fixed scope, fixed price."
   },
   {
-    question: "Does Avocado offer ongoing maintenance after launch?",
-    answer: "Yes. Our Scale & Infrastructure tier includes ongoing maintenance, monitoring, and optimization. We can handle everything from bug fixes to 10x scaling challenges. Many clients keep us on retainer for continuous shipping velocity."
+    question: "Do you build AI products?",
+    answer: "AI is core to what we do. We build custom AI assistants, recommendation engines, document processing systems, and intelligent automation. Used by enterprises handling millions of requests daily."
   },
   {
-    question: "How do engagements work?",
-    answer: "Fixed-scope, fixed-price. We scope your project in a 30-minute call and deliver a clear proposal. No hourly billing. No surprises. You pay for outcomes, not hours."
+    question: "What about loyalty programs and fan engagement?",
+    answer: "We've delivered NFT campaigns for Chivas and Club América, fan platforms with Bitso (Clio Sports Silver 2022 winner), and rewards systems for major brands. We help you connect with customers in new ways."
   }
 ]
 
 // Homepage FAQ (shorter version)
 export const homeFAQItems: FAQItem[] = [
   {
-    question: "How fast can you ship an MVP?",
-    answer: "PoC in 3 days. MVP in 1-3 weeks. AI-driven development with human-verified correctness."
+    question: "How fast can you launch my product?",
+    answer: "Working prototype in 3 days. Full product in 1-3 weeks. You see daily progress, not monthly reports."
   },
   {
     question: "What makes Avocado different?",
-    answer: "AI and blockchain experts since 2018. Enterprise clients like BBVA, Banorte, Chivas. Google for Startups. ISO 27001 certified."
+    answer: "Building since 2018. Trusted by BBVA, Banorte, and Chivas. Google for Startups company. ISO 27001 certified. Enterprise security, startup speed."
   },
   {
-    question: "How do engagements work?",
-    answer: "Fixed-scope, fixed-price. 30-minute scoping call, clear proposal, no hourly billing."
+    question: "How does pricing work?",
+    answer: "Fixed scope, fixed price. No surprises. 30-minute call, clear proposal, you know exactly what you're getting."
   }
 ]

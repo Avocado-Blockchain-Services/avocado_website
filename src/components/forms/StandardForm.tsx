@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { contactFormSchema, type ContactFormData } from '@/lib/schemas'
@@ -5,23 +6,56 @@ import { Input } from '@/components/ui/Input'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
 
+// Get your access key from https://web3forms.com
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || ''
+
 export function StandardForm({ onSuccess }: { onSuccess?: () => void }) {
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<ContactFormData>({
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema)
   })
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    console.log('Form data:', data)
-    onSuccess?.()
-    alert('Signal transmitted! (Simulation)')
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `New Project Inquiry: ${data.projectType}`,
+          from_name: 'Avocado Website',
+          ...data
+        })
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitStatus('success')
+        reset()
+        onSuccess?.()
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch {
+      setSubmitStatus('error')
+    }
+  }
+
+  if (submitStatus === 'success') {
+    return (
+      <div className="text-center p-8 bg-void-surface border border-signal/30">
+        <div className="text-signal text-4xl mb-4">✓</div>
+        <h3 className="text-white text-xl font-mono mb-2">Signal Transmitted</h3>
+        <p className="text-white/70">We'll get back to you within 24 hours.</p>
+      </div>
+    )
   }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 max-w-md mx-auto p-6 bg-void-surface border border-void-elevated">
       <div className="space-y-2">
-        <label className="text-sm font-mono text-text-secondary">Project Type</label>
+        <label className="text-base font-mono text-white/80">Project Type</label>
         <select 
           {...register('projectType')}
           className={cn(
@@ -38,7 +72,7 @@ export function StandardForm({ onSuccess }: { onSuccess?: () => void }) {
       </div>
 
       <div className="space-y-2">
-        <label className="text-sm font-mono text-text-secondary">Email</label>
+        <label className="text-base font-mono text-white/80">Email</label>
         <Input 
           {...register('email')} 
           placeholder="you@company.com" 
@@ -48,7 +82,7 @@ export function StandardForm({ onSuccess }: { onSuccess?: () => void }) {
       </div>
 
       <div className="space-y-2">
-        <label className="text-sm font-mono text-text-secondary">Timeline</label>
+        <label className="text-base font-mono text-white/80">Timeline</label>
         <select 
           {...register('timeline')}
           className={cn(
