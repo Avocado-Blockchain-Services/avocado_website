@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <!-- Blue background -->
+  <rect width="180" height="180" fill="#0000FF"/>
+  <!-- White icon centered (scaled from 792x612 to fit ~120px with padding) -->
+  <g transform="translate(45, 50) scale(0.14)">
+    <circle fill="#FFFFFF" cx="455.8" cy="367.9" r="12.4"/>
+    <path fill="#FFFFFF" d="M444.7,307l-23-57.4c-4.2-10.5-14.5-18-26.5-18s-22.3,7.4-26.5,18l-40.6,101.3c-4.4,11,0.9,23.5,11.9,27.9
+      c2.6,1,5.3,1.5,8,1.5h47.3c29.5,0,53.4-23.9,53.4-53.4C448.6,319.9,447.2,313.2,444.7,307z M395.2,355.6
+      c-15.8,0-28.6-12.8-28.6-28.6c0-15.8,12.8-28.6,28.6-28.6s28.6,12.8,28.6,28.6C423.8,342.8,411,355.6,395.2,355.6z"/>
+  </g>
+</svg>

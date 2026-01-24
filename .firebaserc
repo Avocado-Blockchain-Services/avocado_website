@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "avocado-website-prod"
+  },
+  "targets": {
+    "persea-feeds": {
+      "hosting": {
+        "avocado-website": [
+          "avocado-web"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

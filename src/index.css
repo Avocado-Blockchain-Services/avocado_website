@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+/* Font Face Declarations */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/GeistMono-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400 500 700;
+  font-display: swap;
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Commit Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/CommitMono-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF;
+}
+
+:root {
+  /* The Void */
+  --void-pure: #000000;
+  --void-surface: #0a0a0a;
+  --void-elevated: #111111;
+
+  /* Avocado Blue - The Signal */
+  --signal: #0000FF;
+  --signal-bright: #4444FF;
+  --signal-glow: rgba(0,0,255,0.4);
+  --signal-dim: #000066;
+
+  /* Scanlines & Noise */
+  --scanline: rgba(0,0,255,0.03);
+  --noise-opacity: 0.02;
+
+  /* Text Hierarchy */
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
+  --text-tertiary: #444444;
+
+  /* Terminal Accents */
+  --prompt: #0000FF;
+  --cursor: #0000FF;
+  --success: #00FF00;
+  --error: #FF0044;
+}
+
+@theme {
+  --color-void-pure: var(--void-pure);
+  --color-void-surface: var(--void-surface);
+  --color-void-elevated: var(--void-elevated);
+
+  --color-signal: var(--signal);
+  --color-signal-bright: var(--signal-bright);
+  --color-signal-glow: var(--signal-glow);
+  --color-signal-dim: var(--signal-dim);
+
+  --color-scanline: var(--scanline);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+
+  --color-prompt: var(--prompt);
+  --color-cursor: var(--cursor);
+  --color-success: var(--success);
+  --color-error: var(--error);
+
+  --font-mono: "Geist Mono", monospace;
+  --font-sans: "Satoshi", sans-serif;
+  --font-terminal: "Commit Mono", monospace;
+}
+
+body {
+  background-color: var(--void-pure);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--void-pure);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--void-surface);
+  border: 1px solid var(--void-elevated);
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    filter: none;
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    filter: hue-rotate(90deg);
+  }
+  40% {
+    transform: translate(2px, -2px);
+    filter: hue-rotate(-90deg);
+  }
+  60% {
+    transform: translate(-1px, -1px);
+    clip-path: inset(10% 0 60% 0);
+  }
+  80% {
+    transform: translate(1px, 1px);
+    clip-path: inset(60% 0 10% 0);
+  }
+  100% {
+    transform: translate(0);
+    filter: none;
+  }
+}
+
+.glitch-hover:hover {
+  animation: glitch 0.3s ease;
+  position: relative;
+}
+
+/* Phosphor Glow */
+.text-glow {
+  text-shadow:
+    0 0 10px var(--signal),
+    0 0 20px var(--signal),
+    0 0 40px var(--signal-glow);
+}
+
+/* Cursor Blink */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Accessibility - Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus visible indicators */
+*:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
+
+/* Touch target minimum size */
+button, a, [role="option"], [role="button"] {
+  min-height: 44px;
+}
+
+/* Skip navigation link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--signal);
+  color: var(--void-pure);
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  font-family: var(--font-mono);
+}
+
+.skip-link:focus {
+  top: 0;
+}
