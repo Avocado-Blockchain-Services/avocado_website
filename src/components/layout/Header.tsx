@@ -37,7 +37,7 @@ export function Header() {
       {/* Main Bar */}
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2 group cursor-pointer">
-           <img src="/logo-blue.svg" alt="Avocado" className="h-8 w-auto group-hover:brightness-125 transition-all" />
+           <img src="/logo-white.svg" alt="Avocado" className="h-8 w-auto group-hover:brightness-125 transition-all" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 text-base">
