@@ -28,7 +28,7 @@ export function StandardForm({ onSuccess: _onSuccess }: { onSuccess?: () => void
       <input type="hidden" name="access_key" value={WEB3FORMS_KEY} />
       <input type="hidden" name="subject" value="New Project Inquiry from Avocado Website" />
       <input type="hidden" name="from_name" value="Avocado Website" />
-      <input type="hidden" name="redirect" value="https://avocado-web.web.app/signal?success=true" />
+      <input type="hidden" name="redirect" value="https://avocadoblock.com/signal?success=true" />
       <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
 
       <div className="space-y-2">
