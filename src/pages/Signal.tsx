@@ -1,16 +1,10 @@
 import { useEffect } from 'react'
 import { Section } from '@/components/layout/Section'
-import { TerminalForm } from '@/components/forms/TerminalForm'
 import { StandardForm } from '@/components/forms/StandardForm'
-import { FormToggle } from '@/components/forms/FormToggle'
-import { useFormMode } from '@/hooks/useFormMode'
 
 export function Signal() {
-  const { mode, toggleMode } = useFormMode()
-
   // Scroll to top on mount
   useEffect(() => {
-    // Small timeout to ensure we override browser scroll restoration
     const timer = setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'instant' })
     }, 10)
@@ -23,15 +17,11 @@ export function Signal() {
          <h1 className="text-4xl md:text-5xl font-bold font-mono text-white mb-6 text-center">
            INITIALIZE PROJECT
          </h1>
-         <p className="text-center text-text-secondary mb-12">
+         <p className="text-center text-white/70 mb-12">
            Ready to ship? Tell us what you're building.
          </p>
 
-         <div className="relative">
-           {mode === 'terminal' ? <TerminalForm /> : <StandardForm />}
-         </div>
-         
-         <FormToggle mode={mode} onToggle={toggleMode} />
+         <StandardForm />
        </div>
     </Section>
   )
