@@ -91,16 +91,18 @@ export function TerminalForm() {
     ])
 
     try {
+      const formData = new FormData()
+      formData.append('access_key', WEB3FORMS_KEY)
+      formData.append('subject', `New Project Inquiry: ${data.projectType}`)
+      formData.append('from_name', 'Avocado Website')
+      formData.append('email', data.email)
+      formData.append('projectType', data.projectType)
+      formData.append('timeline', data.timeline)
+      formData.append('botcheck', '')
+
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: `New Project Inquiry: ${data.projectType}`,
-          from_name: 'Avocado Website (Terminal)',
-          botcheck: '',
-          ...data
-        })
+        body: formData
       })
 
       const result = await response.json()
@@ -118,10 +120,11 @@ export function TerminalForm() {
           <TerminalOutput key="error" className="text-error">ERROR: Transmission failed. Try again later.</TerminalOutput>
         ])
       }
-    } catch {
+    } catch (err) {
+      console.error('Form submission error:', err)
       setHistory(prev => [
         ...prev,
-        <TerminalOutput key="error" className="text-error">ERROR: Network error. Check connection.</TerminalOutput>
+        <TerminalOutput key="error" className="text-error">ERROR: {err instanceof Error ? err.message : 'Network error. Check connection.'}</TerminalOutput>
       ])
     }
 
