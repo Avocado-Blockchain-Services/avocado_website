@@ -54,6 +54,9 @@ export function StandardForm({ onSuccess }: { onSuccess?: () => void }) {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 max-w-md mx-auto p-6 bg-void-surface border border-void-elevated">
+      {/* Web3Forms botcheck - invisible spam protection */}
+      <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+
       <div className="space-y-2">
         <label className="text-base font-mono text-white/80">Project Type</label>
         <select 

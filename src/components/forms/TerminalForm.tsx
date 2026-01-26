@@ -98,6 +98,7 @@ export function TerminalForm() {
           access_key: WEB3FORMS_KEY,
           subject: `New Project Inquiry: ${data.projectType}`,
           from_name: 'Avocado Website (Terminal)',
+          botcheck: '',
           ...data
         })
       })
