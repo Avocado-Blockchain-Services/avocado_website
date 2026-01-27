@@ -135,22 +135,22 @@ export function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-8 items-center justify-items-center">
             {[
-              { name: 'BBVA', src: '/clients/BBVA Logo.png' },
-              { name: 'Banorte', src: '/clients/Banorte Logo.png' },
-              { name: 'Grupo Salinas', src: '/clients/Grupo Salinas Logo.png' },
-              { name: 'Chivas', src: '/clients/ChivasLogo.png' },
-              { name: 'Bitso', src: '/clients/BitSo Logo.png' },
-              { name: 'Ava Labs', src: '/clients/AvaLabs.png' },
-              { name: 'HouseBlocks', src: '/clients/HouseBlocks Logo.png' },
+              { name: 'BBVA', src: '/clients/Logo_BBVA.svg' },
+              { name: 'Banorte', src: '/clients/Logo_de_Banorte.svg' },
+              { name: 'Grupo Salinas', src: '/clients/Logo_Grupo_Salinas.svg' },
+              { name: 'Chivas', src: '/clients/Logo_Chivas.png' },
+              { name: 'Bitso', src: '/clients/Logo_Bitso.svg' },
+              { name: 'Ava Labs', src: '/clients/Logo_AvaLabs.png' },
+              { name: 'HouseBlocks', src: '/clients/Logo_HouseBlocks.png' },
             ].map((client) => (
               <div
                 key={client.name}
-                className="flex items-center justify-center p-4 h-20 w-full"
+                className="flex items-center justify-center p-4 h-16 w-full"
               >
                 <img
                   src={client.src}
                   alt={client.name}
-                  className="max-h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  className="h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
                 />
               </div>
             ))}

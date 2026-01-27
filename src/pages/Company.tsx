@@ -89,13 +89,13 @@ export function Company() {
         <h2 className="text-2xl font-mono text-center mb-16 text-text-secondary">TRUSTED BY</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 max-w-5xl mx-auto">
            {[
-             { name: 'Chivas', src: '/clients/ChivasLogo.png' },
-             { name: 'Banorte', src: '/clients/Banorte Logo.png' },
-             { name: 'BBVA', src: '/clients/BBVA Logo.png' },
-             { name: 'Grupo Salinas', src: '/clients/Grupo Salinas Logo.png' },
-             { name: 'BitSo', src: '/clients/BitSo Logo.png' },
-             { name: 'Ava Labs', src: '/clients/AvaLabs.png' },
-             { name: 'HouseBlocks', src: '/clients/HouseBlocks Logo.png' },
+             { name: 'Chivas', src: '/clients/Logo_Chivas.png' },
+             { name: 'Banorte', src: '/clients/Logo_de_Banorte.svg' },
+             { name: 'BBVA', src: '/clients/Logo_BBVA.svg' },
+             { name: 'Grupo Salinas', src: '/clients/Logo_Grupo_Salinas.svg' },
+             { name: 'BitSo', src: '/clients/Logo_Bitso.svg' },
+             { name: 'Ava Labs', src: '/clients/Logo_AvaLabs.png' },
+             { name: 'HouseBlocks', src: '/clients/Logo_HouseBlocks.png' },
            ].map((client) => (
              <Card key={client.name} className="p-8 flex items-center justify-center hover:bg-void-elevated transition-colors min-h-[160px]">
                 <img src={client.src} alt={client.name} className="max-h-12 w-auto max-w-full grayscale hover:grayscale-0 transition-all" />
