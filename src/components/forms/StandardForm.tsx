@@ -1,5 +1,6 @@
 import { Input } from '@/components/ui/Input'
 import { Button } from '@/components/ui/Button'
+import { trackEvent } from '@/lib/analytics'
 
 // Get your access key from https://web3forms.com
 const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || ''
@@ -23,6 +24,7 @@ export function StandardForm({ onSuccess: _onSuccess }: { onSuccess?: () => void
       action="https://api.web3forms.com/submit"
       method="POST"
       className="space-y-6 max-w-md mx-auto p-6 bg-void-surface border border-void-elevated"
+      onSubmit={() => trackEvent('Form Submitted', { form: 'standard' })}
     >
       {/* Web3Forms config */}
       <input type="hidden" name="access_key" value={WEB3FORMS_KEY} />

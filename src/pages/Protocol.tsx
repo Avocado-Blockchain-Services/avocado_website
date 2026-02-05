@@ -20,28 +20,28 @@ const howToSchema = {
       "position": 1,
       "name": "Recon",
       "text": "48-hour deep-dive into your requirements, existing codebase (if any), and success metrics. Output: Technical spec and architecture diagram.",
-      "url": "https://avocado.dev/protocol#recon"
+      "url": "https://avocadoblock.com/protocol#recon"
     },
     {
       "@type": "HowToStep",
       "position": 2,
       "name": "Scaffold",
       "text": "Set up infrastructure, CI/CD, and core architecture. First deployable artifact within 1 week.",
-      "url": "https://avocado.dev/protocol#scaffold"
+      "url": "https://avocadoblock.com/protocol#scaffold"
     },
     {
       "@type": "HowToStep",
       "position": 3,
       "name": "Sprint",
       "text": "Rapid iteration cycles with daily deployments. Weekly demos. Continuous feedback integration.",
-      "url": "https://avocado.dev/protocol#sprint"
+      "url": "https://avocadoblock.com/protocol#sprint"
     },
     {
       "@type": "HowToStep",
       "position": 4,
       "name": "Deploy",
       "text": "Production launch with monitoring, documentation, and handoff. Optional ongoing support engagement.",
-      "url": "https://avocado.dev/protocol#deploy"
+      "url": "https://avocadoblock.com/protocol#deploy"
     }
   ]
 }

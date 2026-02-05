@@ -9,7 +9,7 @@ import { Schema } from '@/components/seo/Schema'
 const perseaAppSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://avocado.dev/ventures#persea-social",
+  "@id": "https://avocadoblock.com/ventures#persea-social",
   "name": "Persea Social",
   "description": "Social engagement platform for building authentic communities",
   "applicationCategory": "SocialNetworkingApplication",
@@ -20,14 +20,14 @@ const perseaAppSchema = {
     "priceCurrency": "USD"
   },
   "creator": {
-    "@id": "https://avocado.dev/#organization"
+    "@id": "https://avocadoblock.com/#organization"
   }
 }
 
 const perseaAiSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://avocado.dev/ventures#persea-ai",
+  "@id": "https://avocadoblock.com/ventures#persea-ai",
   "name": "Persea.ai",
   "description": "AI-powered data pipeline platform built on Google Cloud Vertex AI",
   "applicationCategory": "BusinessApplication",
@@ -38,14 +38,14 @@ const perseaAiSchema = {
     "priceCurrency": "USD"
   },
   "creator": {
-    "@id": "https://avocado.dev/#organization"
+    "@id": "https://avocadoblock.com/#organization"
   }
 }
 
 const notarySchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://avocado.dev/ventures#notary",
+  "@id": "https://avocadoblock.com/ventures#notary",
   "name": "Notary",
   "description": "Blockchain-based document verification and supply chain transparency platform",
   "applicationCategory": "BusinessApplication",
@@ -56,7 +56,7 @@ const notarySchema = {
     "priceCurrency": "USD"
   },
   "creator": {
-    "@id": "https://avocado.dev/#organization"
+    "@id": "https://avocadoblock.com/#organization"
   }
 }
 

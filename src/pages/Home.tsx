@@ -14,14 +14,14 @@ import { Card } from '@/components/ui/Card'
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://avocado.dev/#organization",
+  "@id": "https://avocadoblock.com/#organization",
   "name": "Avocado",
   "alternateName": ["Avocado Ventures", "Avocado Dev Studio"],
   "description": "High-velocity engineering studio that ships MVPs in weeks, not quarters. Specializing in AI/ML products, blockchain applications, and scalable web platforms.",
-  "url": "https://avocado.dev",
+  "url": "https://avocadoblock.com",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://avocado.dev/logo.svg",
+    "url": "https://avocadoblock.com/logo.svg",
     "width": 200,
     "height": 42
   },

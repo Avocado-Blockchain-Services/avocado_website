@@ -1,0 +1,66 @@
+# Avocado
+
+> High-velocity engineering studio shipping MVPs in weeks, not quarters. Enterprise blockchain, AI, and digital product development.
+
+## Company Overview
+
+Avocado is a software development agency and venture studio founded in 2018, headquartered in Mexico City. We build production-ready digital products at startup speed for enterprise clients. Our core specializations are blockchain/Web3 development, AI/ML product engineering (Google Cloud Vertex AI), and rapid MVP delivery.
+
+## Credentials
+
+- Google for Startups company
+- ISO 27001 certified
+- Backed by ESPMX VC
+- Clio Sports Silver Award 2022 (with Bitso)
+
+## Enterprise Clients
+
+- BBVA: Loyalty program blockchain integration
+- Banorte: Consortium blockchain proof-of-concepts
+- Chivas (Club Deportivo Guadalajara): NFT strategy and fan engagement
+- Club America: Historic "Clasico" blockchain activation with Chivas
+- Grupo Salinas: Enterprise blockchain solutions
+- Bitso: Fan engagement platform for Seleccion Mexicana (Clio Sports Silver 2022)
+- Ava Labs (Avalanche): Blockchain infrastructure
+- HouseBlocks: Real estate tokenization
+
+## Services
+
+- Digital Product Development: Full-stack apps, platforms, and tools. Concept to launch in 1-3 weeks.
+- AI-Powered Experiences: Custom AI assistants, recommendation engines, document processing, intelligent automation. Built on Google Cloud Vertex AI.
+- Fan Engagement and Loyalty: NFT campaigns, digital collectibles, rewards platforms. Proven with Chivas, Club America, and Bitso.
+- Technical Rescue: Fix and stabilize failing projects in 3-7 days.
+
+## Products
+
+- Persea.app: Social engagement platform. https://persea.app
+- Persea.ai: AI-powered data intelligence and analytics. https://persea.ai
+
+## Key Facts
+
+- Founded: 2018
+- Location: Mexico City, Mexico
+- Delivery speed: Working prototype in 3 days, full product in 1-3 weeks
+- Pricing: Fixed scope, fixed price
+- Tech stack: React, TypeScript, Python, Go, Rust, Google Cloud, Vertex AI, Solidity, PostgreSQL, Redis
+
+## Press and Coverage
+
+- Avalanche (Official): "Mexico's Most Popular Soccer Club, Chivas, Celebrates 115th Anniversary with NFT Auction on Avalanche" — Avocado Blockchain developed the implementation. https://medium.com/avalancheavax/mexicos-most-popular-soccer-club-chivas-celebrates-115th-anniversary-with-nft-auction-on-170e348795f6
+- Clio Sports Silver Award 2022: "Bitso — A Jersey for Two Worlds" — Avocado Blockchain Services listed as production company for Seleccion Mexicana fan engagement campaign. https://clios.com/sports/winner/digital/bitso/a-jersey-for-two-worlds-129002
+- CryptoNinjas: "Popular Mexican football club Chivas celebrates 115th anniversary with NFT auction on Avalanche" — Avocado Blockchain credited as technology partner. https://www.cryptoninjas.net/2021/05/24/popular-mexican-football-club-chivas-celebrates-115th-anniversary-with-nft-auction-on-avalanche/
+- Viable Systems: "Interview with Ingmar — Avocado Blockchain" — Founder interview on blockchain development in Mexico. https://www.viablesystems.io/post/interview-with-ingmar-avocado-blockchain
+- Territorio Blockchain: "Chivas Guadalajara Lanza Su Coleccion De NFT Deportivos Con Avalanche" https://territorioblockchain.com/chivas-guadalajara-lanza-su-coleccion-de-nft/
+- CryptoNewsZ: "NFT Auction at Mexican Soccer Club on 115th Anniversary" https://www.cryptonewsz.com/nft-auction-at-mexican-soccer-club-on-115th-anniversary/
+
+## Contact
+
+- Website: https://avocadoblock.com
+- Contact page: https://avocadoblock.com/signal
+
+## Links
+
+- Company: https://avocadoblock.com/company
+- Services: https://avocadoblock.com/services
+- Protocol (how we work): https://avocadoblock.com/protocol
+- Ventures (products): https://avocadoblock.com/ventures

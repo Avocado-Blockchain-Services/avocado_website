@@ -5,6 +5,7 @@ import { TerminalOutput } from '@/components/terminal/TerminalOutput'
 import { TerminalInput } from '@/components/terminal/TerminalInput'
 import { TerminalMenu, type Option } from '@/components/terminal/TerminalMenu'
 import { contactFormSchema, type ContactFormData } from '@/lib/schemas'
+import { trackEvent } from '@/lib/analytics'
 
 // Get your access key from https://web3forms.com
 const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || ''
@@ -108,6 +109,7 @@ export function TerminalForm() {
       const result = await response.json()
 
       if (result.success) {
+        trackEvent('Form Submitted', { form: 'terminal', projectType: data.projectType, timeline: data.timeline })
         setHistory(prev => [
           ...prev,
           <TerminalOutput key="success-1" className="text-success">✓ Signal transmitted successfully</TerminalOutput>,
@@ -115,6 +117,7 @@ export function TerminalForm() {
           <TerminalOutput key="success-3" className="text-success">✓ Check your inbox for confirmation</TerminalOutput>
         ])
       } else {
+        trackEvent('Form Error', { form: 'terminal', error: 'submission_failed' })
         setHistory(prev => [
           ...prev,
           <TerminalOutput key="error" className="text-error">ERROR: Transmission failed. Try again later.</TerminalOutput>

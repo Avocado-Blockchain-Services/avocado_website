@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/Button'
 import { TerminalPreview } from './TerminalPreview'
 import { Glitch } from '@/components/effects/Glitch'
 import { PhosphorGlow } from '@/components/effects/PhosphorGlow'
+import { trackEvent } from '@/lib/analytics'
 
 export function Hero() {
   return (
@@ -30,7 +31,7 @@ export function Hero() {
 
            <div className="flex flex-col sm:flex-row gap-4 pt-4">
              <Button variant="primary" size="lg" className="w-full sm:w-auto" asChild>
-               <a href="/signal">[█ DEPLOY WITH AVOCADO]</a>
+               <a href="/signal" onClick={() => trackEvent('CTA Click', { label: 'Deploy With Avocado', section: 'hero' })}>[█ DEPLOY WITH AVOCADO]</a>
              </Button>
            </div>
         </div>

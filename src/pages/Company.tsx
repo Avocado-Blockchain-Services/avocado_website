@@ -15,8 +15,10 @@ export function Company() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Avocado",
-        "url": "https://avocado.dev/company",
-        "description": "Enterprise blockchain and AI development studio. Google for Startups company based in Mexico City.",
+        "alternateName": "Avocado Blockchain Services",
+        "url": "https://avocadoblock.com/company",
+        "description": "Enterprise blockchain and AI development studio. Google for Startups company based in Mexico City. Trusted by BBVA, Banorte, Chivas, Bitso, and Grupo Salinas.",
+        "foundingDate": "2018",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Mexico City",
@@ -32,6 +34,38 @@ export function Company() {
             "@type": "EducationalOccupationalCredential",
             "credentialCategory": "Certification",
             "name": "ISO27001"
+          }
+        ],
+        "award": [
+          "Clio Sports Silver Award 2022 — Bitso 'A Jersey for Two Worlds' fan engagement campaign for Selección Mexicana"
+        ],
+        "subjectOf": [
+          {
+            "@type": "Article",
+            "headline": "Mexico's Most Popular Soccer Club, Chivas, Celebrates 115th Anniversary with NFT Auction on Avalanche",
+            "url": "https://medium.com/avalancheavax/mexicos-most-popular-soccer-club-chivas-celebrates-115th-anniversary-with-nft-auction-on-170e348795f6",
+            "publisher": { "@type": "Organization", "name": "Avalanche" },
+            "datePublished": "2021-05-24"
+          },
+          {
+            "@type": "Article",
+            "headline": "Popular Mexican football club Chivas celebrates 115th anniversary with NFT auction on Avalanche",
+            "url": "https://www.cryptoninjas.net/2021/05/24/popular-mexican-football-club-chivas-celebrates-115th-anniversary-with-nft-auction-on-avalanche/",
+            "publisher": { "@type": "Organization", "name": "CryptoNinjas" },
+            "datePublished": "2021-05-24"
+          },
+          {
+            "@type": "Article",
+            "headline": "Bitso — A Jersey for Two Worlds (Clio Sports Silver 2022)",
+            "url": "https://clios.com/sports/winner/digital/bitso/a-jersey-for-two-worlds-129002",
+            "publisher": { "@type": "Organization", "name": "Clio Awards" },
+            "datePublished": "2022"
+          },
+          {
+            "@type": "Article",
+            "headline": "Interview with Ingmar — Avocado Blockchain",
+            "url": "https://www.viablesystems.io/post/interview-with-ingmar-avocado-blockchain",
+            "publisher": { "@type": "Organization", "name": "Viable Systems" }
           }
         ]
       }} />
@@ -101,6 +135,69 @@ export function Company() {
                 <img src={client.src} alt={client.name} className="max-h-12 w-auto max-w-full grayscale hover:grayscale-0 transition-all" />
              </Card>
            ))}
+        </div>
+      </Section>
+
+      {/* Press & Coverage */}
+      <Section className="py-24">
+        <h2 className="text-2xl font-mono text-center mb-16 text-text-secondary">&gt; PRESS &amp; COVERAGE</h2>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {[
+            {
+              title: "Chivas Celebrates 115th Anniversary with NFT Auction on Avalanche",
+              source: "Avalanche (Official)",
+              url: "https://medium.com/avalancheavax/mexicos-most-popular-soccer-club-chivas-celebrates-115th-anniversary-with-nft-auction-on-170e348795f6",
+              year: "2021"
+            },
+            {
+              title: "Bitso — A Jersey for Two Worlds",
+              source: "Clio Sports Silver Award 2022",
+              url: "https://clios.com/sports/winner/digital/bitso/a-jersey-for-two-worlds-129002",
+              year: "2022"
+            },
+            {
+              title: "Chivas NFT Auction on Avalanche",
+              source: "CryptoNinjas",
+              url: "https://www.cryptoninjas.net/2021/05/24/popular-mexican-football-club-chivas-celebrates-115th-anniversary-with-nft-auction-on-avalanche/",
+              year: "2021"
+            },
+            {
+              title: "Interview with Ingmar — Avocado Blockchain",
+              source: "Viable Systems",
+              url: "https://www.viablesystems.io/post/interview-with-ingmar-avocado-blockchain",
+              year: "2023"
+            },
+            {
+              title: "Chivas NFT Launch Coverage",
+              source: "Territorio Blockchain",
+              url: "https://territorioblockchain.com/chivas-guadalajara-lanza-su-coleccion-de-nft/",
+              year: "2021"
+            },
+            {
+              title: "NFT Auction at Mexican Soccer Club on 115th Anniversary",
+              source: "CryptoNewsZ",
+              url: "https://www.cryptonewsz.com/nft-auction-at-mexican-soccer-club-on-115th-anniversary/",
+              year: "2021"
+            },
+          ].map((item) => (
+            <a
+              key={item.url}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block"
+            >
+              <Card className="p-6 h-full transition-colors group-hover:border-signal/40">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <div className="text-signal text-xs font-mono mb-2">{item.source} · {item.year}</div>
+                    <div className="text-white group-hover:text-signal transition-colors font-mono text-base">{item.title}</div>
+                  </div>
+                  <span className="text-text-tertiary group-hover:text-signal transition-colors text-lg flex-shrink-0">→</span>
+                </div>
+              </Card>
+            </a>
+          ))}
         </div>
       </Section>
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
+import { trackEvent } from '@/lib/analytics'
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -49,7 +50,7 @@ export function Header() {
         </nav>
 
         <Button variant="primary" size="sm" className="hidden md:inline-flex" asChild>
-          <a href="/signal">[█ START A PROJECT]</a>
+          <a href="/signal" onClick={() => trackEvent('CTA Click', { label: 'Start A Project', section: 'header' })}>[█ START A PROJECT]</a>
         </Button>
       </div>
 

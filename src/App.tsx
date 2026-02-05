@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { Layout } from '@/components/layout/Layout'
 import { Home } from '@/pages/Home'
 import { Signal } from '@/pages/Signal'
@@ -6,8 +7,15 @@ import { Ventures } from '@/pages/Ventures'
 import { Services } from '@/pages/Services'
 import { Protocol } from '@/pages/Protocol'
 import { Company } from '@/pages/Company'
+import { trackPageView } from '@/lib/analytics'
 
 function App() {
+  const location = useLocation()
+
+  useEffect(() => {
+    trackPageView(location.pathname)
+  }, [location.pathname])
+
   return (
     <Layout>
       <Routes>

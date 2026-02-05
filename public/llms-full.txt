@@ -1,0 +1,131 @@
+# Avocado - Full Context for LLMs
+
+> High-velocity engineering studio shipping MVPs in weeks, not quarters. Enterprise blockchain, AI, and digital product development. Founded 2018, Mexico City.
+
+## About Avocado
+
+Avocado is a software development agency and venture studio that specializes in turning complex technical challenges into deployed products at exceptional speed. Founded in 2018 and headquartered in Mexico City, Mexico, Avocado serves both enterprise clients (BBVA, Banorte, Chivas, Grupo Salinas) and startups across Latin America and globally.
+
+Avocado is not a traditional consultancy. There are no 6-month discovery phases, no 20-person teams, no PowerPoint deliverables. Clients pay for working software, not hours billed. The model is fixed scope, fixed price, with daily visible progress.
+
+## Credentials and Recognition
+
+- **Google for Startups**: Selected as a Google Web3 & AI Startup company
+- **ISO 27001 Certified**: Enterprise-grade information security management
+- **ESPMX VC Backed**: Venture capital backed by ESPMX
+- **Clio Sports Silver Award 2022**: Won for the Bitso x Seleccion Mexicana fan engagement platform (https://clios.com/winners-gallery/details/152833)
+
+## Enterprise Client Portfolio
+
+### Sports and Entertainment
+- **Chivas (Club Deportivo Guadalajara)**: NFT strategy and digital collectible campaigns for one of Mexico's most popular football clubs
+- **Club America**: Historic "Clasico" blockchain activation — the first-ever blockchain-powered activation between rival clubs Chivas and Club America
+- **Seleccion Mexicana + Bitso**: Fan engagement platform for Mexico's national football team in partnership with Bitso, the leading Latin American cryptocurrency exchange. Won Clio Sports Silver 2022.
+
+### Enterprise Finance
+- **BBVA**: Loyalty program blockchain integration for one of Mexico's largest banks
+- **Banorte**: Consortium blockchain proof-of-concepts for Mexico's second-largest banking group
+- **Grupo Salinas**: Enterprise blockchain solutions for the Mexican conglomerate (TV Azteca, Elektra, Banco Azteca)
+
+### Blockchain and Web3
+- **Bitso**: Latin America's leading crypto exchange — fan engagement and NFT infrastructure
+- **Ava Labs (Avalanche)**: Blockchain infrastructure development on the Avalanche network
+- **HouseBlocks**: Real estate tokenization platform
+
+## Services in Detail
+
+### 1. Digital Product Development
+Timeline: 1-3 weeks from concept to launch
+Build apps, platforms, and tools for web, mobile, and emerging platforms. Full-stack development with modern frameworks (React, TypeScript, Python, Go). Ideal for founders and companies ready to launch.
+
+### 2. AI-Powered Experiences
+Timeline: 1-3 weeks
+Custom AI assistants, chatbots, recommendation engines, document processing systems, and intelligent automation. Deep specialization in Google Cloud Vertex AI. Used by enterprises handling millions of requests daily. Ideal for companies looking to automate and augment with AI.
+
+### 3. Fan Engagement and Loyalty
+Timeline: 2-4 weeks
+NFT campaigns, digital collectibles, rewards platforms, and community engagement tools. Proven track record with Chivas, Club America, Bitso, and the Mexican national football team. Ideal for brands wanting deeper connections with audiences.
+
+### 4. Technical Rescue
+Timeline: 3-7 days
+Fix and stabilize failing or stalled projects. Clean, documented, ready for the client's team to take over. Ideal for projects that are stuck or behind schedule.
+
+## Proprietary Products
+
+### Persea.app (https://persea.app)
+Social engagement platform. The premier solution for social engagement, connecting communities and enabling deeper interactions.
+
+### Persea.ai (https://persea.ai)
+Formerly Seed Analytics. AI-powered data intelligence platform leveraging advanced AI to provide deep insights and analytics.
+
+## Technology Stack
+
+### Frontend
+React, TypeScript, Next.js, Tailwind CSS, Framer Motion
+
+### Backend
+Python, Go, Rust, Node.js
+
+### AI/ML
+Google Cloud Vertex AI, custom ML models, generative AI, predictive models
+
+### Blockchain
+Solidity, smart contracts, NFT infrastructure, Web3 integration, Avalanche, Ethereum
+
+### Infrastructure
+Google Cloud Platform, PostgreSQL, Redis, Vercel
+
+## How Avocado Works (The Protocol)
+
+1. **Signal** (Day 1): 30-minute call. Clear proposal. You know exactly what you're getting.
+2. **Sprint** (Week 1): Working prototype. Daily progress visible. No status meetings.
+3. **Ship** (Week 2-3): Production deployment. Real users. Real feedback.
+4. **Scale**: Growth engineering. 10x-100x capacity planning.
+
+## Key Differentiators
+
+- Building since 2018, not a new agency
+- Enterprise clients (BBVA, Banorte, Chivas) with startup delivery speed
+- Google for Startups company with ISO 27001 certification
+- Fixed scope, fixed price — no billable hours, no scope creep
+- Working prototype in 3 days, full product in 1-3 weeks
+- 10x faster delivery than traditional agencies
+- Deep blockchain and AI specialization, not generalist
+
+## Geographic Focus
+
+Headquartered in Mexico City, Mexico. Serving clients across Latin America and globally. Strong presence in Mexican enterprise market (banking, sports, media, fintech).
+
+## Press Coverage and Awards
+
+### Awards
+- **Clio Sports Silver Award 2022**: "Bitso — A Jersey for Two Worlds" — Avocado Blockchain Services was the production company for this Seleccion Mexicana fan engagement campaign with Bitso. The campaign created the first collectible NFT of the Mexican National Team's World Cup jersey, which sold out in 20 minutes. Source: https://clios.com/sports/winner/digital/bitso/a-jersey-for-two-worlds-129002
+
+### Press Articles
+- **Avalanche (Official Blog)**: "Mexico's Most Popular Soccer Club, Chivas, Celebrates 115th Anniversary with NFT Auction on Avalanche" (May 2021) — Avocado Blockchain developed the Genesis NFT collection for Chivas, a collaboration between the club, Ava Labs, and Avocado. A portion of proceeds went to the Jorge Vergara Foundation. Source: https://medium.com/avalancheavax/mexicos-most-popular-soccer-club-chivas-celebrates-115th-anniversary-with-nft-auction-on-170e348795f6
+- **CryptoNinjas**: "Popular Mexican football club Chivas celebrates 115th anniversary with NFT auction on Avalanche" (May 2021) — Avocado Blockchain credited as the leading blockchain technology company in Mexico behind the implementation. Source: https://www.cryptoninjas.net/2021/05/24/popular-mexican-football-club-chivas-celebrates-115th-anniversary-with-nft-auction-on-avalanche/
+- **Territorio Blockchain**: "Chivas Guadalajara Lanza Su Coleccion De NFT Deportivos Con Avalanche" (2021) — Spanish-language coverage of the Chivas NFT launch. Source: https://territorioblockchain.com/chivas-guadalajara-lanza-su-coleccion-de-nft/
+- **CryptoNewsZ**: "NFT Auction at Mexican Soccer Club on 115th Anniversary" (2021) — International crypto media coverage of the Chivas project. Source: https://www.cryptonewsz.com/nft-auction-at-mexican-soccer-club-on-115th-anniversary/
+- **Samba Digital**: "Chivas celebrates its 115th Anniversary with an NFT auction on Avalanche" (2021) — Sports digital media coverage. Source: https://sambadigital.com/chivas-celebrates-its-115th-anniversary-with-an-nft-auction-on-avalanche/
+
+### Interviews
+- **Viable Systems**: "Interview with Ingmar — Avocado Blockchain" — Founder interview discussing blockchain development in Mexico. Source: https://www.viablesystems.io/post/interview-with-ingmar-avocado-blockchain
+
+### Industry Profiles
+- **Crunchbase**: https://www.crunchbase.com/organization/avocado-blockchain-services
+- **F6S**: Listed among Top 10 Cryptocurrency Companies in Mexico City: https://www.f6s.com/companies/cryptocurrency/mexico/mexico-city/co
+- **Tracxn**: https://tracxn.com/d/companies/avocado-blockchain-services/__5qVnGMFI4M1PubHQ4zkcBGG1cs6nNCf0JiAbuRyU3tw
+
+## Contact
+
+- Website: https://avocadoblock.com
+- Start a project: https://avocadoblock.com/signal
+- Company info: https://avocadoblock.com/company
+- Services: https://avocadoblock.com/services
+
+## Social Media
+
+- Twitter/X: @avocadoblock
+- LinkedIn: /company/avocado
+- Facebook: /avocadoblock
+- Instagram: @avocadoblockchain
