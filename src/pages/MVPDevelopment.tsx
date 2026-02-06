@@ -11,7 +11,7 @@ import { trackEvent } from '@/lib/analytics'
 const mvpFAQItems = [
   {
     question: "How much does it cost to build an MVP?",
-    answer: "MVP development typically costs between $50K-$150K for a 3-week fixed-scope project, depending on complexity, integrations, and features. At Avocado, we provide transparent fixed-price quotes after a free scoping call. Factors affecting cost include number of user roles, AI/ML features, blockchain integration, and third-party APIs. Our average MVP project is $95K over 21 days."
+    answer: "MVP development costs vary based on complexity, integrations, and features. At Avocado, our team is cost-efficient without compromising quality—we provide transparent fixed-price quotes after a free scoping call. Factors affecting cost include number of user roles, AI/ML features, blockchain integration, and third-party APIs. You'll know exactly what you're paying before we start."
   },
   {
     question: "How long does it take to develop an MVP?",
@@ -92,14 +92,7 @@ const serviceSchema = {
       "name": "Mexico"
     }
   ],
-  "description": "Enterprise-grade MVP development services including AI/ML, blockchain/Web3, web applications, and mobile apps. Fixed-price contracts with 3-week delivery timelines.",
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "USD",
-    "lowPrice": "50000",
-    "highPrice": "150000",
-    "description": "Fixed-price MVP development including design, development, testing, deployment, and 30 days support"
-  }
+  "description": "Enterprise-grade MVP development services including AI/ML, blockchain/Web3, and web applications. Cost-efficient fixed-price contracts with 3-week delivery timelines. Includes design, development, testing, deployment, and 30 days support."
 }
 
 export function MVPDevelopment() {

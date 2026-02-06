@@ -42,7 +42,7 @@ Avocado is an MVP development company that ships enterprise-grade products in 3 
 - Mobile MVPs: iOS, Android, and cross-platform applications
 
 ### MVP Development Pricing
-- Fixed-price contracts: $50K-$150K depending on scope
+- Cost-efficient fixed-price contracts tailored to project scope
 - Timeline: 3 weeks (21 days) for most projects
 - Includes: Design, development, testing, deployment, 30 days support, full code ownership
 
