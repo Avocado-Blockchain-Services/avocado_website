@@ -7,6 +7,7 @@ import { Ventures } from '@/pages/Ventures'
 import { Services } from '@/pages/Services'
 import { Protocol } from '@/pages/Protocol'
 import { Company } from '@/pages/Company'
+import { MVPDevelopment } from '@/pages/MVPDevelopment'
 import { trackPageView } from '@/lib/analytics'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/protocol" element={<Protocol />} />
         <Route path="/company" element={<Company />} />
+        <Route path="/mvp-development" element={<MVPDevelopment />} />
       </Routes>
     </Layout>
   )
