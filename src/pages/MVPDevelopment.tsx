@@ -116,7 +116,7 @@ export function MVPDevelopment() {
       title: 'AI & Machine Learning MVPs',
       timeline: '3 weeks',
       idealFor: 'Teams needing intelligent automation',
-      desc: 'Conversational AI chatbots, recommendation engines, sentiment analysis, and predictive analytics. Working models, not just API integrations.',
+      desc: 'Conversational AI chatbots, recommendation engines, sentiment analysis, and predictive analytics. Built on Google Cloud Platform and Vertex AI by certified GCP experts.',
       action: 'Build AI MVP'
     },
     {
@@ -130,15 +130,8 @@ export function MVPDevelopment() {
       title: 'Web Application MVPs',
       timeline: '2-3 weeks',
       idealFor: 'Startups validating SaaS ideas',
-      desc: 'SaaS platforms, customer portals, admin dashboards, and data visualization tools. Battle-tested frameworks that scale.',
+      desc: 'SaaS platforms, customer portals, admin dashboards, and data visualization tools. Deployed on GCP with enterprise-grade infrastructure.',
       action: 'Build Web MVP'
-    },
-    {
-      title: 'Mobile MVPs',
-      timeline: '3-4 weeks',
-      idealFor: 'Consumer-facing products',
-      desc: 'Native iOS/Android or cross-platform apps. We handle App Store and Google Play submission end-to-end.',
-      action: 'Build Mobile MVP'
     },
   ]
 
@@ -183,7 +176,7 @@ export function MVPDevelopment() {
           <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; MVP DEVELOPMENT</div>
           <h1 className="text-4xl md:text-5xl font-bold font-mono text-white mb-4">SHIP ENTERPRISE-GRADE PRODUCTS IN WEEKS, NOT QUARTERS</h1>
           <p className="text-white/80 text-lg mb-6">
-            Avocado Dev Studio is an ISO 27001-certified MVP development company based in Mexico City that ships enterprise-grade products in 3 weeks using a fixed-price model. We've delivered MVPs for Fortune 500 clients including BBVA, Banorte, Bitso, Chivas, and Grupo Salinas.
+            Avocado Dev Studio is an ISO 27001-certified MVP development company and Google Cloud Platform experts. We ship enterprise-grade AI, blockchain, and web products in 3 weeks using a fixed-price model. Trusted by Fortune 500 clients including BBVA, Banorte, Bitso, Chivas, and Grupo Salinas.
           </p>
           <p className="text-white/80 text-base">
             Whether you're a VP of Product at a $100M company or a funded startup founder, you get the same thing: working software in production within three weeks—no scope creep, no hourly billing surprises, no compromises on quality.
@@ -204,7 +197,7 @@ export function MVPDevelopment() {
           <p className="text-white/80 text-lg">AI, blockchain, web, and mobile MVPs. Fixed scope. Fixed price. Three weeks.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {services.map(s => (
             <Card key={s.title} className="p-6 flex flex-col gap-4">
               <div className="text-signal text-xs font-mono">{s.timeline}</div>
