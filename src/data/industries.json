@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "banking",
+    "name": "Banking & Finance",
+    "title": "MVP Development for Banks & Financial Institutions",
+    "description": "Enterprise-grade AI and blockchain solutions for banking. ISO 27001 certified. Trusted by BBVA and Banorte.",
+    "keyword": "MVP development for banks",
+    "painPoints": ["Legacy system integration", "Compliance requirements", "Security concerns", "Slow internal IT"],
+    "solutions": ["AI-powered automation", "Blockchain for transparency", "Secure API integrations", "Rapid prototyping"],
+    "caseStudy": "bbva",
+    "icon": "🏦"
+  },
+  {
+    "slug": "sports",
+    "name": "Sports & Entertainment", 
+    "title": "Blockchain & NFT Development for Sports Teams",
+    "description": "Fan engagement platforms, NFT campaigns, and loyalty programs. Clio Sports Silver 2022 winner with Bitso.",
+    "keyword": "blockchain for sports teams",
+    "painPoints": ["Fan engagement declining", "Merchandise revenue flat", "No direct fan connection", "Outdated loyalty programs"],
+    "solutions": ["NFT collectibles", "Token-gated experiences", "Digital loyalty platforms", "Fan engagement apps"],
+    "caseStudy": "chivas",
+    "icon": "⚽"
+  },
+  {
+    "slug": "fintech",
+    "name": "FinTech",
+    "title": "FinTech MVP Development Company",
+    "description": "Build compliant, scalable fintech products in weeks. AI-powered, blockchain-ready, GCP infrastructure.",
+    "keyword": "fintech MVP development",
+    "painPoints": ["Time to market pressure", "Regulatory compliance", "Scaling challenges", "Security requirements"],
+    "solutions": ["Rapid MVP delivery", "Compliance-first architecture", "Cloud-native scaling", "Enterprise security"],
+    "caseStudy": "bitso",
+    "icon": "💳"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "vertex-ai",
+    "name": "Vertex AI",
+    "title": "Vertex AI Development Company | GCP AI Experts",
+    "description": "Build production AI with Google's Vertex AI. ML pipelines, model training, deployment, and monitoring by certified GCP experts.",
+    "keyword": "Vertex AI development",
+    "capabilities": ["Custom model training", "AutoML", "Model deployment", "MLOps pipelines"],
+    "useCases": ["Recommendation engines", "Document processing", "Predictive analytics", "Conversational AI"],
+    "icon": "🧠"
+  },
+  {
+    "slug": "solidity",
+    "name": "Solidity",
+    "title": "Solidity Developers for Hire | Smart Contract Experts",
+    "description": "Expert Solidity development for DeFi, NFTs, DAOs, and custom protocols. Security-first, gas-optimized code.",
+    "keyword": "Solidity developers for hire",
+    "capabilities": ["Smart contracts", "DeFi protocols", "NFT contracts", "DAO governance"],
+    "useCases": ["Token launches", "NFT marketplaces", "Staking systems", "Multi-sig wallets"],
+    "icon": "⛓️"
+  },
+  {
+    "slug": "ethereum",
+    "name": "Ethereum",
+    "title": "Ethereum Development Company | dApp & Smart Contract Experts",
+    "description": "Enterprise Ethereum development. dApps, smart contracts, DeFi, and NFT platforms by experienced blockchain engineers.",
+    "keyword": "Ethereum development company",
+    "capabilities": ["dApp development", "Smart contracts", "Layer 2 integration", "Token standards"],
+    "useCases": ["DeFi platforms", "NFT marketplaces", "DAOs", "Enterprise blockchain"],
+    "icon": "💎"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "bbva",
+    "client": "BBVA",
+    "title": "BBVA Blockchain Loyalty Integration | Case Study",
+    "description": "How Avocado helped BBVA integrate blockchain into their loyalty program infrastructure.",
+    "keyword": "BBVA blockchain case study",
+    "industry": "banking",
+    "challenge": "Legacy loyalty system with fragmented data and low customer engagement",
+    "solution": "Blockchain-based loyalty infrastructure with transparent point tracking and cross-partner redemption",
+    "results": ["Increased loyalty engagement", "Reduced reconciliation time", "Cross-partner integration"],
+    "techStack": ["Solidity", "React", "GCP", "PostgreSQL"],
+    "timeline": "8 weeks",
+    "logo": "/clients/Logo_BBVA.svg"
+  },
+  {
+    "slug": "chivas",
+    "client": "Chivas Guadalajara",
+    "title": "Chivas NFT Campaign on Avalanche | Case Study",
+    "description": "How Avocado launched Mexico's first major sports NFT collection for Chivas' 115th anniversary.",
+    "keyword": "Chivas NFT case study",
+    "industry": "sports",
+    "challenge": "Create a memorable 115th anniversary digital experience that engages global fanbase",
+    "solution": "NFT collection on Avalanche with exclusive digital collectibles and fan experiences",
+    "results": ["Successful NFT launch", "Global media coverage", "New fan engagement channel"],
+    "techStack": ["Solidity", "Avalanche", "React", "IPFS"],
+    "timeline": "4 weeks",
+    "logo": "/clients/Logo_Chivas.png"
+  },
+  {
+    "slug": "bitso",
+    "client": "Bitso",
+    "title": "Bitso Fan Engagement Platform | Clio Sports Winner",
+    "description": "Clio Sports Silver 2022 winning fan engagement platform for Mexico's national soccer team.",
+    "keyword": "Bitso fan platform case study",
+    "industry": "sports",
+    "challenge": "Create innovative fan engagement for Selección Mexicana that stands out during World Cup",
+    "solution": "Blockchain-powered fan platform with exclusive rewards and experiences",
+    "results": ["Clio Sports Silver 2022", "Massive fan adoption", "Industry recognition"],
+    "techStack": ["React", "Blockchain", "GCP", "PostgreSQL"],
+    "timeline": "6 weeks",
+    "logo": "/clients/Logo_Bitso.svg"
+  }
+]

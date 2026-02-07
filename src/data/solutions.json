@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "ai-chatbot",
+    "name": "AI Chatbot Development",
+    "title": "AI Chatbot Development Company | Custom Conversational AI",
+    "description": "Build intelligent chatbots with Vertex AI and GCP. Customer support automation, lead qualification, internal tools.",
+    "keyword": "AI chatbot development",
+    "features": ["Natural language understanding", "Multi-channel deployment", "Analytics dashboard", "Human handoff"],
+    "techStack": ["Vertex AI", "Dialogflow", "Python", "React"],
+    "timeline": "2-3 weeks",
+    "icon": "🤖"
+  },
+  {
+    "slug": "nft-marketplace",
+    "name": "NFT Marketplace Development",
+    "title": "NFT Marketplace Development | Custom Web3 Platforms",
+    "description": "Build NFT marketplaces on Ethereum, Polygon, or Solana. Minting, trading, auctions, royalties built-in.",
+    "keyword": "NFT marketplace development",
+    "features": ["Lazy minting", "Auction system", "Royalty management", "Multi-chain support"],
+    "techStack": ["Solidity", "Ethereum", "Polygon", "React"],
+    "timeline": "3-4 weeks",
+    "icon": "🎨"
+  },
+  {
+    "slug": "smart-contracts",
+    "name": "Smart Contract Development",
+    "title": "Smart Contract Development Services | Audited & Secure",
+    "description": "Custom smart contracts for DeFi, NFTs, DAOs, and tokenization. Security-first development with full audits.",
+    "keyword": "smart contract development",
+    "features": ["Security audits", "Gas optimization", "Upgradeable contracts", "Multi-sig support"],
+    "techStack": ["Solidity", "Hardhat", "OpenZeppelin", "Ethereum"],
+    "timeline": "2-3 weeks",
+    "icon": "📜"
+  },
+  {
+    "slug": "saas-mvp",
+    "name": "SaaS MVP Development",
+    "title": "SaaS MVP Development Company | Launch in 3 Weeks",
+    "description": "Validate your SaaS idea fast. Full-stack development with auth, billing, dashboards, and API ready to scale.",
+    "keyword": "SaaS MVP development",
+    "features": ["User authentication", "Subscription billing", "Admin dashboard", "API-first architecture"],
+    "techStack": ["React", "TypeScript", "Python", "GCP"],
+    "timeline": "2-3 weeks",
+    "icon": "☁️"
+  },
+  {
+    "slug": "loyalty-platform",
+    "name": "Loyalty Platform Development",
+    "title": "Digital Loyalty Platform Development | Blockchain-Powered",
+    "description": "Modern loyalty programs with blockchain transparency. Points, rewards, NFT collectibles, gamification.",
+    "keyword": "loyalty program development",
+    "features": ["Points system", "Reward redemption", "NFT rewards", "Gamification"],
+    "techStack": ["React", "Solidity", "PostgreSQL", "GCP"],
+    "timeline": "3-4 weeks",
+    "icon": "🎁"
+  }
+]
