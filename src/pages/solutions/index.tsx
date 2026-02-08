@@ -1,24 +1,22 @@
 import { useParams } from 'react-router-dom'
 import { SolutionPage } from './SolutionPage'
-import solutions from '@/data/solutions.json'
+import { SolutionsHub } from './SolutionsHub'
+import solutionsData from '@/data/solutions.json'
 
 export function SolutionRouter() {
-  const { slug } = useParams()
-  const solution = solutions.find(s => s.slug === slug)
+  const { slug } = useParams<{ slug: string }>()
   
-  if (!solution) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-white font-mono mb-4">404</h1>
-          <p className="text-white/60">Solution not found</p>
-          <a href="/services" className="text-signal hover:underline mt-4 inline-block">
-            ← Back to Services
-          </a>
-        </div>
-      </div>
-    )
+  // No slug = show hub page
+  if (!slug) {
+    return <SolutionsHub />
   }
   
-  return <SolutionPage data={solution} />
+  const solutionData = solutionsData.find((solution) => solution.slug === slug)
+  
+  // Invalid slug = show hub page
+  if (!solutionData) {
+    return <SolutionsHub />
+  }
+  
+  return <SolutionPage data={solutionData} />
 }

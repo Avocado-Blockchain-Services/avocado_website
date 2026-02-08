@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { Section } from '@/components/layout/Section'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
@@ -8,234 +7,388 @@ import { CTASection } from '@/components/marketing/CTASection'
 import { SEO } from '@/components/seo/SEO'
 import { Schema } from '@/components/seo/Schema'
 import { trackEvent } from '@/lib/analytics'
-import solutions from '@/data/solutions.json'
 
 interface TechPageProps {
   data: {
     slug: string
     name: string
-    title: string
+    metaTitle: string
+    metaDescription: string
+    h1: string
+    intro: string
     description: string
-    keyword: string
-    capabilities: string[]
-    useCases: string[]
-    icon: string
+    capabilities: Array<{
+      title: string
+      description: string
+    }>
+    useCases: Array<{
+      title: string
+      description: string
+    }>
+    whyVertexAI?: Array<{
+      title: string
+      description: string
+    }>
+    whySolidity?: Array<{
+      title: string
+      description: string
+    }>
+    whyEthereum?: Array<{
+      title: string
+      description: string
+    }>
+    industries: string[]
+    solutions: string[]
+    caseStudies: string[]
+    relatedTech: string[]
+    faqs: Array<{
+      question: string
+      answer: string
+    }>
   }
 }
 
 export function TechPage({ data }: TechPageProps) {
   useEffect(() => {
-    trackEvent('Landing Page Viewed', {
-      page: `tech-${data.slug}`,
-      keyword: data.keyword,
-      intent: 'informational'
+    trackEvent('Tech Page Viewed', {
+      technology: data.slug,
+      page: `tech/${data.slug}`
     })
-  }, [data.slug, data.keyword])
+  }, [data.slug])
 
-  const relatedSolutions = solutions.filter(s => 
-    s.techStack.some(tech => tech.toLowerCase().includes(data.name.toLowerCase()))
-  ).slice(0, 3)
-
-  const faqItems = [
-    {
-      question: `Why choose Avocado for ${data.name} development?`,
-      answer: `Avocado has deep expertise in ${data.name} with proven experience delivering production-grade applications for Fortune 500 clients including BBVA, Banorte, and Bitso. We're ISO 27001 certified, Google Cloud Platform experts, and deliver in 3 weeks with fixed pricing. You get senior engineers, not junior contractors.`
-    },
-    {
-      question: `How long does it take to build with ${data.name}?`,
-      answer: `At Avocado, we deliver ${data.name}-based MVPs in 2-3 weeks using our 4-phase protocol: Recon → Scaffold → Sprint → Deploy. Our fastest projects launch in 72 hours for proof-of-concepts, while more complex enterprise platforms take the full 3 weeks. Traditional agencies often quote 3-6 months for the same scope.`
-    },
-    {
-      question: `What's included in a ${data.name} project?`,
-      answer: 'Our fixed-price quote includes: product scoping and requirements documentation, UX/UI design, frontend and backend development, automated testing and QA, cloud deployment and infrastructure setup, security audit, 30 days post-launch support, and full code ownership transfer.'
-    },
-    {
-      question: `Can you integrate ${data.name} with our existing systems?`,
-      answer: `Absolutely. We specialize in enterprise integrations including legacy systems, APIs, databases, and third-party services. Our team has extensive experience with ${data.name} and can work with your existing infrastructure securely and efficiently.`
-    }
-  ]
-
-  const articleSchema = {
+  const serviceSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": data.title,
-    "description": data.description,
-    "author": {
-      "@type": "Organization",
-      "name": "Avocado Dev Studio"
-    },
-    "publisher": {
+    "@type": "Service",
+    "serviceType": `${data.name} Development Services`,
+    "provider": {
       "@type": "Organization",
       "name": "Avocado Dev Studio",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://avocadoblock.com/logo.svg"
-      }
-    }
+      "@id": "https://avocadoblock.com/#organization"
+    },
+    "areaServed": [
+      { "@type": "Country", "name": "United States" },
+      { "@type": "Country", "name": "Canada" }
+    ],
+    "description": data.metaDescription
   }
+
+  const whySection = data.whyVertexAI || data.whySolidity || data.whyEthereum
+  const whyTitle = data.whyVertexAI
+    ? 'WHY VERTEX AI'
+    : data.whySolidity
+    ? 'WHY SOLIDITY'
+    : 'WHY ETHEREUM'
 
   return (
     <>
-      <SEO
-        title={data.title}
-        description={data.description}
-      />
-      <Schema data={articleSchema} />
+      <SEO title={data.metaTitle} description={data.metaDescription} />
+      <Schema data={serviceSchema} />
 
       {/* Hero Section */}
       <Section className="py-20">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <div className="text-signal text-lg md:text-xl font-mono mb-3">
-            &gt; TECHNOLOGY
+            &gt; {data.name.toUpperCase()}
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold font-mono text-white mb-4 flex items-center justify-center gap-3">
-            <span>{data.icon}</span>
-            <span>{data.name}</span>
+          <h1 className="text-4xl md:text-5xl font-bold font-mono text-white mb-6">
+            {data.h1}
           </h1>
-          <p className="text-white/80 text-lg mb-6">
-            {data.description}
+          <p className="text-white/80 text-lg leading-relaxed mb-8">
+            {data.intro}
           </p>
-        </div>
-
-        <div className="flex justify-center">
-          <Button variant="primary" asChild>
-            <a href="/signal" onClick={() => trackEvent('Tech Hero CTA Clicked', { tech: data.slug })}>
-              Start a {data.name} Project →
+          <Button variant="primary" size="lg" asChild>
+            <a
+              href="/signal"
+              onClick={() =>
+                trackEvent('Tech Hero CTA Clicked', {
+                  technology: data.slug
+                })
+              }
+            >
+              Hire {data.name} Experts →
             </a>
           </Button>
         </div>
       </Section>
 
-      {/* Capabilities Section */}
+      {/* Overview Section */}
       <Section className="py-20 bg-void-surface">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">
-            &gt; WHAT WE BUILD
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-signal text-lg md:text-xl font-mono mb-3">
+              &gt; OVERVIEW
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
+              WHAT IS {data.name.toUpperCase()}?
+            </h2>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
-            {data.name.toUpperCase()} CAPABILITIES
-          </h2>
-          <p className="text-white/80 text-lg">
-            Our team has deep expertise in {data.name} development.
-          </p>
+          <Card className="p-8">
+            <p className="text-white/80 text-lg leading-relaxed">
+              {data.description}
+            </p>
+          </Card>
         </div>
+      </Section>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {data.capabilities.map((capability, idx) => (
-            <Card key={idx} className="p-6">
-              <div className="text-signal text-xs font-mono mb-2">CAPABILITY {idx + 1}</div>
-              <h3 className="text-xl font-bold text-white font-mono">{capability}</h3>
-            </Card>
-          ))}
+      {/* Capabilities Section */}
+      <Section className="py-20">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-signal text-lg md:text-xl font-mono mb-3">
+              &gt; OUR EXPERTISE
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
+              {data.name.toUpperCase()} CAPABILITIES
+            </h2>
+            <p className="text-white/80 text-lg">
+              Avocado's team delivers production-grade {data.name} applications for enterprises and startups.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {data.capabilities.map((capability, index) => (
+              <Card key={index} className="p-6 flex flex-col gap-3">
+                <div className="text-signal text-xs font-mono">
+                  CAPABILITY {index + 1}
+                </div>
+                <h3 className="text-xl font-bold text-white font-mono">
+                  {capability.title}
+                </h3>
+                <p className="text-white/80">{capability.description}</p>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button variant="secondary" asChild>
+              <a
+                href="/protocol"
+                onClick={() =>
+                  trackEvent('Tech Capabilities CTA Clicked', {
+                    technology: data.slug
+                  })
+                }
+              >
+                See How We Work →
+              </a>
+            </Button>
+          </div>
         </div>
       </Section>
 
       {/* Use Cases Section */}
-      <Section className="py-20">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">
-            &gt; USE CASES
+      <Section className="py-20 bg-void-surface">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-signal text-lg md:text-xl font-mono mb-3">
+              &gt; REAL-WORLD APPLICATIONS
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
+              PROJECTS WE'VE BUILT
+            </h2>
+            <p className="text-white/80 text-lg">
+              Avocado has delivered {data.name} projects for Fortune 500 companies and industry innovators.
+            </p>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
-            WHAT YOU CAN BUILD WITH {data.name.toUpperCase()}
-          </h2>
-          <p className="text-white/80 text-lg">
-            Real-world applications we've delivered using {data.name}.
-          </p>
-        </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-          {data.useCases.map((useCase, idx) => (
-            <Card key={idx} className="p-6 text-center">
-              <h3 className="text-lg font-bold text-white font-mono">{useCase}</h3>
-            </Card>
-          ))}
+          <div className="grid md:grid-cols-3 gap-6">
+            {data.useCases.map((useCase, index) => (
+              <Card key={index} className="p-6 flex flex-col gap-4">
+                <div className="text-signal text-sm font-mono">
+                  USE CASE {index + 1}
+                </div>
+                <h3 className="text-lg font-bold text-white font-mono">
+                  {useCase.title}
+                </h3>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  {useCase.description}
+                </p>
+              </Card>
+            ))}
+          </div>
         </div>
       </Section>
 
-      {/* Related Solutions */}
-      {relatedSolutions.length > 0 && (
-        <Section className="py-20 bg-void-surface">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="text-signal text-lg md:text-xl font-mono mb-3">
-              &gt; SOLUTIONS
+      {/* Why Section */}
+      {whySection && whySection.length > 0 && (
+        <Section className="py-20">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="text-signal text-lg md:text-xl font-mono mb-3">
+                &gt; ADVANTAGES
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
+                {whyTitle}
+              </h2>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
-              BUILT WITH {data.name.toUpperCase()}
-            </h2>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {relatedSolutions.map(solution => (
-              <Card key={solution.slug} className="p-6">
-                <div className="text-4xl mb-3">{solution.icon}</div>
-                <h3 className="text-xl font-bold text-white font-mono mb-2">{solution.name}</h3>
-                <p className="text-white/80 mb-4 text-sm">{solution.description}</p>
-                <Button variant="secondary" className="w-full" asChild>
-                  <Link to={`/solutions/${solution.slug}`}>
-                    Learn More →
-                  </Link>
-                </Button>
-              </Card>
-            ))}
+            <div className="grid md:grid-cols-2 gap-6">
+              {whySection.map((reason, index) => (
+                <Card key={index} className="p-6 flex flex-col gap-3">
+                  <h3 className="text-lg font-bold text-white font-mono">
+                    {reason.title}
+                  </h3>
+                  <p className="text-white/80">{reason.description}</p>
+                </Card>
+              ))}
+            </div>
           </div>
         </Section>
       )}
 
-      {/* Why Avocado Section */}
+      {/* Social Proof Section */}
+      {data.caseStudies && data.caseStudies.length > 0 && (
+        <Section className="py-20 bg-void-surface">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="text-signal text-lg md:text-xl font-mono mb-3">
+              &gt; PROVEN RESULTS
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
+              TRUSTED BY INDUSTRY LEADERS
+            </h2>
+            <p className="text-white/80 text-lg">
+              See how we've delivered {data.name} solutions for Fortune 500 companies.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+            {data.caseStudies.map((caseStudySlug) => (
+              <a
+                key={caseStudySlug}
+                href={`/case-studies/${caseStudySlug}`}
+                onClick={() =>
+                  trackEvent('Tech Case Study Clicked', {
+                    technology: data.slug,
+                    caseStudy: caseStudySlug
+                  })
+                }
+                className="block p-8 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center"
+              >
+                <div className="text-signal font-mono text-2xl mb-2">
+                  {caseStudySlug.toUpperCase()}
+                </div>
+                <p className="text-white/60 text-sm">View Case Study →</p>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center space-y-4">
+            <p className="text-white/80 text-lg font-mono">
+              ISO 27001 CERTIFIED • GOOGLE FOR STARTUPS • GCP EXPERTS
+            </p>
+          </div>
+        </Section>
+      )}
+
+      {/* Internal Links Section */}
       <Section className="py-20">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="text-signal text-lg md:text-xl font-mono mb-3">
-            &gt; WHY AVOCADO
+            &gt; EXPLORE MORE
           </div>
           <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
-            EXPERT {data.name.toUpperCase()} DEVELOPMENT
+            RELATED CONTENT
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <Card className="p-6">
-            <div className="text-signal text-xs font-mono mb-2">PROVEN EXPERTISE</div>
-            <h3 className="text-xl font-bold text-white font-mono mb-3">Battle-Tested</h3>
-            <p className="text-white/80">
-              Trusted by Fortune 500 companies including BBVA, Banorte, and Grupo Salinas. ISO 27001 certified.
-            </p>
-          </Card>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* Industries */}
+          {data.industries && data.industries.length > 0 && (
+            <div>
+              <h3 className="text-signal font-mono text-sm mb-4">INDUSTRIES</h3>
+              <div className="space-y-3">
+                {data.industries.map((industrySlug) => (
+                  <a
+                    key={industrySlug}
+                    href={`/industries/${industrySlug}`}
+                    onClick={() =>
+                      trackEvent('Tech Internal Link Clicked', {
+                        technology: data.slug,
+                        destination: `industries/${industrySlug}`
+                      })
+                    }
+                    className="block p-4 border border-void-elevated rounded-lg hover:border-signal transition-colors"
+                  >
+                    <span className="text-white text-sm">
+                      {industrySlug.replace(/-/g, ' ').toUpperCase()}
+                    </span>
+                    <span className="text-signal ml-2">→</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
 
-          <Card className="p-6">
-            <div className="text-signal text-xs font-mono mb-2">RAPID DELIVERY</div>
-            <h3 className="text-xl font-bold text-white font-mono mb-3">3 Weeks</h3>
-            <p className="text-white/80">
-              Ship production-ready {data.name} applications in 3 weeks using our 4-phase protocol.
-            </p>
-          </Card>
+          {/* Solutions */}
+          {data.solutions && data.solutions.length > 0 && (
+            <div>
+              <h3 className="text-signal font-mono text-sm mb-4">SOLUTIONS</h3>
+              <div className="space-y-3">
+                {data.solutions.map((solutionSlug) => (
+                  <a
+                    key={solutionSlug}
+                    href={`/solutions/${solutionSlug}`}
+                    onClick={() =>
+                      trackEvent('Tech Internal Link Clicked', {
+                        technology: data.slug,
+                        destination: `solutions/${solutionSlug}`
+                      })
+                    }
+                    className="block p-4 border border-void-elevated rounded-lg hover:border-signal transition-colors"
+                  >
+                    <span className="text-white text-sm">
+                      {solutionSlug.replace(/-/g, ' ').toUpperCase()}
+                    </span>
+                    <span className="text-signal ml-2">→</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
 
-          <Card className="p-6">
-            <div className="text-signal text-xs font-mono mb-2">FIXED PRICING</div>
-            <h3 className="text-xl font-bold text-white font-mono mb-3">No Surprises</h3>
-            <p className="text-white/80">
-              Transparent fixed-price quotes. You know exactly what you're paying before we start.
-            </p>
-          </Card>
-        </div>
-
-        <div className="mt-12 text-center">
-          <Button variant="secondary" asChild>
-            <a href="/company">Learn More About Avocado →</a>
-          </Button>
+          {/* Related Technologies */}
+          {data.relatedTech && data.relatedTech.length > 0 && (
+            <div>
+              <h3 className="text-signal font-mono text-sm mb-4">
+                RELATED TECH
+              </h3>
+              <div className="space-y-3">
+                {data.relatedTech.map((techSlug) => (
+                  <a
+                    key={techSlug}
+                    href={`/tech/${techSlug}`}
+                    onClick={() =>
+                      trackEvent('Tech Internal Link Clicked', {
+                        technology: data.slug,
+                        destination: `tech/${techSlug}`
+                      })
+                    }
+                    className="block p-4 border border-void-elevated rounded-lg hover:border-signal transition-colors"
+                  >
+                    <span className="text-white text-sm">
+                      {techSlug.replace(/-/g, ' ').toUpperCase()}
+                    </span>
+                    <span className="text-signal ml-2">→</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </Section>
 
       {/* FAQ Section */}
       <Section className="py-20 bg-void-surface">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; FAQ</div>
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">
+            &gt; FAQ
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">
             COMMON QUESTIONS
           </h2>
         </div>
-        <div className="max-w-2xl mx-auto">
-          <FAQ items={faqItems} />
+        <div className="max-w-3xl mx-auto">
+          <FAQ items={data.faqs} />
         </div>
       </Section>
 

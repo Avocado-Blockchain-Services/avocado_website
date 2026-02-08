@@ -31,9 +31,12 @@ function App() {
         <Route path="/protocol" element={<Protocol />} />
         <Route path="/company" element={<Company />} />
         <Route path="/mvp-development" element={<MVPDevelopment />} />
+        <Route path="/industries" element={<IndustryRouter />} />
         <Route path="/industries/:slug" element={<IndustryRouter />} />
+        <Route path="/solutions" element={<SolutionRouter />} />
         <Route path="/solutions/:slug" element={<SolutionRouter />} />
         <Route path="/tech/:slug" element={<TechRouter />} />
+        <Route path="/case-studies" element={<CaseStudyRouter />} />
         <Route path="/case-studies/:slug" element={<CaseStudyRouter />} />
       </Routes>
     </Layout>

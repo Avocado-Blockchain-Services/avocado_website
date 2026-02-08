@@ -1,35 +1,185 @@
 [
   {
     "slug": "banking",
-    "name": "Banking & Finance",
-    "title": "MVP Development for Banks & Financial Institutions",
-    "description": "Enterprise-grade AI and blockchain solutions for banking. ISO 27001 certified. Trusted by BBVA and Banorte.",
-    "keyword": "MVP development for banks",
-    "painPoints": ["Legacy system integration", "Compliance requirements", "Security concerns", "Slow internal IT"],
-    "solutions": ["AI-powered automation", "Blockchain for transparency", "Secure API integrations", "Rapid prototyping"],
-    "caseStudy": "bbva",
-    "icon": "🏦"
+    "name": "Banking & Financial Services",
+    "metaTitle": "Banking Software Development | Financial Services Technology | Avocado",
+    "metaDescription": "ISO 27001-certified banking software development trusted by BBVA and Banorte. Custom financial applications, secure transaction systems, and regulatory-compliant platforms built in 3 weeks.",
+    "h1": "ENTERPRISE BANKING SOFTWARE DEVELOPMENT",
+    "intro": "Avocado Dev Studio is an ISO 27001-certified software development company specializing in banking and financial services technology. We build secure, regulatory-compliant digital banking platforms, internal tools, and customer-facing applications trusted by Fortune 500 institutions including BBVA and Banorte.",
+    "painPoints": [
+      {
+        "title": "Legacy System Modernization",
+        "description": "Your core banking systems run on decades-old technology that's expensive to maintain and impossible to scale. Integration with modern APIs requires custom middleware layers that break constantly. You need to modernize without disrupting daily operations."
+      },
+      {
+        "title": "Regulatory Compliance Overhead",
+        "description": "Every new feature requires compliance review, security audits, and documentation for regulators. Traditional development agencies don't understand GLBA, SOC 2, or PCI DSS requirements. One compliance failure can cost millions in fines."
+      },
+      {
+        "title": "Slow Time-to-Market",
+        "description": "Competitors launch new digital banking features in weeks while your internal team is stuck in 9-month development cycles. By the time you launch, customer expectations have moved forward. You're losing market share to fintechs that ship faster."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Secure Digital Banking Platforms",
+        "description": "Customer portals, admin dashboards, transaction management systems, and real-time reporting tools. Built with enterprise security standards (encryption at rest and in transit, multi-factor authentication, role-based access control). ISO 27001-certified development process ensures compliance from day one."
+      },
+      {
+        "title": "Core Banking API Integration",
+        "description": "Modern REST APIs and GraphQL layers for legacy core banking systems (Temenos, Fiserv, FIS, Oracle FLEXCUBE). Secure middleware for real-time account data, transaction processing, and customer information retrieval. Built on Google Cloud Platform with 99.9% uptime SLAs."
+      },
+      {
+        "title": "AI-Powered Financial Tools",
+        "description": "Fraud detection systems using machine learning, document processing for loan applications, intelligent chatbots for customer service, and predictive analytics for risk scoring. Built on Google Cloud Vertex AI by certified GCP experts."
+      }
+    ],
+    "caseStudies": ["bbva", "banorte"],
+    "technologies": ["vertex-ai"],
+    "relatedSolutions": ["ai-chatbot", "saas-mvp"],
+    "faqs": [
+      {
+        "question": "How does Avocado handle financial data security and compliance?",
+        "answer": "Avocado is ISO 27001 certified, meaning our entire development process—from code review to deployment—follows international security standards. We implement encryption at rest and in transit, multi-factor authentication, role-based access control, audit logging, and regular penetration testing. Our team has experience with GLBA, SOC 2, PCI DSS, and other financial regulations. Every project includes a security audit before production deployment."
+      },
+      {
+        "question": "Can Avocado integrate with our existing core banking system?",
+        "answer": "Yes—we've built integrations for Temenos, Fiserv, FIS, Oracle FLEXCUBE, and other major core banking platforms. Our approach is to build a secure API middleware layer on Google Cloud Platform that connects your legacy systems to modern applications without exposing sensitive infrastructure. This allows you to launch new customer-facing features while your core systems remain untouched."
+      },
+      {
+        "question": "How long does it take to build a banking application?",
+        "answer": "Simple customer portals and internal tools can be delivered in 3 weeks. More complex applications with regulatory requirements, third-party integrations, and advanced security features typically take 4-8 weeks. Unlike traditional agencies that quote 6-12 months, Avocado uses a fixed-scope, fixed-price model with clear deliverables and daily progress updates."
+      },
+      {
+        "question": "What banking clients has Avocado worked with?",
+        "answer": "Avocado has delivered projects for BBVA (one of the largest banks in Mexico and Spain) and Banorte (Mexico's third-largest bank). Our work includes customer-facing applications, internal banking tools, blockchain prototypes, and AI-powered document processing systems. We're trusted by Fortune 500 financial institutions that require enterprise-grade security and compliance."
+      },
+      {
+        "question": "Does Avocado provide ongoing support for banking applications?",
+        "answer": "Yes—every project includes 30 days of post-launch support covering bug fixes, performance monitoring, and security updates. After that, most banking clients choose a dedicated team engagement for ongoing feature development, quarterly security audits, and compliance updates as regulations change. We also offer 24/7 incident response for mission-critical production systems."
+      }
+    ]
   },
   {
     "slug": "sports",
-    "name": "Sports & Entertainment", 
-    "title": "Blockchain & NFT Development for Sports Teams",
-    "description": "Fan engagement platforms, NFT campaigns, and loyalty programs. Clio Sports Silver 2022 winner with Bitso.",
-    "keyword": "blockchain for sports teams",
-    "painPoints": ["Fan engagement declining", "Merchandise revenue flat", "No direct fan connection", "Outdated loyalty programs"],
-    "solutions": ["NFT collectibles", "Token-gated experiences", "Digital loyalty platforms", "Fan engagement apps"],
-    "caseStudy": "chivas",
-    "icon": "⚽"
+    "name": "Sports & Entertainment",
+    "metaTitle": "Sports Technology Development | Fan Engagement Platforms | Avocado",
+    "metaDescription": "Award-winning sports technology development trusted by Chivas, Club América, and Bitso. NFT campaigns, fan engagement platforms, and loyalty systems that connect teams with millions of fans.",
+    "h1": "SPORTS TECHNOLOGY & FAN ENGAGEMENT PLATFORMS",
+    "intro": "Avocado Dev Studio builds sports technology and fan engagement platforms trusted by Liga MX teams including Chivas and Club América, and brands like Bitso. We specialize in NFT campaigns, digital collectibles, loyalty programs, and web3 experiences that create new revenue streams and deeper fan relationships.",
+    "painPoints": [
+      {
+        "title": "Limited Digital Revenue Streams",
+        "description": "Your team makes money from tickets, merchandise, and sponsorships—but these traditional revenue streams are flat or declining. Younger fans expect digital experiences and ownership, not just stadium attendance. You need new ways to monetize your brand and fanbase."
+      },
+      {
+        "title": "Declining Fan Engagement",
+        "description": "Social media reach is down due to algorithm changes. Email open rates are declining. Younger fans don't watch full games on TV. You're losing mindshare to other entertainment options and struggling to build a direct relationship with your audience."
+      },
+      {
+        "title": "No Technical Expertise for Web3",
+        "description": "Your marketing team wants to launch NFT campaigns, digital collectibles, or blockchain-based loyalty programs—but your internal IT team has no experience with Web3 technology. Traditional agencies pitch expensive 6-month projects with unclear deliverables."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "NFT Campaigns & Digital Collectibles",
+        "description": "Launch NFT collections tied to match highlights, player milestones, or exclusive experiences. Fans collect, trade, and showcase digital memorabilia. Built on Ethereum, Polygon, or Solana with low transaction costs and easy onboarding for non-crypto users. We've delivered campaigns for Chivas and Club América that generated significant media coverage."
+      },
+      {
+        "title": "Fan Engagement & Loyalty Platforms",
+        "description": "Custom web and mobile applications that reward fans for attending games, buying merchandise, sharing content, and engaging with sponsors. Points systems, tier-based benefits, exclusive content access, and gamification features. Our platform for Bitso won a Clio Sports Silver award in 2022."
+      },
+      {
+        "title": "Ticketing & Membership Systems",
+        "description": "Modern ticketing platforms with dynamic pricing, season pass management, and secondary market integration. Blockchain-based ticket authentication prevents fraud and scalping. VIP membership portals with exclusive content, early access, and meet-and-greet coordination."
+      }
+    ],
+    "caseStudies": ["chivas", "bitso"],
+    "technologies": ["ethereum", "solidity"],
+    "relatedSolutions": ["nft-marketplace", "loyalty-platform"],
+    "faqs": [
+      {
+        "question": "What sports teams has Avocado worked with?",
+        "answer": "Avocado has delivered projects for Chivas (NFT campaigns and digital collectibles), Club América (fan engagement technology), and worked with Bitso on a fan platform that won a Clio Sports Silver award in 2022. Our work combines sports marketing strategy with cutting-edge blockchain and Web3 technology."
+      },
+      {
+        "question": "How do NFT campaigns generate revenue for sports teams?",
+        "answer": "Teams sell NFT collections to fans (primary sale revenue), then earn royalties on secondary market trades (typically 5-10% of every resale). NFTs can unlock exclusive experiences (meet-and-greets, stadium tours, VIP access) that create additional sponsorship opportunities. Teams also use NFTs as loyalty rewards to increase merchandise and ticket sales. Chivas generated significant revenue and media coverage with their NFT launches."
+      },
+      {
+        "question": "Do fans need to understand cryptocurrency to use your platforms?",
+        "answer": "No—our fan engagement platforms are designed for mainstream users with no crypto knowledge. Fans can purchase NFTs with credit cards (we handle the crypto conversion behind the scenes), and view their digital collectibles in a simple web gallery without needing a crypto wallet. For advanced users, we support MetaMask and other Web3 wallets."
+      },
+      {
+        "question": "How long does it take to launch an NFT campaign for a sports team?",
+        "answer": "A simple NFT drop (single collection, basic smart contract, credit card checkout) can launch in 2-3 weeks. More complex campaigns with multiple tiers, utility features, and custom marketplace functionality take 4-6 weeks. We handle smart contract development, marketplace frontend, payment integration, and security audits."
+      },
+      {
+        "question": "Can you build a loyalty program without blockchain technology?",
+        "answer": "Yes—many of our fan engagement platforms use traditional databases for points and rewards. Blockchain makes sense when you want fans to truly own their rewards (transferable NFTs), create secondary markets for collectibles, or integrate with third-party sponsors. We recommend starting with a traditional loyalty platform and adding blockchain features later if needed."
+      }
+    ]
   },
   {
     "slug": "fintech",
-    "name": "FinTech",
-    "title": "FinTech MVP Development Company",
-    "description": "Build compliant, scalable fintech products in weeks. AI-powered, blockchain-ready, GCP infrastructure.",
-    "keyword": "fintech MVP development",
-    "painPoints": ["Time to market pressure", "Regulatory compliance", "Scaling challenges", "Security requirements"],
-    "solutions": ["Rapid MVP delivery", "Compliance-first architecture", "Cloud-native scaling", "Enterprise security"],
-    "caseStudy": "bitso",
-    "icon": "💳"
+    "name": "FinTech & Cryptocurrency",
+    "metaTitle": "Fintech Development Company | Crypto & Blockchain Development | Avocado",
+    "metaDescription": "Fintech development trusted by Bitso (Latin America's largest crypto exchange). Build DeFi platforms, crypto wallets, trading systems, and blockchain applications in 3 weeks.",
+    "h1": "FINTECH & CRYPTOCURRENCY DEVELOPMENT",
+    "intro": "Avocado Dev Studio is a fintech development company specializing in cryptocurrency, blockchain, and decentralized finance (DeFi) platforms. We've delivered projects for Bitso (Latin America's largest crypto exchange) and other fintech innovators. Our team combines deep blockchain expertise with traditional financial services experience.",
+    "painPoints": [
+      {
+        "title": "Finding Blockchain Developers You Can Trust",
+        "description": "Most blockchain developers have 2-3 years of experience (the technology is young). You need a team that's built production systems handling real money, not just side projects. One smart contract bug can cost millions in lost funds or hacks."
+      },
+      {
+        "title": "Regulatory Uncertainty",
+        "description": "Crypto regulations change constantly across different jurisdictions. You need to launch quickly before regulations get stricter—but you can't afford compliance failures. Traditional legal counsel doesn't understand DeFi, NFTs, or tokenomics."
+      },
+      {
+        "title": "Expensive Infrastructure Costs",
+        "description": "Running blockchain nodes, managing wallet infrastructure, and processing high-volume transactions requires specialized DevOps expertise. Cloud costs spiral out of control with poor architecture. Traditional fintech agencies don't understand Web3 infrastructure."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "DeFi Platforms & Protocols",
+        "description": "Decentralized exchanges (DEXs), lending protocols, staking platforms, liquidity pools, and yield farming applications. Smart contracts built in Solidity for Ethereum and EVM-compatible chains. Security audits, gas optimization, and comprehensive testing before production deployment."
+      },
+      {
+        "title": "Crypto Wallets & Exchange Infrastructure",
+        "description": "Non-custodial wallets, multi-signature treasury management, trading interfaces, order book engines, and KYC/AML compliance systems. We've built infrastructure for Bitso that handles millions of transactions. Deployed on Google Cloud Platform with enterprise-grade security."
+      },
+      {
+        "title": "NFT Marketplaces & Web3 Applications",
+        "description": "Custom NFT marketplaces with lazy minting, royalty enforcement, and secondary market features. Web3 authentication (MetaMask, WalletConnect), token-gated content, and decentralized identity systems. Built on Ethereum, Polygon, or Solana depending on your use case."
+      }
+    ],
+    "caseStudies": ["bitso"],
+    "technologies": ["ethereum", "solidity"],
+    "relatedSolutions": ["nft-marketplace", "smart-contracts"],
+    "faqs": [
+      {
+        "question": "What fintech companies has Avocado worked with?",
+        "answer": "Avocado has delivered projects for Bitso (Latin America's largest cryptocurrency exchange with millions of users), as well as banking clients like BBVA and Banorte who are exploring blockchain technology. Our work includes trading infrastructure, wallet systems, DeFi protocols, NFT platforms, and blockchain-based loyalty programs."
+      },
+      {
+        "question": "How does Avocado ensure smart contract security?",
+        "answer": "Every smart contract we deploy goes through: (1) comprehensive unit and integration testing with 100% code coverage, (2) automated security analysis using tools like Slither and MythX, (3) gas optimization to minimize transaction costs, (4) manual code review by senior blockchain developers, and (5) third-party security audit for high-value contracts. We follow OpenZeppelin standards and best practices."
+      },
+      {
+        "question": "What blockchain platforms does Avocado support?",
+        "answer": "We build on Ethereum (mainnet and Layer 2s like Arbitrum and Optimism), Polygon, Solana, and other EVM-compatible chains. For most fintech applications, we recommend Polygon for low transaction fees and Ethereum compatibility, or Solana for high-throughput trading systems. We help you choose the right chain based on your technical requirements and business model."
+      },
+      {
+        "question": "Can Avocado build a traditional fintech app without blockchain?",
+        "answer": "Yes—our team has experience with traditional financial applications including payment processing, banking APIs, lending platforms, and investment tools. We've worked with BBVA and Banorte on non-blockchain projects. We recommend blockchain only when decentralization, transparency, or token economics provide clear business value."
+      },
+      {
+        "question": "How much does it cost to build a DeFi protocol or crypto exchange?",
+        "answer": "A simple DeFi protocol (single-pool staking or basic DEX) starts around cost-efficient fixed pricing with 3-4 week delivery. Full crypto exchange infrastructure (order books, wallet management, KYC/AML, admin tools) requires 8-12 weeks. We provide transparent fixed-price quotes after a free scoping call—no hourly billing surprises."
+      }
+    ]
   }
 ]

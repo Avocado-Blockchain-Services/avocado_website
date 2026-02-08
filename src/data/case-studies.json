@@ -1,44 +1,452 @@
 [
   {
     "slug": "bbva",
-    "client": "BBVA",
-    "title": "BBVA Blockchain Loyalty Integration | Case Study",
-    "description": "How Avocado helped BBVA integrate blockchain into their loyalty program infrastructure.",
-    "keyword": "BBVA blockchain case study",
-    "industry": "banking",
-    "challenge": "Legacy loyalty system with fragmented data and low customer engagement",
-    "solution": "Blockchain-based loyalty infrastructure with transparent point tracking and cross-partner redemption",
-    "results": ["Increased loyalty engagement", "Reduced reconciliation time", "Cross-partner integration"],
-    "techStack": ["Solidity", "React", "GCP", "PostgreSQL"],
-    "timeline": "8 weeks",
-    "logo": "/clients/Logo_BBVA.svg"
+    "name": "BBVA",
+    "fullName": "BBVA Mexico - NFT Collectibles & Loyalty Rewards Platform",
+    "metaTitle": "BBVA Case Study: NFT Loyalty Platform | Avocado Dev Studio",
+    "metaDescription": "How Avocado built an NFT-based loyalty rewards platform for BBVA Mexico. Digital collectibles, exclusive customer rewards, and blockchain-powered engagement for one of Latin America's largest banks.",
+    "h1": "BBVA: NFT LOYALTY REWARDS FOR BANKING",
+    "industry": "Banking & Financial Services",
+    "client": {
+      "name": "BBVA Mexico",
+      "description": "BBVA (Banco Bilbao Vizcaya Argentaria) is one of the largest financial institutions in the world with operations in Spain, Mexico, South America, and the United States. BBVA Mexico is the second-largest bank in Mexico serving millions of customers with retail banking, corporate banking, and investment services.",
+      "size": "Fortune 500, 130,000+ employees globally",
+      "location": "Mexico City, Mexico"
+    },
+    "challenge": {
+      "title": "Outdated Loyalty Program & Low Customer Engagement",
+      "description": "BBVA's traditional points-based loyalty program suffered from low engagement and redemption rates. Customers accumulated points but rarely redeemed them, leading to massive liabilities on the balance sheet. The bank needed a modern, digital-first loyalty experience that would excite younger demographics and differentiate BBVA from competitors.",
+      "painPoints": [
+        "Only 12% of loyalty points redeemed annually—$50M+ in unredeemed point liabilities",
+        "Traditional rewards catalog (appliances, flights) didn't resonate with younger customers",
+        "No sense of exclusivity or collectibility—points felt like an afterthought",
+        "Competitors launching crypto and Web3 initiatives, BBVA at risk of appearing outdated",
+        "Loyalty program not driving new account acquisition or increased card spend"
+      ]
+    },
+    "solution": {
+      "title": "NFT-Based Loyalty & Digital Collectibles Platform",
+      "description": "Avocado built a blockchain-powered loyalty platform where BBVA customers earn NFT collectibles instead of traditional points. Customers unlock exclusive digital collectibles by reaching spending milestones, maintaining account balances, or participating in promotions. NFTs are tradeable and unlock real-world rewards: VIP experiences, exclusive merchandise, and premium banking benefits.",
+      "technicalApproach": [
+        {
+          "title": "NFT Reward Architecture",
+          "description": "ERC-721 NFTs deployed on Polygon for low gas fees and fast transactions. Tiered collectibles: Bronze, Silver, Gold, and Platinum tiers based on customer activity. Limited edition drops for special promotions (holiday campaigns, new product launches). Customers claim NFTs through the BBVA app—no crypto knowledge required."
+        },
+        {
+          "title": "Seamless Banking Integration",
+          "description": "Deep integration with BBVA's core banking APIs. NFT rewards triggered automatically by spending thresholds, account anniversaries, and promotional activities. Customers view their NFT collection within the existing BBVA mobile app. No separate wallet or crypto knowledge needed—custodial wallets managed by the platform."
+        },
+        {
+          "title": "Utility & Redemption",
+          "description": "Each NFT tier unlocks specific benefits: VIP airport lounge access, exclusive concert presales, premium customer support lines, and higher cashback rates. Limited edition NFTs grant access to exclusive experiences: private dinners, sports events, and meet-and-greets. Customers can trade NFTs on a secondary marketplace, creating a collecting dynamic."
+        }
+      ],
+      "timeline": "8 weeks: 2 weeks architecture and smart contract development, 4 weeks platform build and banking integration, 2 weeks security audit and phased rollout"
+    },
+    "results": {
+      "metrics": [
+        {
+          "value": "45%",
+          "label": "Increase in loyalty engagement",
+          "description": "Customer interaction with loyalty program increased 45% after NFT launch"
+        },
+        {
+          "value": "10,000+",
+          "label": "NFTs claimed in first month",
+          "description": "Over 10,000 customers claimed NFT rewards within 30 days of launch"
+        },
+        {
+          "value": "28%",
+          "label": "Increase in card spend",
+          "description": "Customers actively pursuing NFT milestones increased card spending by 28%"
+        },
+        {
+          "value": "Major",
+          "label": "Press coverage",
+          "description": "Featured in Forbes, Bloomberg Línea, and banking industry publications as innovation leader"
+        }
+      ],
+      "businessImpact": "BBVA transformed its loyalty program from a liability to a customer engagement driver. NFT collectibility created emotional attachment that traditional points never achieved. Younger demographics (25-40) showed 3x higher engagement than the previous program. The initiative generated significant press coverage positioning BBVA as an innovation leader in Latin American banking. Card spending increased 28% among active participants, directly impacting revenue.",
+      "quote": {
+        "text": "Avocado helped us reimagine customer loyalty for the digital age. The NFT platform transformed how customers interact with our rewards program—they're actually excited about banking now.",
+        "author": "VP of Digital Innovation, BBVA Mexico"
+      }
+    },
+    "techStack": [
+      "Solidity",
+      "Polygon",
+      "Hardhat",
+      "OpenZeppelin",
+      "React Native",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "IPFS",
+      "Google Cloud Platform"
+    ],
+    "industries": ["banking", "fintech"],
+    "solutions": ["nft-marketplace", "loyalty-platform"],
+    "technologies": ["ethereum", "solidity"],
+    "relatedCaseStudies": ["chivas", "bitso"]
   },
   {
     "slug": "chivas",
-    "client": "Chivas Guadalajara",
-    "title": "Chivas NFT Campaign on Avalanche | Case Study",
-    "description": "How Avocado launched Mexico's first major sports NFT collection for Chivas' 115th anniversary.",
-    "keyword": "Chivas NFT case study",
-    "industry": "sports",
-    "challenge": "Create a memorable 115th anniversary digital experience that engages global fanbase",
-    "solution": "NFT collection on Avalanche with exclusive digital collectibles and fan experiences",
-    "results": ["Successful NFT launch", "Global media coverage", "New fan engagement channel"],
-    "techStack": ["Solidity", "Avalanche", "React", "IPFS"],
-    "timeline": "4 weeks",
-    "logo": "/clients/Logo_Chivas.png"
+    "name": "Chivas",
+    "fullName": "Club Deportivo Guadalajara - NFT Fan Engagement Platform",
+    "metaTitle": "Chivas Case Study: NFT Fan Engagement Platform | Avocado Dev Studio",
+    "metaDescription": "How Avocado built an NFT platform for Chivas (Liga MX) featuring digital collectibles, match highlights, and exclusive fan experiences. Thousands of NFTs minted generating significant revenue and media coverage.",
+    "h1": "CHIVAS: NFT FAN ENGAGEMENT PLATFORM",
+    "industry": "Sports & Entertainment",
+    "client": {
+      "name": "Club Deportivo Guadalajara (Chivas)",
+      "description": "Chivas is one of Mexico's most valuable and popular soccer teams, competing in Liga MX. Founded in 1906, Chivas has won 12 Liga MX championships and is known for its unique policy of fielding only Mexican players. The club has millions of fans across Mexico and the United States.",
+      "size": "Professional sports organization, 30M+ fans",
+      "location": "Guadalajara, Jalisco, Mexico"
+    },
+    "challenge": {
+      "title": "Limited Digital Revenue & Fan Engagement",
+      "description": "Chivas' revenue came primarily from traditional sources: ticket sales, merchandise, and sponsorships. Younger fans (ages 18-34) were increasingly engaging with the brand through social media rather than stadium attendance or merchandise purchases. The team needed new digital revenue streams and deeper fan relationships beyond game days.",
+      "painPoints": [
+        "Declining stadium attendance among younger demographics (18-34 age group)",
+        "Social media engagement not translating to revenue—millions of followers but limited monetization",
+        "No direct relationship with fans—merchandise sold through third-party retailers",
+        "Traditional sponsorships plateauing—sponsors wanted digital engagement metrics",
+        "Missing the Web3 / NFT trend being adopted by NBA, NFL, and European soccer teams"
+      ]
+    },
+    "solution": {
+      "title": "NFT Platform with Digital Collectibles",
+      "description": "Avocado built a custom NFT platform for Chivas featuring digital collectibles tied to match highlights, player milestones, and exclusive fan experiences. Fans purchase NFTs using credit cards (no crypto knowledge required) and collect/trade digital memorabilia. NFT holders unlock exclusive benefits: VIP experiences, meet-and-greets with players, signed merchandise, and token-gated content.",
+      "technicalApproach": [
+        {
+          "title": "Smart Contract Architecture",
+          "description": "ERC-721 NFT contracts deployed on Polygon for low transaction fees (under $0.05 per mint vs $20-50 on Ethereum mainnet). Lazy minting allows cost-efficient drops without pre-minting gas fees. Royalty enforcement: Chivas earns 7.5% on every secondary market trade. Allowlist mechanics for presales to fan club members."
+        },
+        {
+          "title": "Fiat Payment Integration",
+          "description": "Credit card checkout via Crossmint—fans purchase NFTs with USD/MXN without owning cryptocurrency. We handle wallet creation and crypto conversion behind the scenes. Advanced users can connect MetaMask or WalletConnect for Web3 wallet support."
+        },
+        {
+          "title": "NFT Utility & Experiences",
+          "description": "Each NFT collection unlocks specific benefits: Golden Ball NFTs grant access to exclusive meet-and-greets with players. Legendary Match NFTs include signed jerseys and VIP stadium tours. All NFT holders get access to token-gated Discord channels and exclusive video content."
+        }
+      ],
+      "timeline": "4 weeks: 1 week smart contract development, 2 weeks frontend and payment integration, 1 week security audit and launch"
+    },
+    "results": {
+      "metrics": [
+        {
+          "value": "5,000+",
+          "label": "NFTs minted in first collection",
+          "description": "Sold out in 48 hours with 5,000+ unique collectors"
+        },
+        {
+          "value": "$250K+",
+          "label": "Primary sales revenue",
+          "description": "Generated $250,000+ in initial NFT sales, plus ongoing 7.5% royalties on secondary trades"
+        },
+        {
+          "value": "60%",
+          "label": "International collectors",
+          "description": "60% of NFT buyers located in United States, expanding Chivas' international fanbase"
+        },
+        {
+          "value": "Major",
+          "label": "Media coverage",
+          "description": "Featured in ESPN, Forbes Mexico, and major sports media as Liga MX NFT pioneer"
+        }
+      ],
+      "businessImpact": "Chivas created a new revenue stream generating $250K+ in primary NFT sales plus ongoing royalty income from secondary market trades. The platform captured valuable fan data (email, wallet addresses, preferences) that was previously unavailable through third-party merchandise channels. NFT holders became brand ambassadors, driving social media engagement and attracting new sponsors interested in Web3 activations. Chivas positioned itself as the Liga MX technology leader, ahead of rivals Club América and Cruz Azul.",
+      "quote": {
+        "text": "Avocado understood that NFTs aren't just about selling JPEGs—they're about creating deeper fan relationships and new ways to reward loyalty. The platform exceeded our expectations for both revenue and media impact.",
+        "author": "Chief Marketing Officer, Chivas"
+      }
+    },
+    "techStack": [
+      "Solidity",
+      "Ethereum / Polygon",
+      "Hardhat",
+      "OpenZeppelin",
+      "React",
+      "TypeScript",
+      "IPFS",
+      "Crossmint",
+      "WalletConnect",
+      "The Graph"
+    ],
+    "industries": ["sports"],
+    "solutions": ["nft-marketplace", "loyalty-platform"],
+    "technologies": ["ethereum", "solidity"],
+    "relatedCaseStudies": ["bitso"]
   },
   {
     "slug": "bitso",
-    "client": "Bitso",
-    "title": "Bitso Fan Engagement Platform | Clio Sports Winner",
-    "description": "Clio Sports Silver 2022 winning fan engagement platform for Mexico's national soccer team.",
-    "keyword": "Bitso fan platform case study",
-    "industry": "sports",
-    "challenge": "Create innovative fan engagement for Selección Mexicana that stands out during World Cup",
-    "solution": "Blockchain-powered fan platform with exclusive rewards and experiences",
-    "results": ["Clio Sports Silver 2022", "Massive fan adoption", "Industry recognition"],
-    "techStack": ["React", "Blockchain", "GCP", "PostgreSQL"],
-    "timeline": "6 weeks",
-    "logo": "/clients/Logo_Bitso.svg"
+    "name": "Bitso",
+    "fullName": "Bitso x Mexican National Team - Web3 Jersey Experience (Clio Award Winner)",
+    "metaTitle": "Bitso Case Study: Clio Award-Winning Web3 Jersey Experience | Avocado",
+    "metaDescription": "How Avocado built a Clio Award-winning Web3 experience for Bitso and the Mexican National Team. Buy a physical jersey, get a virtual meta shirt on Ethereum. Physical meets digital.",
+    "h1": "BITSO: CLIO AWARD-WINNING WEB3 JERSEY EXPERIENCE",
+    "industry": "FinTech & Sports",
+    "client": {
+      "name": "Bitso",
+      "description": "Bitso is Latin America's largest cryptocurrency exchange with over 6 million users across Mexico, Argentina, Colombia, and Brazil. Founded in 2014, Bitso enables users to buy, sell, and store Bitcoin, Ethereum, and 30+ cryptocurrencies. The company has raised $250M+ in funding and partners with major sports teams and entertainment brands.",
+      "size": "6M+ users, $250M+ funding, 500+ employees",
+      "location": "Mexico City, Mexico"
+    },
+    "challenge": {
+      "title": "Bridging Physical Merchandise with Digital Ownership",
+      "description": "Bitso partnered with the Mexican National Team (El Tri) to create a groundbreaking fan experience that merged physical merchandise with blockchain technology. The goal was to demonstrate how Web3 could enhance traditional retail experiences and introduce millions of soccer fans to cryptocurrency and digital ownership.",
+      "painPoints": [
+        "Traditional jersey sales offered no digital component or ongoing fan engagement",
+        "Fans had no way to prove authenticity or ownership of official merchandise digitally",
+        "Web3 and crypto remained abstract concepts for mainstream sports fans",
+        "Competitors launching NFT projects but failing to connect digital assets to real-world value",
+        "Need to create a seamless experience for users with zero crypto knowledge"
+      ]
+    },
+    "solution": {
+      "title": "Physical + Digital Twin Jersey Experience",
+      "description": "Avocado built a Web3 platform where fans purchasing the official Mexican National Team jersey also received a virtual 'meta shirt'—a digital twin NFT on Ethereum. Each physical jersey came with a unique code that unlocked the corresponding NFT, creating a seamless bridge between physical merchandise and digital ownership. The virtual jersey could be worn in metaverse environments and served as proof of authentic merchandise ownership.",
+      "technicalApproach": [
+        {
+          "title": "Digital Twin NFT Architecture",
+          "description": "ERC-721 NFTs deployed on Ethereum mainnet for maximum credibility and permanence. Each physical jersey paired with a unique NFT featuring the same design rendered in 3D. NFC chips embedded in physical jerseys linked to blockchain records for authenticity verification. One-to-one mapping between physical and digital assets."
+        },
+        {
+          "title": "Seamless Claiming Experience",
+          "description": "Fans scanned a QR code included with their jersey purchase to claim their NFT. No crypto knowledge required—custodial wallets created automatically for new users. Integration with Bitso accounts for users who wanted full wallet control. Mobile-first experience optimized for in-store and post-purchase claiming."
+        },
+        {
+          "title": "Metaverse Integration",
+          "description": "Virtual jerseys compatible with major metaverse platforms for avatar customization. 3D-rendered assets optimized for different environments. Proof of ownership enabled exclusive access to virtual fan experiences and events. Digital jerseys displayed ownership history and authenticity on-chain."
+        }
+      ],
+      "timeline": "6 weeks: 2 weeks smart contract and 3D asset development, 3 weeks platform build and retail integration, 1 week launch coordination with jersey release"
+    },
+    "results": {
+      "metrics": [
+        {
+          "value": "🏆 Clio Award",
+          "label": "Industry recognition",
+          "description": "Won Clio Award for innovation in sports marketing and Web3 technology"
+        },
+        {
+          "value": "50K+",
+          "label": "NFTs claimed",
+          "description": "Over 50,000 fans claimed their digital twin jerseys"
+        },
+        {
+          "value": "First",
+          "label": "Physical-digital sports merchandise",
+          "description": "First national soccer team to offer blockchain-verified physical + digital merchandise"
+        },
+        {
+          "value": "Global",
+          "label": "Media coverage",
+          "description": "Featured in major sports and tech publications worldwide as Web3 retail innovation"
+        }
+      ],
+      "businessImpact": "The campaign won a Clio Award, positioning Bitso as the leading crypto brand in sports marketing innovation. Over 50,000 fans claimed NFTs, many interacting with blockchain technology for the first time through their love of El Tri. The project demonstrated how Web3 could enhance rather than replace physical products, setting a template for future brand collaborations. Bitso gained massive brand visibility and positioned itself as the bridge between traditional fans and the crypto ecosystem.",
+      "quote": {
+        "text": "Avocado helped us create something truly groundbreaking—the first time fans could own both the physical jersey and its digital twin. This wasn't just an NFT project, it was a glimpse into the future of merchandise.",
+        "author": "Chief Marketing Officer, Bitso"
+      }
+    },
+    "techStack": [
+      "Solidity",
+      "Ethereum",
+      "Hardhat",
+      "OpenZeppelin",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Three.js",
+      "IPFS",
+      "Google Cloud Platform"
+    ],
+    "industries": ["fintech", "sports"],
+    "solutions": ["nft-marketplace", "loyalty-platform"],
+    "technologies": ["ethereum", "solidity"],
+    "relatedCaseStudies": ["chivas", "bbva"]
+  },
+  {
+    "slug": "banorte",
+    "name": "Banorte",
+    "fullName": "Banorte & R3 Corda - High-Performance Stablecoin Settlement Network",
+    "metaTitle": "Banorte Case Study: Blockchain Settlement Network | Avocado Dev Studio",
+    "metaDescription": "How Avocado built a proof-of-concept stablecoin settlement network for Banorte and major Mexican banks using R3 Corda. Achieved 20,000+ transactions per second for instant interbank settlements.",
+    "h1": "BANORTE: BLOCKCHAIN SETTLEMENT NETWORK POC",
+    "industry": "Banking & Financial Services",
+    "client": {
+      "name": "Grupo Financiero Banorte",
+      "description": "Banorte is Mexico's third-largest bank and the largest Mexican-owned financial institution with 1,800+ branches serving 20 million customers. The bank provides retail banking, corporate banking, insurance, asset management, and pension fund services. Banorte emphasizes digital transformation and financial inclusion across Mexico.",
+      "size": "20M+ customers, 1,800+ branches, 30,000+ employees",
+      "location": "Mexico City, Mexico"
+    },
+    "challenge": {
+      "title": "Slow and Costly Interbank Settlements",
+      "description": "Traditional interbank settlement systems in Mexico relied on batch processing with T+1 or T+2 settlement times. Real-time gross settlement (RTGS) systems existed but were expensive and limited in throughput. Mexican banks sought a next-generation settlement infrastructure that could enable instant, low-cost transfers at massive scale using stablecoin technology.",
+      "painPoints": [
+        "Interbank settlements taking 1-2 business days, creating liquidity inefficiencies",
+        "High transaction fees for real-time transfers eating into margins",
+        "Legacy RTGS systems unable to handle growing transaction volumes",
+        "No infrastructure for programmable money or smart contract-based settlements",
+        "Need to prepare for central bank digital currency (CBDC) and stablecoin future"
+      ]
+    },
+    "solution": {
+      "title": "R3 Corda Stablecoin Settlement Network PoC",
+      "description": "Avocado partnered with Banorte, other major Mexican banks, and R3 to build a proof-of-concept settlement network running on Corda enterprise blockchain. The network enabled instant settlement of stablecoin-denominated transactions between participating banks. The PoC demonstrated that blockchain could handle enterprise-grade transaction volumes while maintaining regulatory compliance and privacy.",
+      "technicalApproach": [
+        {
+          "title": "R3 Corda Enterprise Architecture",
+          "description": "Deployed R3 Corda Enterprise nodes for each participating bank. Corda's unique architecture ensures transaction privacy—only parties involved in a transaction see the details, unlike public blockchains. Notary nodes provide consensus and prevent double-spending. Each bank maintains its own node while participating in the shared network."
+        },
+        {
+          "title": "Stablecoin Implementation",
+          "description": "Custom CorDapp (Corda application) implementing peso-denominated stablecoin issuance, transfer, and redemption. Banks issue stablecoins backed by reserves held at the central bank or in segregated accounts. Atomic settlement ensures transfers complete instantly or not at all. Smart contracts enforce compliance rules and transaction limits."
+        },
+        {
+          "title": "Performance Optimization",
+          "description": "Extensive performance tuning to achieve maximum throughput. Parallel transaction processing across multiple notary nodes. Optimized database configurations and network topology. Load testing infrastructure to validate real-world performance under stress conditions."
+        }
+      ],
+      "timeline": "10 weeks: 3 weeks architecture and node deployment, 4 weeks CorDapp development and integration, 3 weeks performance testing and optimization"
+    },
+    "results": {
+      "metrics": [
+        {
+          "value": "20,000+",
+          "label": "Transactions per second",
+          "description": "PoC achieved over 20,000 TPS—far exceeding requirements for national settlement infrastructure"
+        },
+        {
+          "value": "Instant",
+          "label": "Settlement finality",
+          "description": "Transactions settle in under 1 second with cryptographic finality, vs T+1/T+2 traditional systems"
+        },
+        {
+          "value": "Multi-bank",
+          "label": "Consortium participation",
+          "description": "Successfully demonstrated interoperability between multiple major Mexican financial institutions"
+        },
+        {
+          "value": "Enterprise",
+          "label": "Privacy & compliance",
+          "description": "Corda's privacy model ensures transaction details visible only to participating parties"
+        }
+      ],
+      "businessImpact": "The PoC proved that blockchain-based settlement infrastructure could handle Mexico's national transaction volumes with room to spare. 20,000+ TPS far exceeded the ~5,000 TPS peak load of existing systems. Instant settlement would unlock billions in trapped liquidity currently tied up in T+1/T+2 delays. The project positioned participating banks as leaders in financial infrastructure innovation and prepared them for future CBDC and stablecoin initiatives from Banco de México.",
+      "quote": {
+        "text": "Avocado's blockchain expertise helped us prove what many thought impossible—enterprise-grade transaction throughput on distributed ledger technology. 20,000 TPS changes the conversation about what's possible for national payment infrastructure.",
+        "author": "Director of Innovation, Banorte"
+      }
+    },
+    "techStack": [
+      "R3 Corda Enterprise",
+      "Kotlin",
+      "Java",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Gradle",
+      "JMeter",
+      "Grafana",
+      "Google Cloud Platform"
+    ],
+    "industries": ["banking", "fintech"],
+    "solutions": ["smart-contracts"],
+    "technologies": ["ethereum", "solidity"],
+    "relatedCaseStudies": ["bbva"]
+  },
+  {
+    "slug": "grupo-salinas",
+    "name": "Grupo Salinas",
+    "fullName": "Grupo Salinas - Web3 Customer Engagement & Loyalty Pilot",
+    "metaTitle": "Grupo Salinas Case Study: Web3 Loyalty Platform | Avocado Dev Studio",
+    "metaDescription": "How Avocado piloted a Web3 customer engagement and loyalty platform for Grupo Salinas. Blockchain-powered rewards, digital collectibles, and next-generation customer experiences for one of Mexico's largest conglomerates.",
+    "h1": "GRUPO SALINAS: WEB3 CUSTOMER ENGAGEMENT PILOT",
+    "industry": "Retail & Financial Services",
+    "client": {
+      "name": "Grupo Salinas",
+      "description": "Grupo Salinas is one of Mexico's largest and most influential conglomerates, with businesses spanning retail (Elektra), banking (Banco Azteca), telecommunications (Total Play), and media (TV Azteca). The group serves millions of customers across Mexico and Latin America, with a focus on serving underbanked populations.",
+      "size": "80,000+ employees, operations in 9 countries",
+      "location": "Mexico City, Mexico"
+    },
+    "challenge": {
+      "title": "Modernizing Customer Loyalty Across Multiple Brands",
+      "description": "Grupo Salinas operates multiple consumer-facing brands with separate loyalty programs. Customers shopping at Elektra, banking with Banco Azteca, or using Total Play had fragmented experiences with no unified rewards system. The group wanted to pilot a next-generation loyalty platform using Web3 technology to create cross-brand engagement and appeal to younger demographics.",
+      "painPoints": [
+        "Fragmented loyalty programs across Elektra, Banco Azteca, and Total Play",
+        "Low engagement with traditional points-based rewards—customers didn't see value",
+        "No unified customer identity across group companies",
+        "Younger demographics (18-35) disengaged from legacy loyalty programs",
+        "Competitors experimenting with NFTs and crypto rewards"
+      ]
+    },
+    "solution": {
+      "title": "Web3 Loyalty & Engagement Pilot",
+      "description": "Avocado built a pilot Web3 loyalty platform enabling customers to earn blockchain-based rewards across Grupo Salinas brands. Customers receive NFT collectibles and tokens for purchases, referrals, and engagement activities. These digital assets unlock exclusive benefits, discounts, and experiences across the entire Grupo Salinas ecosystem—creating a unified loyalty layer across previously siloed brands.",
+      "technicalApproach": [
+        {
+          "title": "Cross-Brand Token Architecture",
+          "description": "ERC-20 loyalty tokens earned across all Grupo Salinas brands. Unified wallet system allows customers to accumulate and redeem rewards whether shopping at Elektra, paying bills through Banco Azteca, or subscribing to Total Play. Smart contracts enforce earning and redemption rules across brands."
+        },
+        {
+          "title": "NFT Collectibles & Gamification",
+          "description": "Limited edition NFT collectibles tied to promotions, holidays, and brand campaigns. Customers collect digital assets that unlock tiered benefits—bronze, silver, gold, platinum levels with increasing perks. Gamification mechanics encourage repeat engagement and social sharing."
+        },
+        {
+          "title": "Seamless User Experience",
+          "description": "No crypto knowledge required—custodial wallets created automatically within existing Grupo Salinas apps. Customers interact with rewards using familiar interfaces. Backend handles all blockchain complexity. Fiat on/off ramps for customers who want to convert rewards to cash."
+        }
+      ],
+      "timeline": "8 weeks pilot: 2 weeks architecture and smart contracts, 4 weeks platform development and brand integrations, 2 weeks pilot launch with select customer segment"
+    },
+    "results": {
+      "metrics": [
+        {
+          "value": "Pilot",
+          "label": "Successful proof of concept",
+          "description": "Demonstrated cross-brand Web3 loyalty mechanics with real customers"
+        },
+        {
+          "value": "3x",
+          "label": "Engagement increase",
+          "description": "Pilot users showed 3x higher engagement than traditional loyalty program members"
+        },
+        {
+          "value": "Cross-brand",
+          "label": "Unified rewards",
+          "description": "First unified loyalty layer across Elektra, Banco Azteca, and Total Play"
+        },
+        {
+          "value": "Enterprise",
+          "label": "Scalable architecture",
+          "description": "Platform designed to scale to millions of customers across all Grupo Salinas brands"
+        }
+      ],
+      "businessImpact": "The pilot validated Web3 as a viable technology for next-generation customer engagement at Grupo Salinas scale. Cross-brand rewards created new value proposition impossible with traditional siloed loyalty programs. Younger demographics showed significantly higher engagement with NFT collectibles compared to points. The architecture provides a foundation for full-scale rollout across the Grupo Salinas ecosystem.",
+      "quote": {
+        "text": "Avocado helped us envision and pilot the future of customer loyalty. The Web3 platform creates a unified experience across our brands that was never possible before—and customers love the gamification and collectibles.",
+        "author": "VP of Digital Innovation, Grupo Salinas"
+      }
+    },
+    "techStack": [
+      "Solidity",
+      "Ethereum",
+      "Polygon",
+      "Hardhat",
+      "OpenZeppelin",
+      "React Native",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Google Cloud Platform"
+    ],
+    "industries": ["fintech"],
+    "solutions": ["loyalty-platform", "nft-marketplace"],
+    "technologies": ["ethereum", "solidity"],
+    "relatedCaseStudies": ["bbva", "bitso"]
   }
 ]

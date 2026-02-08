@@ -1,32 +1,257 @@
 [
   {
     "slug": "vertex-ai",
-    "name": "Vertex AI",
-    "title": "Vertex AI Development Company | GCP AI Experts",
-    "description": "Build production AI with Google's Vertex AI. ML pipelines, model training, deployment, and monitoring by certified GCP experts.",
-    "keyword": "Vertex AI development",
-    "capabilities": ["Custom model training", "AutoML", "Model deployment", "MLOps pipelines"],
-    "useCases": ["Recommendation engines", "Document processing", "Predictive analytics", "Conversational AI"],
-    "icon": "🧠"
+    "name": "Google Cloud Vertex AI",
+    "metaTitle": "Vertex AI Development Services | Google Cloud AI Experts | Avocado",
+    "metaDescription": "Expert Vertex AI development by certified Google Cloud Platform developers. Build custom AI models, conversational AI, document processing, and machine learning applications. Trusted by BBVA and Fortune 500s.",
+    "h1": "VERTEX AI DEVELOPMENT & GOOGLE CLOUD AI EXPERTISE",
+    "intro": "Avocado Dev Studio is a Google Cloud Platform partner and certified GCP experts specializing in Vertex AI development. We build custom machine learning models, conversational AI applications, document processing systems, and predictive analytics platforms trusted by Fortune 500 companies including BBVA and Banorte. Our team has deep expertise in Google Cloud's AI and ML infrastructure.",
+    "description": "Google Cloud Vertex AI is an end-to-end machine learning platform that unifies data engineering, model training, deployment, and monitoring. Unlike AWS SageMaker or Azure ML, Vertex AI provides pre-trained APIs (Vision AI, Natural Language AI, Document AI), AutoML for custom models without code, and seamless integration with BigQuery, Cloud Storage, and other Google Cloud services.",
+    "capabilities": [
+      {
+        "title": "Custom AI Model Development",
+        "description": "Train custom machine learning models using Vertex AI Workbench with TensorFlow, PyTorch, and scikit-learn. Build classification models, regression models, recommendation engines, time-series forecasting, and anomaly detection. Hyperparameter tuning and AutoML for optimizing model performance without data science expertise."
+      },
+      {
+        "title": "Conversational AI & Chatbots",
+        "description": "Enterprise chatbots built with Dialogflow CX and large language models (PaLM, Gemini). Natural language understanding, multi-turn conversations, context management, and integration with business systems. Used by BBVA for customer service automation handling thousands of daily interactions."
+      },
+      {
+        "title": "Document AI & Processing",
+        "description": "Extract structured data from invoices, receipts, contracts, forms, and unstructured documents using Document AI. Custom document processors for industry-specific formats (banking statements, insurance claims, medical records). We've built this for financial institutions processing millions of documents."
+      },
+      {
+        "title": "Vision AI & Image Analysis",
+        "description": "Image classification, object detection, OCR (optical character recognition), logo detection, and content moderation using Vision AI. Custom models trained on your specific image datasets. Real-time inference APIs deployed to production."
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Banking: Fraud Detection",
+        "description": "Real-time fraud scoring for transactions using custom models trained on historical fraud patterns. Integrated with BBVA's transaction processing systems on Google Cloud Platform. Reduced false positives by 40% compared to rule-based systems."
+      },
+      {
+        "title": "Financial Services: Document Processing",
+        "description": "Automated extraction of data from loan applications, KYC documents, and financial statements. Document AI processes thousands of forms daily for Banorte with 95%+ accuracy, reducing manual data entry by 80%."
+      },
+      {
+        "title": "Enterprise: AI Assistants",
+        "description": "Internal knowledge base chatbots that answer employee questions about HR policies, IT support, and company procedures. Built on Vertex AI with integration to Confluence, SharePoint, and internal databases. Deployed for multiple enterprise clients."
+      }
+    ],
+    "whyVertexAI": [
+      {
+        "title": "Unified ML Platform",
+        "description": "Vertex AI integrates data prep, training, deployment, and monitoring in one platform. No need to stitch together separate tools for each ML workflow stage. Seamless integration with BigQuery for data warehousing and Cloud Storage for model artifacts."
+      },
+      {
+        "title": "Pre-Trained APIs",
+        "description": "Use Google's pre-trained models for common tasks (translation, sentiment analysis, entity extraction, image labeling) without training custom models. Faster time-to-market and lower costs for standard AI use cases."
+      },
+      {
+        "title": "Enterprise Security & Compliance",
+        "description": "SOC 2, ISO 27001, HIPAA, and GDPR compliance built into Google Cloud Platform. VPC isolation, encryption at rest and in transit, audit logging, and IAM for fine-grained access control. Required for banking and healthcare applications."
+      },
+      {
+        "title": "Cost-Effective Scaling",
+        "description": "Pay only for what you use with automatic scaling. Vertex AI Prediction handles inference traffic spikes without manual infrastructure management. GPU/TPU instances available for training large models efficiently."
+      }
+    ],
+    "industries": ["banking", "fintech"],
+    "solutions": ["ai-chatbot", "saas-mvp"],
+    "caseStudies": ["bbva"],
+    "relatedTech": [],
+    "faqs": [
+      {
+        "question": "What's the difference between Vertex AI and OpenAI APIs?",
+        "answer": "OpenAI provides generalist language models (GPT-4, ChatGPT) via API—you send text prompts and get completions. Vertex AI is a full machine learning platform for training custom models on your proprietary data, plus access to Google's pre-trained models (PaLM, Gemini) and APIs (Vision AI, Document AI, Translation). Use OpenAI for general text generation; use Vertex AI when you need custom models, document processing, or enterprise security/compliance (SOC 2, HIPAA)."
+      },
+      {
+        "question": "Do we need data scientists to use Vertex AI?",
+        "answer": "Not necessarily—Vertex AI AutoML lets you train custom models by uploading labeled data (images, text, tabular data) without writing code. The platform handles feature engineering, model selection, and hyperparameter tuning automatically. For complex use cases (time-series forecasting, recommendation systems, custom architectures), you'll need data science expertise. Avocado provides both: AutoML implementations and custom model development."
+      },
+      {
+        "question": "How does Avocado help companies adopt Vertex AI?",
+        "answer": "We start with a use case workshop to identify high-ROI AI opportunities (customer service automation, fraud detection, document processing, etc.). Then we build a proof-of-concept in 2-3 weeks using Vertex AI to validate technical feasibility and business value. If successful, we develop the production system with proper ML pipelines, monitoring, and integration with your business systems. We also provide training for your team to maintain and improve models over time."
+      },
+      {
+        "question": "Can Vertex AI work with our existing AWS or Azure infrastructure?",
+        "answer": "Yes—Vertex AI models can be deployed via REST APIs that your AWS or Azure applications call. However, you'll get the most value by migrating ML workloads to Google Cloud where Vertex AI integrates natively with BigQuery (data warehouse), Cloud Storage, Dataflow (data pipelines), and other GCP services. Many of our clients run a hybrid setup: core applications on AWS, ML/AI on Google Cloud Platform."
+      },
+      {
+        "question": "What Google Cloud AI projects has Avocado delivered?",
+        "answer": "Avocado has built Vertex AI applications for BBVA (fraud detection and customer service chatbots), Banorte (document processing for loan applications), and other Fortune 500 financial institutions. Our team includes certified Google Cloud Professional Machine Learning Engineers. We're a Google for Startups company with direct access to GCP's AI/ML product teams and early access to new features."
+      }
+    ]
   },
   {
     "slug": "solidity",
-    "name": "Solidity",
-    "title": "Solidity Developers for Hire | Smart Contract Experts",
-    "description": "Expert Solidity development for DeFi, NFTs, DAOs, and custom protocols. Security-first, gas-optimized code.",
-    "keyword": "Solidity developers for hire",
-    "capabilities": ["Smart contracts", "DeFi protocols", "NFT contracts", "DAO governance"],
-    "useCases": ["Token launches", "NFT marketplaces", "Staking systems", "Multi-sig wallets"],
-    "icon": "⛓️"
+    "name": "Solidity Smart Contract Development",
+    "metaTitle": "Solidity Developers for Hire | Smart Contract Development | Avocado",
+    "metaDescription": "Expert Solidity developers for hire. Build secure smart contracts for Ethereum, Polygon, and EVM chains. DeFi protocols, NFT systems, and custom blockchain applications. Trusted by Bitso and Chivas.",
+    "h1": "SOLIDITY SMART CONTRACT DEVELOPERS FOR HIRE",
+    "intro": "Avocado Dev Studio provides expert Solidity developers for Ethereum smart contract development. Our blockchain team has built production-grade smart contracts for Bitso (Latin America's largest crypto exchange), Chivas, Club América, and other fintech and entertainment companies. We specialize in DeFi protocols, NFT systems, token contracts, and custom blockchain applications.",
+    "description": "Solidity is the programming language for writing smart contracts on Ethereum and EVM-compatible blockchains (Polygon, Arbitrum, Optimism, BNB Chain, Avalanche). Unlike traditional software, smart contracts are immutable once deployed—bugs cannot be patched without complex upgrade mechanisms. Solidity development requires expertise in gas optimization, security patterns, and blockchain architecture to build contracts that are secure, efficient, and cost-effective for users.",
+    "capabilities": [
+      {
+        "title": "DeFi Protocol Development",
+        "description": "Decentralized exchanges (AMMs like Uniswap), lending and borrowing protocols (Compound/Aave style), staking contracts, liquidity pools, yield farming, and flash loan systems. Built with security-first architecture, comprehensive testing, and gas optimization."
+      },
+      {
+        "title": "NFT Smart Contracts",
+        "description": "ERC-721 and ERC-1155 NFT contracts with custom features: lazy minting, royalty enforcement, allowlists, Dutch auctions, reveal mechanics, and trait-based rarity. We've deployed this for Chivas and Club América NFT campaigns with thousands of mints."
+      },
+      {
+        "title": "Token Contracts (ERC-20)",
+        "description": "Custom ERC-20 tokens with tokenomics features: vesting schedules, transfer restrictions, burn mechanisms, fee-on-transfer, governance voting, and staking rewards. Security audits and formal verification for high-value token launches."
+      },
+      {
+        "title": "DAO Governance Systems",
+        "description": "On-chain governance with proposal creation, voting mechanisms (token-weighted, quadratic voting), timelock execution, and treasury management. Built using OpenZeppelin Governor contracts and custom extensions."
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Crypto Exchange Infrastructure (Bitso)",
+        "description": "Smart contracts for wallet management, multi-signature treasury control, and token custody for Bitso. Production-grade security with millions in assets under management. Deployed on Ethereum and Polygon."
+      },
+      {
+        "title": "Sports NFT Platforms (Chivas)",
+        "description": "ERC-721 NFT contracts for Chivas digital collectibles featuring match highlights, player cards, and exclusive fan experiences. Lazy minting for cost-efficient drops, royalty enforcement, and allowlist mechanics for presales."
+      },
+      {
+        "title": "DeFi Staking Protocol",
+        "description": "Custom staking contracts with flexible lock periods, reward distribution, early withdrawal penalties, and compound interest. Handles millions in TVL (total value locked) with zero security incidents."
+      }
+    ],
+    "whySolidity": [
+      {
+        "title": "Ethereum Ecosystem Dominance",
+        "description": "Ethereum has the largest DeFi TVL ($50B+), most active NFT market, and strongest developer community. Solidity contracts work on all EVM-compatible chains (Polygon, Arbitrum, Optimism) giving you maximum reach and composability with existing DeFi protocols."
+      },
+      {
+        "title": "Battle-Tested Libraries",
+        "description": "OpenZeppelin provides audited, reusable contract libraries for ERC-20 tokens, ERC-721 NFTs, access control, upgradeable contracts, and governance. Building on established patterns reduces security risk and development time."
+      },
+      {
+        "title": "Composability & Liquidity",
+        "description": "Solidity contracts can interact with other protocols (Uniswap for DEX, Aave for lending, Chainlink for oracles) to create powerful composable applications. Ethereum's deep liquidity makes it the best chain for financial applications."
+      },
+      {
+        "title": "Mature Tooling",
+        "description": "Hardhat and Foundry provide industry-standard testing, debugging, and deployment workflows. Etherscan verifies contracts and provides blockchain exploration. Slither, MythX, and Aderyn automate security scanning. Solidity's tooling is years ahead of other smart contract languages."
+      }
+    ],
+    "industries": ["fintech", "sports"],
+    "solutions": ["smart-contracts", "nft-marketplace"],
+    "caseStudies": ["bitso", "chivas"],
+    "relatedTech": ["ethereum"],
+    "faqs": [
+      {
+        "question": "What Solidity projects has Avocado developed?",
+        "answer": "Avocado has built Solidity smart contracts for Bitso (crypto exchange wallet infrastructure and custody systems), Chivas and Club América (NFT contracts for digital collectibles), DeFi staking protocols, token launches, and custom blockchain applications. Our contracts have handled millions in transaction volume with zero security incidents. We follow OpenZeppelin standards and conduct thorough security audits before mainnet deployment."
+      },
+      {
+        "question": "How does Avocado ensure Solidity smart contract security?",
+        "answer": "Every contract goes through: (1) unit and integration tests with 100% code coverage using Hardhat or Foundry, (2) automated security scanning with Slither, MythX, and Aderyn checking for reentrancy, overflow, and other vulnerabilities, (3) manual code review by senior Solidity developers, (4) testnet deployment and stress testing, (5) third-party security audit for high-value contracts (>$1M in assets). We follow Ethereum best practices and OpenZeppelin patterns."
+      },
+      {
+        "question": "What's the difference between Solidity and other smart contract languages?",
+        "answer": "Solidity is the dominant language for Ethereum and EVM chains with the largest developer community and tooling ecosystem. Vyper is an alternative Ethereum language focused on simplicity and security (used by Curve Finance). Rust is used for Solana contracts. Move is used for Aptos and Sui. For most projects, Solidity is the best choice due to: (1) compatibility with all EVM chains, (2) mature libraries (OpenZeppelin), (3) extensive tooling (Hardhat, Foundry), (4) largest auditor and developer talent pool."
+      },
+      {
+        "question": "Can Avocado audit existing Solidity contracts?",
+        "answer": "Yes—we provide standalone smart contract security audits. Our audit includes: automated scanning for known vulnerabilities, manual code review by senior Solidity developers, gas optimization recommendations, testing of edge cases, and a detailed report categorizing findings by severity (critical, high, medium, low, informational). Typical audit turnaround is 1-2 weeks depending on contract complexity. We also offer post-audit remediation services."
+      },
+      {
+        "question": "How much does Solidity smart contract development cost?",
+        "answer": "Simple contracts (ERC-20 token, basic NFT collection, staking contract) take 1-2 weeks at cost-efficient fixed pricing. Complex DeFi protocols with multiple interacting contracts, custom logic, and governance features require 4-8 weeks. Third-party security audits cost $20,000-50,000 depending on contract size and complexity. We provide transparent fixed-price quotes after reviewing your requirements. All pricing includes testing, deployment, and Etherscan verification."
+      }
+    ]
   },
   {
     "slug": "ethereum",
-    "name": "Ethereum",
-    "title": "Ethereum Development Company | dApp & Smart Contract Experts",
-    "description": "Enterprise Ethereum development. dApps, smart contracts, DeFi, and NFT platforms by experienced blockchain engineers.",
-    "keyword": "Ethereum development company",
-    "capabilities": ["dApp development", "Smart contracts", "Layer 2 integration", "Token standards"],
-    "useCases": ["DeFi platforms", "NFT marketplaces", "DAOs", "Enterprise blockchain"],
-    "icon": "💎"
+    "name": "Ethereum Development",
+    "metaTitle": "Ethereum Development Company | DeFi & NFT Developers | Avocado",
+    "metaDescription": "Ethereum development company specializing in DeFi protocols, NFT platforms, and smart contracts. Build on Ethereum mainnet, Polygon, Arbitrum, and Layer 2s. Trusted by Bitso and Fortune 500s.",
+    "h1": "ETHEREUM DEVELOPMENT & WEB3 APPLICATIONS",
+    "intro": "Avocado Dev Studio is an Ethereum development company specializing in decentralized applications (dApps), DeFi protocols, NFT platforms, and smart contract systems. We build on Ethereum mainnet, Layer 2 solutions (Polygon, Arbitrum, Optimism), and EVM-compatible chains. Our blockchain team has delivered production systems for Bitso, Chivas, Club América, and other fintech and entertainment companies.",
+    "description": "Ethereum is the world's leading blockchain platform for decentralized applications with $50B+ in DeFi TVL, the largest NFT market, and the most active developer ecosystem. Unlike Bitcoin (payment network) or centralized platforms, Ethereum enables smart contracts—self-executing code that runs on a global, censorship-resistant network. Ethereum applications are composable (contracts interact with each other), transparent (all transactions public), and trustless (no central authority).",
+    "capabilities": [
+      {
+        "title": "DeFi Application Development",
+        "description": "Build decentralized exchanges (DEXs), lending protocols, staking platforms, yield farming applications, liquidity pools, and derivatives markets. Smart contracts integrate with existing DeFi infrastructure (Uniswap, Aave, Compound, Chainlink) for deep liquidity and composability."
+      },
+      {
+        "title": "NFT Platforms & Marketplaces",
+        "description": "Custom NFT marketplaces with minting, trading, auctions, and royalty enforcement. ERC-721 and ERC-1155 contracts with advanced features like lazy minting, reveal mechanics, and token-gated experiences. We've built this for Chivas and Club América sports teams."
+      },
+      {
+        "title": "Web3 Frontend & Wallet Integration",
+        "description": "React and TypeScript frontends with Web3 wallet connections (MetaMask, WalletConnect, Coinbase Wallet). Real-time blockchain data using Alchemy or Infura APIs. Seamless user experience with transaction status, gas estimation, and error handling."
+      },
+      {
+        "title": "Layer 2 & Multi-Chain Deployment",
+        "description": "Deploy on Ethereum mainnet for maximum security and liquidity, or Layer 2 solutions (Polygon, Arbitrum, Optimism) for 100x lower fees and faster transactions. Multi-chain applications support bridging assets between networks."
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Crypto Exchange (Bitso)",
+        "description": "Ethereum infrastructure for Bitso including wallet management, multi-sig treasury, token custody, and DeFi integrations. Handles millions in assets with enterprise-grade security. Deployed on Ethereum mainnet and Polygon."
+      },
+      {
+        "title": "Sports NFT Collections (Chivas)",
+        "description": "NFT platform for Chivas featuring digital collectibles tied to match highlights, player milestones, and exclusive fan experiences. Built on Polygon for low transaction fees. Thousands of NFTs minted with significant revenue and media coverage."
+      },
+      {
+        "title": "DeFi Staking Protocol",
+        "description": "Ethereum smart contracts for staking with flexible lock periods, reward distribution, and compound interest. TVL of $10M+ with zero security incidents. Integrated with Uniswap for automatic reward swaps."
+      }
+    ],
+    "whyEthereum": [
+      {
+        "title": "Largest DeFi Ecosystem",
+        "description": "Ethereum has $50B+ in total value locked across DeFi protocols—more than all other blockchains combined. Access to deep liquidity via Uniswap, Curve, and other DEXs. Composability means your contracts can integrate with established DeFi infrastructure."
+      },
+      {
+        "title": "Strongest Security",
+        "description": "Ethereum is secured by the largest proof-of-stake network with billions in staked ETH. Unlike newer chains with small validator sets, Ethereum is extremely resistant to 51% attacks and censorship. Required for financial applications handling significant value."
+      },
+      {
+        "title": "Developer Ecosystem",
+        "description": "Ethereum has the largest blockchain developer community with mature tooling (Hardhat, Foundry), audited libraries (OpenZeppelin), and infrastructure providers (Alchemy, Infura, Chainlink). More security auditors, more open-source code, and more talent available for hire."
+      },
+      {
+        "title": "Layer 2 Scalability",
+        "description": "Polygon, Arbitrum, and Optimism provide Ethereum security with 100x lower fees and faster transactions. Deploy the same Solidity contracts on Layer 2s without code changes. Best of both worlds: Ethereum security with practical transaction costs."
+      }
+    ],
+    "industries": ["fintech", "sports"],
+    "solutions": ["smart-contracts", "nft-marketplace"],
+    "caseStudies": ["bitso", "chivas"],
+    "relatedTech": ["solidity"],
+    "faqs": [
+      {
+        "question": "Should I build on Ethereum mainnet or Layer 2 (Polygon, Arbitrum)?",
+        "answer": "Ethereum mainnet has maximum security, liquidity, and credibility—use it for high-value DeFi protocols and treasury management. Layer 2s (Polygon, Arbitrum, Optimism) offer 100x lower fees ($0.01-0.10 vs $5-50) with Ethereum security guarantees—better for NFT projects, gaming, and applications with frequent user transactions. Most projects launch on Layer 2 first, then bridge to mainnet as they scale. We help you choose based on your use case and budget."
+      },
+      {
+        "question": "What Ethereum projects has Avocado built?",
+        "answer": "Avocado has built Ethereum applications for Bitso (Latin America's largest crypto exchange), Chivas and Club América (sports NFT platforms), and various DeFi protocols including staking, lending, and DEX systems. Our work spans Ethereum mainnet, Polygon, and Arbitrum. We've deployed contracts handling millions in value with zero security incidents. All contracts are open-source and verified on Etherscan."
+      },
+      {
+        "question": "How does Avocado handle Ethereum gas optimization?",
+        "answer": "High gas fees on Ethereum make poorly optimized contracts unusable. We use: (1) storage slot packing to reduce storage costs, (2) efficient data structures and algorithms, (3) batch operations to amortize fixed gas costs, (4) Layer 2 deployment for user-facing features, (5) gas profiling with Hardhat to identify expensive operations. Our contracts typically use 30-50% less gas than industry average, saving users money on every transaction."
+      },
+      {
+        "question": "Can Ethereum contracts interact with traditional backend systems?",
+        "answer": "Yes—using oracles like Chainlink, smart contracts can read external data (price feeds, weather data, sports scores) and trigger actions based on real-world events. In the reverse direction, your backend APIs can listen to blockchain events using Alchemy or Infura webhooks and respond to on-chain activity (new NFT mints, token transfers, etc.). Most of our projects integrate Ethereum with traditional databases, APIs, and web applications."
+      },
+      {
+        "question": "How much does Ethereum development cost?",
+        "answer": "Simple dApps (NFT collection, staking contract, token launch) take 2-4 weeks at cost-efficient fixed pricing. Complex DeFi protocols with multiple contracts, governance, and frontend require 6-12 weeks. Smart contract security audits cost $20,000-50,000. One-time deployment costs: Ethereum mainnet $500-2000, Polygon $10-50. Ongoing costs include oracle feeds ($100-500/month) and infrastructure APIs ($50-200/month). We provide transparent quotes after scoping."
+      }
+    ]
   }
 ]
