@@ -280,14 +280,14 @@ export function AIAgents() {
       <Section className="py-20">
         <div className="max-w-3xl mx-auto">
           <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; WHY_US</div>
-          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-8">ENGINEERING STUDIO FIRST. AI AGENTS SECOND.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-8">ENGINEERING STUDIO WITH AI SUPERPOWERS</h2>
 
           <div className="space-y-6 text-white/80 text-base">
             <p>
-              We've been shipping production software since 2018 — for banks, fintechs, and enterprises. When we started building AI agents, we already knew how systems talk to each other, how to handle data at scale, and how to deploy things that don't break at 3am.
+              We've been shipping production software since 2018 — for banks, fintechs, and enterprises. Selected by Google for Startups for both our AI and blockchain work. When we build agents, we bring real engineering depth: systems architecture, data pipelines, cloud infrastructure, and the kind of integration experience you only get from years of enterprise delivery.
             </p>
             <p>
-              That matters. Most "AI agencies" know prompts. We know infrastructure.
+              Most AI shops started yesterday. We started in production.
             </p>
           </div>
 
