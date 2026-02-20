@@ -312,6 +312,79 @@ export function AIAgents() {
         </div>
       </Section>
 
+      {/* Spectrum */}
+      <Section className="py-20 bg-void-surface">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; DEPTH</div>
+          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-8">FROM CHATBOT TO EXPERT SYSTEM</h2>
+
+          <p className="text-white/80 text-base mb-8">
+            Not every problem needs the same level of intelligence. We build agents at every level of complexity — from simple responders to autonomous systems that reason over your entire business.
+          </p>
+
+          <div className="space-y-4">
+            {[
+              {
+                level: 'LEVEL 1',
+                title: 'Conversational',
+                desc: 'Answers questions, handles FAQs, routes requests. Knows your product and speaks your tone. Deployed in hours.',
+              },
+              {
+                level: 'LEVEL 2',
+                title: 'Workflow',
+                desc: 'Executes multi-step processes across your tools. Reads input, makes decisions, takes actions, reports back. The workhorse.',
+              },
+              {
+                level: 'LEVEL 3',
+                title: 'Expert System',
+                desc: 'Deep domain knowledge. Reasons over complex data, handles edge cases, learns from feedback. Becomes a specialist in your business logic.',
+              },
+            ].map(item => (
+              <Card key={item.level} className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="text-signal text-xs font-mono whitespace-nowrap pt-1">{item.level}</div>
+                  <div>
+                    <h3 className="text-white font-mono font-bold mb-1">{item.title}</h3>
+                    <p className="text-white/70 text-sm">{item.desc}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* OpenClaw */}
+      <Section className="py-20">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; POWERED_BY</div>
+          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-8">OPENCLAW — OPEN-SOURCE AGENT INFRASTRUCTURE</h2>
+
+          <div className="space-y-6 text-white/80 text-base">
+            <p>
+              We deploy agents on <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" className="text-signal hover:underline">OpenClaw</a> — an open-source agent platform that runs on your infrastructure. Not ours. Yours.
+            </p>
+            <p>
+              Your agents live where your team already works — Slack, WhatsApp, Discord, Teams, email. No new dashboards to learn. No vendor portal. They show up in the tools you already use, ready to work.
+            </p>
+          </div>
+
+          <div className="bg-void-surface border border-signal/20 rounded-lg p-6 my-8">
+            <div className="text-signal text-xs font-mono mb-3">&gt; WHY_OPEN_SOURCE</div>
+            <ul className="space-y-2 text-white/80 text-sm">
+              <li className="font-mono">→ Runs on your cloud, your servers, your rules</li>
+              <li className="font-mono">→ Full visibility into what your agents are doing</li>
+              <li className="font-mono">→ No monthly platform fees — you own the stack</li>
+              <li className="font-mono">→ Connect to any messaging platform, any API, any tool</li>
+            </ul>
+          </div>
+
+          <p className="text-white/60 text-base">
+            Closed platforms lock you in. We give you the keys.
+          </p>
+        </div>
+      </Section>
+
       {/* The Numbers */}
       <Section className="py-20 bg-void-surface">
         <div className="text-center max-w-2xl mx-auto mb-16">
