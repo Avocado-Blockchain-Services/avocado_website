@@ -17,7 +17,7 @@ const organizationSchema = {
   "@id": "https://avocadoblock.com/#organization",
   "name": "Avocado",
   "alternateName": ["Avocado Dev Studio", "Avocado"],
-  "description": "High-velocity engineering studio that ships MVPs in weeks, not quarters. Specializing in AI/ML products, blockchain applications, and scalable web platforms.",
+  "description": "Engineering studio that builds products and deploys AI agents. We ship MVPs in weeks, then automate your business workflows with custom AI agents. Specializing in AI/ML, blockchain, and scalable web platforms.",
   "url": "https://avocadoblock.com",
   "logo": {
     "@type": "ImageObject",
@@ -99,8 +99,8 @@ export function Home() {
   return (
     <>
       <SEO
-        title="Ship in weeks, not quarters"
-        description="High-velocity engineering studio that ships MVPs in weeks, not quarters. Specializing in AI/ML products, blockchain applications, and scalable web platforms."
+        title="We Build It. Then We Automate It. | Avocado"
+        description="Avocado ships products in weeks and deploys AI agents that automate your business. MVP development, AI agent automation, blockchain — trusted by BBVA, Banorte, Bitso. ISO 27001 certified."
       />
       <Schema data={organizationSchema} />
 
@@ -168,6 +168,40 @@ export function Home() {
         <div className="text-center mt-14">
           <Button variant="secondary" asChild>
             <a href="/company">Enterprise clients. Startup speed. -&gt;</a>
+          </Button>
+        </div>
+      </Section>
+
+      {/* AI Agents Feature */}
+      <Section id="ai-agents" className="py-24">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; AI AGENTS</div>
+          <h2 className="text-3xl md:text-4xl font-bold font-mono mb-4 text-white">YOUR BUSINESS, ON AUTOPILOT</h2>
+          <p className="text-white/80 text-lg mb-2">We built AI agents for our own team first. Lead response, CRM updates, daily reports — all automated.</p>
+          <p className="text-white/60 text-base">Now we build them for yours.</p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+          <Card className="p-6">
+            <div className="text-signal text-xs font-mono mb-3">LEAD QUALIFICATION</div>
+            <h3 className="text-xl font-bold text-white font-mono mb-2">Scout</h3>
+            <p className="text-white/70">Responds to every inbound lead in minutes. Qualifies, enriches, and books meetings with your team.</p>
+          </Card>
+          <Card className="p-6">
+            <div className="text-signal text-xs font-mono mb-3">CUSTOMER SUPPORT</div>
+            <h3 className="text-xl font-bold text-white font-mono mb-2">Concierge</h3>
+            <p className="text-white/70">Handles customer questions across email and chat. Knows your product. Escalates when it matters.</p>
+          </Card>
+          <Card className="p-6">
+            <div className="text-signal text-xs font-mono mb-3">OPS & REPORTING</div>
+            <h3 className="text-xl font-bold text-white font-mono mb-2">Pulse</h3>
+            <p className="text-white/70">Daily summaries, CRM updates, pipeline reports — in your Slack before your morning coffee.</p>
+          </Card>
+        </div>
+
+        <div className="text-center">
+          <Button variant="secondary" asChild>
+            <a href="/ai-agents">See all agents & how we deploy them →</a>
           </Button>
         </div>
       </Section>
