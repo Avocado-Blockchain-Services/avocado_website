@@ -6,6 +6,7 @@ import { Signal } from '@/pages/Signal'
 import { Ventures } from '@/pages/Ventures'
 import { Services } from '@/pages/Services'
 import { Protocol } from '@/pages/Protocol'
+import { AIAgents } from '@/pages/AIAgents'
 import { Company } from '@/pages/Company'
 import { MVPDevelopment } from '@/pages/MVPDevelopment'
 import { IndustryRouter } from '@/pages/industries'
@@ -28,6 +29,7 @@ function App() {
         <Route path="/signal" element={<Signal />} />
         <Route path="/products" element={<Ventures />} />
         <Route path="/ventures" element={<Ventures />} />
+        <Route path="/ai-agents" element={<AIAgents />} />
         <Route path="/services" element={<Services />} />
         <Route path="/playbook" element={<Protocol />} />
         <Route path="/protocol" element={<Protocol />} />
