@@ -279,36 +279,36 @@ export function AIAgents() {
       {/* Our Story */}
       <Section className="py-20">
         <div className="max-w-3xl mx-auto">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; ORIGIN_STORY</div>
-          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-8">WE DIDN'T START AS AN AI AGENCY</h2>
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; WHY_US</div>
+          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-8">ENGINEERING STUDIO FIRST. AI AGENTS SECOND.</h2>
 
           <div className="space-y-6 text-white/80 text-base">
             <p>
-              Avocado has been building software since 2018. MVPs, blockchain platforms, AI pipelines — for clients like BBVA, Banorte, and Bitso. We're a small team that punches above its weight.
+              We've been shipping production software since 2018 — for banks, fintechs, and enterprises. When we started building AI agents, we already knew how systems talk to each other, how to handle data at scale, and how to deploy things that don't break at 3am.
             </p>
             <p>
-              But internally? We were drowning in the same manual work every small company deals with. Leads came in and sat unanswered. Reports that should take 5 minutes took an hour because someone had to pull data from three different tools. The CRM was always outdated.
-            </p>
-            <p>
-              In 2024 we started experimenting. We gave an AI model access to our inbox. Built an agent that drafted responses to customer inquiries. Then another that synced our CRM after every call. Then a browser agent that checked competitor pricing every morning and posted a summary in Slack.
-            </p>
-
-            <div className="bg-void-surface border border-signal/20 rounded-lg p-6 my-8">
-              <div className="text-signal text-xs font-mono mb-2">&gt; WHAT_CHANGED</div>
-              <ul className="space-y-2 text-white font-mono text-sm">
-                <li>→ Lead response time: hours → minutes</li>
-                <li>→ Weekly reports: manual half-day → automatic by morning</li>
-                <li>→ CRM accuracy: "we'll update it later" → always current</li>
-              </ul>
-            </div>
-
-            <p>
-              We're model-agnostic — we use Claude for reasoning and customer-facing work, open-source models for batch processing, and pick the right tool for each job. We've learned what works, what breaks, and where you still need a human in the loop.
-            </p>
-            <p>
-              That's the difference between Avocado and every "AI agency" that appeared last year: <strong className="text-white">we run AI agents in our own business, every day.</strong> The agents handling your first inquiry when you contact us? Built by us, running on our infrastructure.
+              That matters. Most "AI agencies" know prompts. We know infrastructure.
             </p>
           </div>
+
+          <div className="bg-void-surface border border-signal/20 rounded-lg p-6 my-8">
+            <div className="text-signal text-xs font-mono mb-3">&gt; THE_STACK</div>
+            <div className="space-y-4 text-white/80 text-sm">
+              <div>
+                <span className="text-white font-mono font-bold">Google Cloud Vertex AI</span> — our default runtime for production agents. Enterprise-grade orchestration, grounding, and scaling. We're a 2x Google for Startups partner (AI + Blockchain).
+              </div>
+              <div>
+                <span className="text-white font-mono font-bold">Model-agnostic</span> — we pick the right model for the job. Claude for reasoning. Open-source for batch. Specialized models for domain tasks. No vendor lock-in.
+              </div>
+              <div>
+                <span className="text-white font-mono font-bold">Battle-tested integrations</span> — APIs, browser automation, legacy systems. If your team uses it, we can wire an agent into it.
+              </div>
+            </div>
+          </div>
+
+          <p className="text-white/60 text-base">
+            We don't just know AI. We know how to put it in production and keep it there.
+          </p>
         </div>
       </Section>
 
