@@ -49,7 +49,7 @@ export function SolutionsHub() {
             >
               <Card className="h-full p-8 hover:border-signal/50 transition-all">
                 <div className="flex items-start justify-between mb-4">
-                  <span className="text-3xl">{solution.icon || '⚡'}</span>
+                  <span className="text-3xl">{(solution as any).icon || '⚡'}</span>
                   <span className="text-white/40 font-mono text-sm group-hover:text-signal transition-colors">
                     [LEARN MORE →]
                   </span>
@@ -61,7 +61,7 @@ export function SolutionsHub() {
                   {solution.metaDescription}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {solution.techStack?.slice(0, 3).map((tech: string) => (
+                  {(solution as any).techStack?.slice(0, 3).map((tech: string) => (
                     <span 
                       key={tech} 
                       className="px-2 py-1 bg-void-elevated text-white/60 text-xs font-mono rounded"

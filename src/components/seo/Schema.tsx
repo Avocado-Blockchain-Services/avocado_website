@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-export function Schema({ data }: { data: object }) {
+export function Schema({ data, type: _type }: { data: object, type?: string }) {
   return (
     <Helmet>
       <script type="application/ld+json">

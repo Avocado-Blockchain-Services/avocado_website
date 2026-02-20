@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { Section } from '@/components/layout/Section'
 import { Card } from '@/components/ui/Card'
-import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { FAQ } from '@/components/marketing/FAQ'
 import { CTASection } from '@/components/marketing/CTASection'
@@ -87,41 +86,6 @@ const faqSchema = {
     }
   }))
 }
-
-const agents = [
-  {
-    name: 'Scout',
-    role: 'Lead Qualification Agent',
-    desc: 'Responds to every inbound lead in minutes. Enriches contact data, scores fit, and books meetings with your sales team. No lead falls through the cracks.',
-    replaces: 'Junior SDR tasks',
-    type: 'API + Human-in-the-loop',
-    stack: ['CRM', 'Email', 'Calendar'],
-  },
-  {
-    name: 'Concierge',
-    role: 'Customer Support Agent',
-    desc: 'Handles incoming customer questions across email and chat. Knows your product, follows your tone, escalates edge cases to your real team.',
-    replaces: 'Repetitive support tickets',
-    type: 'API + Browser',
-    stack: ['Email', 'Chat', 'Knowledge Base'],
-  },
-  {
-    name: 'Pulse',
-    role: 'Operations & Reporting Agent',
-    desc: 'Generates daily summaries, updates your CRM, tracks pipeline changes, and drops reports in Slack before your morning coffee.',
-    replaces: 'Manual reporting & data entry',
-    type: 'API',
-    stack: ['CRM', 'Slack', 'Sheets'],
-  },
-  {
-    name: 'Onboarder',
-    role: 'Client Onboarding Agent',
-    desc: 'Walks new clients through setup. Sends welcome sequences, collects documents, tracks completion, and flags blockers to your team.',
-    replaces: 'Repetitive onboarding steps',
-    type: 'API + Human-in-the-loop',
-    stack: ['Email', 'Forms', 'CRM'],
-  },
-]
 
 const integrationTypes = [
   {
@@ -262,9 +226,9 @@ export function AIAgents() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {integrationTypes.map((type, i) => (
+          {integrationTypes.map((type, idx) => (
             <Card key={type.title} className="p-6 flex flex-col gap-4">
-              <div className="text-signal text-xs font-mono">TYPE {i + 1}</div>
+              <div className="text-signal text-xs font-mono">TYPE {idx + 1}</div>
               <h3 className="text-xl font-bold text-white font-mono">{type.title}</h3>
               <p className="text-white/80 flex-1">{type.desc}</p>
               <div className="bg-void-surface border border-void-elevated rounded-lg p-3">
@@ -443,7 +407,7 @@ export function AIAgents() {
                 desc: 'Your agents learn and improve. We monitor performance, handle edge cases, and optimize based on real usage data. 30 days of support included.',
                 output: 'Performance reports, optimization recommendations, full handoff'
               },
-            ].map((phase, i) => (
+            ].map((phase) => (
               <div key={phase.phase} className="relative scroll-mt-24">
                 <div className="absolute -left-[41px] top-0 w-5 h-5 bg-void-pure border-2 border-signal rounded-full flex items-center justify-center">
                   <div className="w-2 h-2 bg-signal rounded-full" />

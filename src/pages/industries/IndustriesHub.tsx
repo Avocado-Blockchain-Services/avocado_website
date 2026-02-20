@@ -49,7 +49,7 @@ export function IndustriesHub() {
             >
               <Card className="h-full p-8 hover:border-signal/50 transition-all">
                 <div className="flex items-start justify-between mb-4">
-                  <span className="text-4xl">{industry.icon || '🏢'}</span>
+                  <span className="text-4xl">{(industry as any).icon || '🏢'}</span>
                   <span className="text-white/40 font-mono text-sm group-hover:text-signal transition-colors">
                     [EXPLORE →]
                   </span>
@@ -63,7 +63,7 @@ export function IndustriesHub() {
                 <div className="pt-4 border-t border-void-elevated">
                   <p className="text-white/40 text-sm font-mono mb-2">KEY CLIENTS:</p>
                   <div className="flex flex-wrap gap-2">
-                    {industry.clients?.slice(0, 3).map((client: string) => (
+                    {(industry as any).clients?.slice(0, 3).map((client: string) => (
                       <span 
                         key={client} 
                         className="text-white/80 text-sm"

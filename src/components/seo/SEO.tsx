@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-export function SEO({ title, description }: { title: string, description: string }) {
+export function SEO({ title, description, canonical }: { title: string, description: string, canonical?: string }) {
   return (
     <Helmet>
       <title>{title} | Avocado</title>
@@ -8,6 +8,7 @@ export function SEO({ title, description }: { title: string, description: string
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta name="twitter:card" content="summary_large_image" />
+      {canonical && <link rel="canonical" href={canonical} />}
     </Helmet>
   )
 }
