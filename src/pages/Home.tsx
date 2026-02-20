@@ -16,8 +16,8 @@ const organizationSchema = {
   "@type": "Organization",
   "@id": "https://avocadoblock.com/#organization",
   "name": "Avocado",
-  "alternateName": ["Avocado Dev Studio", "Avocado"],
-  "description": "Engineering studio that builds products and deploys AI agents. We ship MVPs in weeks, then automate your business workflows with custom AI agents. Specializing in AI/ML, blockchain, and scalable web platforms.",
+  "alternateName": ["Avocado Ventures", "Avocado Dev Studio"],
+  "description": "High-velocity engineering studio that ships MVPs in weeks, not quarters. Specializing in AI/ML products, blockchain applications, and scalable web platforms.",
   "url": "https://avocadoblock.com",
   "logo": {
     "@type": "ImageObject",
@@ -77,14 +77,6 @@ const organizationSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "AI Agent Automation",
-          "description": "Custom AI agents that automate business workflows — lead qualification, customer support, operations, and reporting"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
           "name": "Technical Rescue",
           "description": "Fix and stabilize failing or stalled projects"
         }
@@ -99,8 +91,8 @@ export function Home() {
   return (
     <>
       <SEO
-        title="We Build It. Then We Automate It. | Avocado"
-        description="Avocado ships products in weeks and deploys AI agents that automate your business. MVP development, AI agent automation, blockchain — trusted by BBVA, Banorte, Bitso. ISO 27001 certified."
+        title="Ship in weeks, not quarters"
+        description="High-velocity engineering studio that ships MVPs in weeks, not quarters. Specializing in AI/ML products, blockchain applications, and scalable web platforms."
       />
       <Schema data={organizationSchema} />
 
@@ -120,7 +112,7 @@ export function Home() {
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-16">
           <Card className="px-6 py-5 flex items-center gap-3">
             <div className="w-3 h-3 bg-signal rounded-full animate-pulse" />
-            <span className="font-mono text-white text-base">Google for Startups: AI + Blockchain</span>
+            <span className="font-mono text-white text-base">Google for Startups</span>
           </Card>
           <Card className="px-6 py-5 flex items-center gap-3">
             <div className="w-3 h-3 bg-signal rounded-full animate-pulse" />
@@ -172,44 +164,9 @@ export function Home() {
         </div>
       </Section>
 
-      {/* AI Agents Feature */}
-      <Section id="ai-agents" className="py-24">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; AI AGENTS</div>
-          <h2 className="text-3xl md:text-4xl font-bold font-mono mb-4 text-white">YOUR BUSINESS, ON AUTOPILOT</h2>
-          <p className="text-white/80 text-lg mb-2">We built AI agents for our own team first. Lead response, CRM updates, daily reports — all automated.</p>
-          <p className="text-white/60 text-base">Now we build them for yours.</p>
-        </div>
-
-        <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
-          <Card className="p-6 text-center">
-            <div className="text-signal text-2xl font-bold font-mono mb-2">READ</div>
-            <p className="text-white/60 text-sm">They understand your data, messages, and context.</p>
-          </Card>
-          <Card className="p-6 text-center">
-            <div className="text-signal text-2xl font-bold font-mono mb-2">REASON</div>
-            <p className="text-white/60 text-sm">They evaluate, prioritize, and decide what to do next.</p>
-          </Card>
-          <Card className="p-6 text-center">
-            <div className="text-signal text-2xl font-bold font-mono mb-2">ACT</div>
-            <p className="text-white/60 text-sm">They take real actions in your real systems.</p>
-          </Card>
-          <Card className="p-6 text-center">
-            <div className="text-signal text-2xl font-bold font-mono mb-2">ESCALATE</div>
-            <p className="text-white/60 text-sm">They know when to hand it to a human.</p>
-          </Card>
-        </div>
-
-        <div className="text-center">
-          <Button variant="secondary" asChild>
-            <a href="/ai-agents">See all agents & how we deploy them →</a>
-          </Button>
-        </div>
-      </Section>
-
       <Section id="method" className="py-24 bg-void-surface">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; PLAYBOOK</div>
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; PROTOCOL</div>
           <h2 className="text-3xl md:text-4xl font-bold font-mono mb-4 text-white">HOW WE WORK</h2>
           <p className="text-white/80 text-lg mb-2">Four phases. Results on day one. No death by meetings.</p>
           <p className="text-white/60 text-base">You see progress daily. Not PowerPoints. Not status reports. Working software.</p>

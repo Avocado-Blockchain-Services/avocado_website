@@ -237,22 +237,18 @@ export function MVPDevelopment() {
           <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">EXPLORE AVOCADO</h2>
           <p className="text-white/80 text-lg">Discover how we work and what we've built.</p>
         </div>
-        <div className="grid md:grid-cols-5 gap-6 max-w-5xl mx-auto">
-          <a href="/ai-agents" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'ai-agents' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
-            <div className="text-signal font-mono text-sm mb-2">AI AGENTS</div>
-            <p className="text-white/60 text-sm">Automate your business workflows</p>
-          </a>
+        <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           <a href="/playbook" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'playbook' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
-            <div className="text-signal font-mono text-sm mb-2">PLAYBOOK</div>
-            <p className="text-white/60 text-sm">Our 4-phase engineering process</p>
+            <div className="text-signal font-mono text-sm mb-2">PROTOCOL</div>
+            <p className="text-white/60 text-sm">Our 4-phase development process</p>
           </a>
           <a href="/services" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'services' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
             <div className="text-signal font-mono text-sm mb-2">SERVICES</div>
             <p className="text-white/60 text-sm">All development services we offer</p>
           </a>
           <a href="/products" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'products' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
-            <div className="text-signal font-mono text-sm mb-2">PRODUCTS</div>
-            <p className="text-white/60 text-sm">What we've built ourselves</p>
+            <div className="text-signal font-mono text-sm mb-2">VENTURES</div>
+            <p className="text-white/60 text-sm">Products we've built ourselves</p>
           </a>
           <a href="/company" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'company' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
             <div className="text-signal font-mono text-sm mb-2">COMPANY</div>
