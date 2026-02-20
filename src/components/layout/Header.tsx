@@ -42,9 +42,15 @@ export function Header() {
         </a>
 
         <nav className="hidden md:flex items-center gap-8 text-base">
-          {['Home', 'Company', 'Ventures', 'Services', 'Case Studies'].map((item) => (
-             <a key={item} href={item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`} className="text-white/90 hover:text-signal transition-colors">
-               {item}
+          {[
+            { label: 'Home', href: '/' },
+            { label: 'Company', href: '/company' },
+            { label: 'Products', href: '/products' },
+            { label: 'Services', href: '/services' },
+            { label: 'Case Studies', href: '/case-studies' },
+          ].map((item) => (
+             <a key={item.label} href={item.href} className="text-white/90 hover:text-signal transition-colors">
+               {item.label}
              </a>
           ))}
         </nav>

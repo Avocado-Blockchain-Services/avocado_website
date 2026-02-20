@@ -94,7 +94,7 @@ export function IndustryPage({ data }: IndustryPageProps) {
           </Button>
           <Button variant="secondary" asChild>
             <a
-              href="/protocol"
+              href="/playbook"
               onClick={() =>
                 trackEvent('Industry Hero CTA Clicked', {
                   industry: data.slug,

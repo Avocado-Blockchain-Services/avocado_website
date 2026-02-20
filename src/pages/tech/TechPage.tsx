@@ -162,7 +162,7 @@ export function TechPage({ data }: TechPageProps) {
           <div className="text-center">
             <Button variant="secondary" asChild>
               <a
-                href="/protocol"
+                href="/playbook"
                 onClick={() =>
                   trackEvent('Tech Capabilities CTA Clicked', {
                     technology: data.slug

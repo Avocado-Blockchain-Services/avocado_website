@@ -9,7 +9,7 @@ import { Schema } from '@/components/seo/Schema'
 const perseaAppSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://avocadoblock.com/ventures#persea-social",
+  "@id": "https://avocadoblock.com/products#persea-social",
   "name": "Persea Social",
   "description": "Social engagement platform for building authentic communities",
   "applicationCategory": "SocialNetworkingApplication",
@@ -27,7 +27,7 @@ const perseaAppSchema = {
 const perseaAiSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://avocadoblock.com/ventures#persea-ai",
+  "@id": "https://avocadoblock.com/products#persea-ai",
   "name": "Persea.ai",
   "description": "AI-powered data pipeline platform built on Google Cloud Vertex AI",
   "applicationCategory": "BusinessApplication",
@@ -45,7 +45,7 @@ const perseaAiSchema = {
 const notarySchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://avocadoblock.com/ventures#notary",
+  "@id": "https://avocadoblock.com/products#notary",
   "name": "Notary",
   "description": "Blockchain-based document verification and supply chain transparency platform",
   "applicationCategory": "BusinessApplication",
@@ -97,7 +97,7 @@ export function Ventures() {
   return (
     <>
       <SEO
-        title="Ventures | What We've Built"
+        title="Products | What We've Built"
         description="We build our own products. Persea Social and Persea.ai - proof we know what we're doing."
       />
       <Schema data={perseaAppSchema} />
@@ -106,7 +106,7 @@ export function Ventures() {
 
       <Section className="py-20">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; VENTURES</div>
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; PRODUCTS</div>
           <h1 className="text-4xl md:text-5xl font-bold font-mono text-white mb-4">OUR PRODUCTS</h1>
           <p className="text-text-secondary text-lg">We build our own products. This is the best proof we know what we're doing.</p>
         </div>

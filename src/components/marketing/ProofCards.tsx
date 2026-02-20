@@ -18,7 +18,7 @@ export function ProofCards() {
             </ul>
           </div>
           <Button variant="ghost" className="w-full border-t border-void-elevated mt-auto" asChild>
-             <a href="/ventures#persea-social">[View Case Study -&gt;]</a>
+             <a href="/products#persea-social">[View Case Study -&gt;]</a>
           </Button>
        </Card>
 
@@ -36,7 +36,7 @@ export function ProofCards() {
             </ul>
           </div>
           <Button variant="ghost" className="w-full border-t border-void-elevated mt-auto" asChild>
-             <a href="/ventures#persea-ai">[View Case Study -&gt;]</a>
+             <a href="/products#persea-ai">[View Case Study -&gt;]</a>
           </Button>
        </Card>
     </div>

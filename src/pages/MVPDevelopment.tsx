@@ -238,7 +238,7 @@ export function MVPDevelopment() {
           <p className="text-white/80 text-lg">Discover how we work and what we've built.</p>
         </div>
         <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          <a href="/protocol" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'protocol' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
+          <a href="/playbook" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'playbook' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
             <div className="text-signal font-mono text-sm mb-2">PROTOCOL</div>
             <p className="text-white/60 text-sm">Our 4-phase development process</p>
           </a>
@@ -246,7 +246,7 @@ export function MVPDevelopment() {
             <div className="text-signal font-mono text-sm mb-2">SERVICES</div>
             <p className="text-white/60 text-sm">All development services we offer</p>
           </a>
-          <a href="/ventures" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'ventures' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
+          <a href="/products" onClick={() => trackEvent('MVP Internal Link Clicked', { destination: 'products' })} className="block p-6 border border-void-elevated rounded-lg hover:border-signal transition-colors text-center">
             <div className="text-signal font-mono text-sm mb-2">VENTURES</div>
             <p className="text-white/60 text-sm">Products we've built ourselves</p>
           </a>

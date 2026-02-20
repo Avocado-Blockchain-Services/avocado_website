@@ -190,14 +190,14 @@ export function SolutionPage({ data }: SolutionPageProps) {
           <div className="text-center mt-12">
             <Button variant="primary" asChild>
               <a
-                href="/protocol"
+                href="/playbook"
                 onClick={() =>
                   trackEvent('Solution Process CTA Clicked', {
                     solution: data.slug
                   })
                 }
               >
-                Learn About Our Protocol →
+                Learn About Our Playbook →
               </a>
             </Button>
           </div>

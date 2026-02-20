@@ -7,7 +7,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "How Avocado Builds Software Products",
-  "description": "Our 4-phase engineering protocol for shipping production software in weeks, not quarters.",
+  "description": "Our 4-phase engineering playbook for shipping production software in weeks, not quarters.",
   "totalTime": "P8W",
   "estimatedCost": {
     "@type": "MonetaryAmount",
@@ -20,28 +20,28 @@ const howToSchema = {
       "position": 1,
       "name": "Recon",
       "text": "48-hour deep-dive into your requirements, existing codebase (if any), and success metrics. Output: Technical spec and architecture diagram.",
-      "url": "https://avocadoblock.com/protocol#recon"
+      "url": "https://avocadoblock.com/playbook#recon"
     },
     {
       "@type": "HowToStep",
       "position": 2,
       "name": "Scaffold",
       "text": "Set up infrastructure, CI/CD, and core architecture. First deployable artifact within 1 week.",
-      "url": "https://avocadoblock.com/protocol#scaffold"
+      "url": "https://avocadoblock.com/playbook#scaffold"
     },
     {
       "@type": "HowToStep",
       "position": 3,
       "name": "Sprint",
       "text": "Rapid iteration cycles with daily deployments. Weekly demos. Continuous feedback integration.",
-      "url": "https://avocadoblock.com/protocol#sprint"
+      "url": "https://avocadoblock.com/playbook#sprint"
     },
     {
       "@type": "HowToStep",
       "position": 4,
       "name": "Deploy",
       "text": "Production launch with monitoring, documentation, and handoff. Optional ongoing support engagement.",
-      "url": "https://avocadoblock.com/protocol#deploy"
+      "url": "https://avocadoblock.com/playbook#deploy"
     }
   ]
 }
@@ -81,14 +81,14 @@ export function Protocol() {
   return (
     <>
       <SEO
-        title="Protocol | How We Work"
-        description="Four phases. First code on day one. No death by meetings. Our engineering protocol ships production software in weeks, not quarters."
+        title="Playbook | How We Work"
+        description="Four phases. First code on day one. No death by meetings. Our engineering playbook ships production software in weeks, not quarters."
       />
       <Schema data={howToSchema} />
 
       <Section className="py-20">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; PROTOCOL</div>
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; PLAYBOOK</div>
           <h1 className="text-4xl md:text-5xl font-bold font-mono text-white mb-4">HOW WE WORK</h1>
           <p className="text-text-secondary text-lg">Four phases. First code on day one. No death by meetings.</p>
         </div>

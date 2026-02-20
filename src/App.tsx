@@ -26,8 +26,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signal" element={<Signal />} />
+        <Route path="/products" element={<Ventures />} />
         <Route path="/ventures" element={<Ventures />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/playbook" element={<Protocol />} />
         <Route path="/protocol" element={<Protocol />} />
         <Route path="/company" element={<Company />} />
         <Route path="/mvp-development" element={<MVPDevelopment />} />

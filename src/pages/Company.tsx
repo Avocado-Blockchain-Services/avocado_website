@@ -204,7 +204,7 @@ export function Company() {
       <Section className="py-24 text-center">
          <h2 className="text-2xl font-bold font-mono text-white mb-8">LOOKING FOR OUR PRODUCTS?</h2>
          <Button variant="ghost" asChild>
-           <a href="/ventures">See Persea Labs -&gt;</a>
+           <a href="/products">See Persea Labs -&gt;</a>
          </Button>
       </Section>
     </>
