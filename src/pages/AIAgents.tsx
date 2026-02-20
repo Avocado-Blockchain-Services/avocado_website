@@ -214,47 +214,42 @@ export function AIAgents() {
         </div>
       </Section>
 
-      {/* Meet Your New Team */}
+      {/* What Agents Do */}
       <Section className="py-20">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; AGENT_ROSTER</div>
-          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">MEET YOUR NEW TEAM</h2>
-          <p className="text-white/80 text-lg">Every agent is custom-built for your business. These are the roles we deploy most.</p>
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; CAPABILITIES</div>
+          <h2 className="text-3xl md:text-4xl font-bold font-mono text-white mb-4">THEY WORK LIKE YOUR BEST PEOPLE</h2>
+          <p className="text-white/80 text-lg">An AI agent isn't a chatbot. It's software that understands context, makes decisions, and takes action — inside your real systems.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {agents.map(agent => (
-            <Card key={agent.name} className="p-8">
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <div className="text-signal text-xs font-mono mb-1">{agent.role.toUpperCase()}</div>
-                  <h3 className="text-2xl font-bold text-white font-mono">{agent.name}</h3>
-                </div>
-                <Badge variant="outline">{agent.type}</Badge>
-              </div>
-
-              <p className="text-white/80 mb-4">{agent.desc}</p>
-
-              <div className="space-y-3">
-                <div>
-                  <div className="text-white/50 text-xs font-mono mb-1">REPLACES</div>
-                  <p className="text-white/70 text-sm">{agent.replaces}</p>
-                </div>
-                <div>
-                  <div className="text-white/50 text-xs font-mono mb-1">CONNECTS TO</div>
-                  <div className="flex flex-wrap gap-2">
-                    {agent.stack.map(s => (
-                      <Badge key={s}>{s}</Badge>
-                    ))}
-                  </div>
-                </div>
-              </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          {[
+            {
+              label: 'READ',
+              desc: 'They ingest your emails, messages, documents, and data. They understand what\'s happening across your business.',
+            },
+            {
+              label: 'REASON',
+              desc: 'They don\'t just follow rules. They evaluate context, weigh options, and decide what to do next — like a person would.',
+            },
+            {
+              label: 'ACT',
+              desc: 'They update systems, send messages, fill forms, call APIs, navigate apps. Real actions in your real tools.',
+            },
+            {
+              label: 'ESCALATE',
+              desc: 'They know their limits. When something needs human judgment, they flag it to your team — not after it\'s too late.',
+            },
+          ].map(item => (
+            <Card key={item.label} className="p-6">
+              <div className="text-signal text-2xl font-bold font-mono mb-3">{item.label}</div>
+              <p className="text-white/70 text-sm">{item.desc}</p>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-white/50 text-sm font-mono">Need a different agent? We build custom roles for your specific workflows.</p>
+          <p className="text-white/50 text-sm font-mono">Every agent is custom-built around your workflows. No templates. No one-size-fits-all.</p>
         </div>
       </Section>
 

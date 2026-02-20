@@ -181,21 +181,22 @@ export function Home() {
           <p className="text-white/60 text-base">Now we build them for yours.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-          <Card className="p-6">
-            <div className="text-signal text-xs font-mono mb-3">LEAD QUALIFICATION</div>
-            <h3 className="text-xl font-bold text-white font-mono mb-2">Scout</h3>
-            <p className="text-white/70">Responds to every inbound lead in minutes. Qualifies, enriches, and books meetings with your team.</p>
+        <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
+          <Card className="p-6 text-center">
+            <div className="text-signal text-2xl font-bold font-mono mb-2">READ</div>
+            <p className="text-white/60 text-sm">They understand your data, messages, and context.</p>
           </Card>
-          <Card className="p-6">
-            <div className="text-signal text-xs font-mono mb-3">CUSTOMER SUPPORT</div>
-            <h3 className="text-xl font-bold text-white font-mono mb-2">Concierge</h3>
-            <p className="text-white/70">Handles customer questions across email and chat. Knows your product. Escalates when it matters.</p>
+          <Card className="p-6 text-center">
+            <div className="text-signal text-2xl font-bold font-mono mb-2">REASON</div>
+            <p className="text-white/60 text-sm">They evaluate, prioritize, and decide what to do next.</p>
           </Card>
-          <Card className="p-6">
-            <div className="text-signal text-xs font-mono mb-3">OPS & REPORTING</div>
-            <h3 className="text-xl font-bold text-white font-mono mb-2">Pulse</h3>
-            <p className="text-white/70">Daily summaries, CRM updates, pipeline reports — in your Slack before your morning coffee.</p>
+          <Card className="p-6 text-center">
+            <div className="text-signal text-2xl font-bold font-mono mb-2">ACT</div>
+            <p className="text-white/60 text-sm">They take real actions in your real systems.</p>
+          </Card>
+          <Card className="p-6 text-center">
+            <div className="text-signal text-2xl font-bold font-mono mb-2">ESCALATE</div>
+            <p className="text-white/60 text-sm">They know when to hand it to a human.</p>
           </Card>
         </div>
 
