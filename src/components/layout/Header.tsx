@@ -45,6 +45,7 @@ export function Header() {
           {[
             { label: 'Home', href: '/' },
             { label: 'Company', href: '/company' },
+            { label: 'AI Agents', href: '/ai-agents' },
             { label: 'Products', href: '/products' },
             { label: 'Services', href: '/services' },
             { label: 'Case Studies', href: '/case-studies' },
