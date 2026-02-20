@@ -16,8 +16,8 @@ const organizationSchema = {
   "@type": "Organization",
   "@id": "https://avocadoblock.com/#organization",
   "name": "Avocado",
-  "alternateName": ["Avocado Ventures", "Avocado Dev Studio"],
-  "description": "High-velocity engineering studio that ships MVPs in weeks, not quarters. Specializing in AI/ML products, blockchain applications, and scalable web platforms.",
+  "alternateName": ["Avocado Dev Studio", "Avocado"],
+  "description": "Engineering studio that builds products and deploys AI agents. MVPs in weeks, AI automation in days. Specializing in AI agents, blockchain, and scalable web platforms.",
   "url": "https://avocadoblock.com",
   "logo": {
     "@type": "ImageObject",
@@ -51,7 +51,9 @@ const organizationSchema = {
     "JavaScript",
     "Python",
     "Google Cloud Vertex AI",
-    "Google Cloud Platform"
+    "Google Cloud Platform",
+    "AI Agent Automation",
+    "Business Process Automation"
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -77,6 +79,14 @@ const organizationSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
+          "name": "AI Agent Automation",
+          "description": "Custom AI agents that automate business workflows — lead qualification, customer support, operations, and reporting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
           "name": "Technical Rescue",
           "description": "Fix and stabilize failing or stalled projects"
         }
@@ -91,8 +101,8 @@ export function Home() {
   return (
     <>
       <SEO
-        title="Ship in weeks, not quarters"
-        description="High-velocity engineering studio that ships MVPs in weeks, not quarters. Specializing in AI/ML products, blockchain applications, and scalable web platforms."
+        title="Build Products. Deploy AI Agents. | Avocado"
+        description="Engineering studio that builds products and deploys AI agents. MVPs in weeks, AI automation in days. Trusted by BBVA, Banorte, Bitso. ISO 27001 certified."
       />
       <Schema data={organizationSchema} />
 
@@ -112,7 +122,7 @@ export function Home() {
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-16">
           <Card className="px-6 py-5 flex items-center gap-3">
             <div className="w-3 h-3 bg-signal rounded-full animate-pulse" />
-            <span className="font-mono text-white text-base">Google for Startups</span>
+            <span className="font-mono text-white text-base">Google for Startups: AI + Blockchain</span>
           </Card>
           <Card className="px-6 py-5 flex items-center gap-3">
             <div className="w-3 h-3 bg-signal rounded-full animate-pulse" />
@@ -166,7 +176,7 @@ export function Home() {
 
       <Section id="method" className="py-24 bg-void-surface">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; PROTOCOL</div>
+          <div className="text-signal text-lg md:text-xl font-mono mb-3">&gt; PLAYBOOK</div>
           <h2 className="text-3xl md:text-4xl font-bold font-mono mb-4 text-white">HOW WE WORK</h2>
           <p className="text-white/80 text-lg mb-2">Four phases. Results on day one. No death by meetings.</p>
           <p className="text-white/60 text-base">You see progress daily. Not PowerPoints. Not status reports. Working software.</p>

@@ -15,23 +15,23 @@ export function Hero() {
            {/* Badge/Tag */}
            <div className="inline-flex items-center gap-2 border border-signal/30 bg-signal/5 px-3 py-1 text-xs font-mono text-signal">
              <span className="animate-pulse">●</span>
-             <span>PROTOCOL v2.0 LIVE</span>
+             <span>BUILD + AUTOMATE</span>
            </div>
 
            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
-             <Glitch>SHIP IN</Glitch> <br />
-             <span className="text-text-secondary">WEEKS, NOT</span> <br />
-             <PhosphorGlow>QUARTERS</PhosphorGlow>
+             <Glitch>BUILD IT.</Glitch> <br />
+             <span className="text-text-secondary">THEN</span> <br />
+             <PhosphorGlow>AUTOMATE IT.</PhosphorGlow>
            </h1>
 
            <div className="font-mono text-sm md:text-base text-text-secondary space-y-2">
-             <p className="text-signal">[████████████░░░░] 75% FASTER DELIVERY</p>
-             <p>Launch your digital product in weeks. Trusted by BBVA, Banorte, and Chivas.</p>
+             <p className="text-signal">[████████████████] PRODUCTS + AI AGENTS</p>
+             <p>Ship your product in weeks. Deploy AI agents that run your operations. Trusted by BBVA, Banorte, and Bitso.</p>
            </div>
 
            <div className="flex flex-col sm:flex-row gap-4 pt-4">
              <Button variant="primary" size="lg" className="w-full sm:w-auto" asChild>
-               <a href="/signal" onClick={() => trackEvent('CTA Click', { label: 'Deploy With Avocado', section: 'hero' })}>[█ DEPLOY WITH AVOCADO]</a>
+               <a href="/signal" onClick={() => trackEvent('CTA Click', { label: 'Deploy With Avocado', section: 'hero' })}>[█ START A PROJECT]</a>
              </Button>
            </div>
         </div>
