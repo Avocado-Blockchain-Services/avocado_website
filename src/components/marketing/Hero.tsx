@@ -31,7 +31,10 @@ export function Hero() {
 
            <div className="flex flex-col sm:flex-row gap-4 pt-4">
              <Button variant="primary" size="lg" className="w-full sm:w-auto" asChild>
-               <a href="/signal" onClick={() => trackEvent('CTA Click', { label: 'Deploy With Avocado', section: 'hero' })}>[█ START A PROJECT]</a>
+               <a href="/signal" onClick={() => trackEvent('CTA Click', { label: 'Start A Project', section: 'hero' })}>[█ START A PROJECT]</a>
+             </Button>
+             <Button variant="secondary" size="lg" className="w-full sm:w-auto" asChild>
+               <a href="/ai-agents" onClick={() => trackEvent('CTA Click', { label: 'Explore AI Agents', section: 'hero' })}>[→ AI AGENTS]</a>
              </Button>
            </div>
         </div>
