@@ -24,7 +24,10 @@ export function StandardForm({ onSuccess: _onSuccess }: { onSuccess?: () => void
       action="https://api.web3forms.com/submit"
       method="POST"
       className="space-y-6 max-w-md mx-auto p-6 bg-void-surface border border-void-elevated"
-      onSubmit={() => trackEvent('Form Submitted', { form: 'standard' })}
+      onSubmit={() => {
+        trackEvent('Form Submitted', { form: 'standard' })
+        window.dataLayer?.push({ event: 'form_submitted', form_type: 'standard' })
+      }}
     >
       {/* Web3Forms config */}
       <input type="hidden" name="access_key" value={WEB3FORMS_KEY} />

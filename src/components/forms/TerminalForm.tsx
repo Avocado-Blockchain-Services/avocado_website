@@ -110,6 +110,7 @@ export function TerminalForm() {
 
       if (result.success) {
         trackEvent('Form Submitted', { form: 'terminal', projectType: data.projectType, timeline: data.timeline })
+        window.dataLayer?.push({ event: 'form_submitted', form_type: 'terminal', project_type: data.projectType })
         setHistory(prev => [
           ...prev,
           <TerminalOutput key="success-1" className="text-success">✓ Signal transmitted successfully</TerminalOutput>,
